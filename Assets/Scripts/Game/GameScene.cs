@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameScene : MonoBehaviour
+/// <summary>
+/// ゲームシーン管理
+/// </summary>
+public class GameScene : SingletonMonoBehaviour<GameScene>
 {
+
 }

@@ -16,10 +16,10 @@ public class HermitClab : MonoBehaviour
     /// </summary>
     GameObject shell;
 
-    [SerializeField,Header("１秒間に回転する速度")]
+    [SerializeField, Header("１秒間に回転する速度")]
     float rotateSpeed;
 
-    [SerializeField,Header("貝殻を発射するスピード")]
+    [SerializeField, Header("貝殻を発射するスピード")]
     float shotShellSpeed;
 
 
@@ -36,9 +36,13 @@ public class HermitClab : MonoBehaviour
         IsShelled = false;
     }
 
+    /// <summary>
+    /// すぐにShellにあたってくっつかないように
+    /// </summary>
+    /// <returns></returns>
     IEnumerator DelayShellHit()
     {
-        for(int i = 0;i<10;i++)
+        for (int i = 0; i < 5; i++)
         {
             yield return null;
         }
@@ -68,6 +72,11 @@ public class HermitClab : MonoBehaviour
         this.transform.position += new Vector3(x, 0, z);
     }
 
+    /// <summary>
+    /// プレイヤーの回転
+    /// </summary>
+    /// <param name="x"></param>
+    /// <param name="y"></param>
     void Rotate(float x, float y)
     {
         if (x == 0 && y == 0)
@@ -90,7 +99,7 @@ public class HermitClab : MonoBehaviour
     void Shot()
     {
         //殻がなければreturn
-        if (!IsShelled)
+        if (!IsShelled || IsShellExistence())
             return;
 
 
@@ -98,9 +107,6 @@ public class HermitClab : MonoBehaviour
         {
             Rigidbody rigid = shell.GetComponent<Rigidbody>();
             rigid.drag = 0;
-
-           
-            
 
             Vector3 dir = new Vector3
                 (90, Mathf.Atan(transform.forward.x / transform.forward.z) * 180 / Mathf.PI, 0);//弾をそちら側に回転させる
@@ -114,9 +120,12 @@ public class HermitClab : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// 脱ぐ！
+    /// </summary>
     void TakeOff()
     {
-        if (!IsShelled || shell == null)
+        if (!IsShelled || IsShellExistence())
             return;
 
         if (Input.GetKeyDown(KeyCode.E))
@@ -126,9 +135,10 @@ public class HermitClab : MonoBehaviour
         }
     }
 
+    //死亡
     void Dead()
     {
-
+        Destroy(this.gameObject);
     }
 
 
@@ -152,7 +162,7 @@ public class HermitClab : MonoBehaviour
         }
 
         //餌にぶつかったとき
-        if (col.gameObject.tag == "Esa")
+        if (col.gameObject.tag == "Food")
         {
             //餌情報を取得する
             Food food = col.gameObject.GetComponent<Food>();
@@ -174,17 +184,25 @@ public class HermitClab : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Shellのリセット
+    /// </summary>
     void ResetShell()
     {
         shell.transform.parent = this.transform.parent;
         shell = null;
     }
 
-
-
-
+    /// <summary>
+    /// 移動できる？
+    /// </summary>
     bool IsMove()
     {
         return state == MoveState.Move;
+    }
+
+    bool IsShellExistence()
+    {
+        return shell != null;
     }
 }

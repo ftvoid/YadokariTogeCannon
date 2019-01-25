@@ -16,13 +16,11 @@ public class HermitClab : MonoBehaviour
     /// </summary>
     GameObject shell;
 
-    [SerializeField]
+    [SerializeField,Header("１秒間に回転する速度")]
     float rotateSpeed;
 
-    [SerializeField]
-    float shellSpeed;
-
-    float rotateMargin = 0.9f;
+    [SerializeField,Header("貝殻を発射するスピード")]
+    float shotShellSpeed;
 
 
     enum MoveState
@@ -36,6 +34,17 @@ public class HermitClab : MonoBehaviour
     private void Awake()
     {
         IsShelled = false;
+    }
+
+    IEnumerator DelayShellHit()
+    {
+        for(int i = 0;i<10;i++)
+        {
+            yield return null;
+        }
+
+        IsShelled = false;
+        yield return null;
     }
 
     // Update is called once per frame
@@ -63,33 +72,15 @@ public class HermitClab : MonoBehaviour
     {
         if (x == 0 && y == 0)
             return;
-        
-        float step = rotateSpeed * Time.deltaTime;
-        float rotate = 0;
 
+        Vector3 target_dir = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
 
-        if (x >= rotateMargin)
-        {
-            rotate = 90f;
-        }
-        else if(x <= -rotateMargin)
-        {
-            rotate = -90f;
-        }
-        else if ( y >= rotateMargin)
-        {
-            rotate = 0;
-        }
-        else if(y <= -rotateMargin)
-        {
-            rotate = 180;
-        }
+        if (target_dir.magnitude < 0.1)
+            return;
 
-        transform.rotation = Quaternion.RotateTowards
-            (transform.rotation,
-            Quaternion.Euler(0, rotate, 0),
-            step);
-
+        //体の向きを変更
+        Quaternion rotation = Quaternion.LookRotation(target_dir);
+        transform.rotation = Quaternion.Lerp(transform.rotation, rotation, Time.deltaTime * rotateSpeed);
 
     }
 
@@ -108,28 +99,30 @@ public class HermitClab : MonoBehaviour
             Rigidbody rigid = shell.GetComponent<Rigidbody>();
             rigid.drag = 0;
 
-            shell.transform.parent = transform.parent;
+           
+            
 
             Vector3 dir = new Vector3
                 (90, Mathf.Atan(transform.forward.x / transform.forward.z) * 180 / Mathf.PI, 0);//弾をそちら側に回転させる
-            shell.transform.Rotate(new Vector3(0, this.transform.eulerAngles.y, 0));
-            Vector3 shotPower = Vector3.Normalize(shell.transform.forward) * shellSpeed;
+            //shell.transform.Rotate(new Vector3(0, this.transform.eulerAngles.y, 0));
+            Vector3 shotPower = Vector3.Normalize(shell.transform.forward) * shotShellSpeed;
             shell.GetComponent<Rigidbody>().AddForce(shotPower);
 
-            IsShelled = false;
+            ResetShell();
+            StartCoroutine(DelayShellHit());
 
         }
     }
 
     void TakeOff()
     {
-        if (!IsShelled)
+        if (!IsShelled || shell == null)
             return;
 
         if (Input.GetKeyDown(KeyCode.E))
         {
-            shell.transform.parent = transform.parent;
-            IsShelled = false;
+            ResetShell();
+            DelayShellHit();
         }
     }
 
@@ -180,6 +173,14 @@ public class HermitClab : MonoBehaviour
             Dead();
         }
     }
+
+    void ResetShell()
+    {
+        shell.transform.parent = this.transform.parent;
+        shell = null;
+    }
+
+
 
 
     bool IsMove()

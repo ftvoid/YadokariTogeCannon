@@ -144,6 +144,9 @@ public class HermitClab : MonoBehaviour
     /// </summary>
     void CloseShell()
     {
+        if (shell == null)
+            return;
+
         shell.GetComponent<ChaseObject>().IsChase = false;
         if(transform.localScale != Vector3.zero)
         myScale = this.transform.localScale;
@@ -185,7 +188,8 @@ public class HermitClab : MonoBehaviour
         {
             Rigidbody rigid = shell.GetComponent<Rigidbody>();
             rigid.drag = 0;
-
+            EffectManager.Instance.ShowEffect("Shot", this.transform.position, this.transform.rotation);
+            SoundManager.Instance.PlayBGM("Title");
             Vector3 dir = new Vector3
                 (90, Mathf.Atan(transform.forward.x / transform.forward.z) * 180 / Mathf.PI, 0);//弾をそちら側に回転させる
             shell.transform.Rotate(dir);
@@ -233,6 +237,7 @@ public class HermitClab : MonoBehaviour
             if (IsShelled)
                 return;
 
+            EffectManager.Instance.ShowEffect("In", this.transform.position, this.transform.rotation);
             shell = col.gameObject;
             shell.GetComponent<ChaseObject>().target = this.gameObject;
             //shell.transform.localPosition = Vector3.zero + new Vector3(0,-0.03f,-0.2f);
@@ -249,7 +254,7 @@ public class HermitClab : MonoBehaviour
             //育成度と満腹度をプラスする
             StateManager.Instance.AddGrowth(food.GetIncreasGrowth());
             StateManager.Instance.AddSatiety(food.GetIncreasSatiety());
-
+            EffectManager.Instance.ShowEffect("Eat",this.transform.position,this.transform.rotation);
             this.transform.localScale += new Vector3(1, 1, 1) * sizeScaler;
 
             FoodManager.Instance.DeleteFood(col.gameObject.GetComponent<Food>());
@@ -277,6 +282,7 @@ public class HermitClab : MonoBehaviour
             if (IsShelled)
                 return;
 
+            
             shell = other.gameObject;
             shell.GetComponent<ChaseObject>().target = shellPos;
             shell.transform.localScale = this.transform.localScale * 1.2f;

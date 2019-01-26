@@ -55,6 +55,7 @@ public class CountDown : MonoBehaviour
     /// </summary>
     public void StartCountDown(UnityAction onComplete = null)
     {
+        _onComplete = onComplete;
         image.color = new Color(1, 1, 1, 1);
         StartCoroutine("Count");
     }

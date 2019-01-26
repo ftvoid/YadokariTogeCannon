@@ -21,7 +21,6 @@ public class TranslateObject : MonoBehaviour
     {
         firstAngle = this.transform.eulerAngles;
         firstPos = this.transform.position;
-      
     }
 
     public void MoveStart()

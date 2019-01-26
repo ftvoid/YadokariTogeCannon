@@ -6,7 +6,10 @@ using UnityEngine;
 public class Shell : MonoBehaviour
 {
     [SerializeField]
-     float attack;
+    float attack = 1;
+
+    [SerializeField]
+    float stanTime = 2;
 
 
     // Update is called once per frame
@@ -28,6 +31,11 @@ public class Shell : MonoBehaviour
     public float GetAttack()
     {
         return attack;
+    }
+
+    public float GetStanTime()
+    {
+        return stanTime;
     }
 
     void Dead()

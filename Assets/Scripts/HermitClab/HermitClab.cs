@@ -173,7 +173,7 @@ public class HermitClab : MonoBehaviour
                 return;
 
             shell = col.gameObject;
-            shell.transform.position = this.transform.position + new Vector3(0,1,0);
+            shell.transform.position = Vector3.zero + new Vector3(0,1,0);
             col.gameObject.transform.parent = this.transform;
             IsShelled = true;
         }

@@ -39,6 +39,18 @@ public class StateManager : SingletonMonoBehaviour<StateManager>
         base.Awake();
         needExp = GetNeedExp(growthLv);
         satiety = 100;
+
+        StartCoroutine(Satiety());
+    }
+
+    IEnumerator Satiety()
+
+    {
+        for(int i = 0; i < 1;i += 0)
+        {
+            satiety -= 1 * Time.deltaTime;
+            yield return null;
+        }
     }
 
 

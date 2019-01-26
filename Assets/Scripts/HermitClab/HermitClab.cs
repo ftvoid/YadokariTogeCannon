@@ -202,6 +202,8 @@ public class HermitClab : MonoBehaviour
             EffectManager.Instance.ShowEffect("Shot", this.transform.position, this.transform.rotation);
             SoundManager.Instance.PlaySE("Shoot");
 
+            this.transform.localScale = myScale;
+
             Vector3 dir = new Vector3
                 (90, Mathf.Atan(transform.forward.x / transform.forward.z) * 180 / Mathf.PI, 0);//弾をそちら側に回転させる
             shell.transform.Rotate(dir);
@@ -274,7 +276,9 @@ public class HermitClab : MonoBehaviour
             //育成度と満腹度をプラスする
             StateManager.Instance.AddGrowth(food.GetIncreasGrowth());
             StateManager.Instance.AddSatiety(food.GetIncreasSatiety());
+            //ご飯食べたエフェクト
             EffectManager.Instance.ShowEffect("Eat",this.transform.position,this.transform.rotation);
+            SoundManager.Instance.PlaySE("Eat");
             this.transform.localScale += new Vector3(1, 1, 1) * sizeScaler;
 
             FoodManager.Instance.DeleteFood(col.gameObject.GetComponent<Food>());
@@ -282,11 +286,11 @@ public class HermitClab : MonoBehaviour
 
 
         //敵にぶつかったとき
-        if (col.gameObject.tag == "enemy")
+        if (col.gameObject.tag == "Clab")
         {
-            //殻を持っていて、動いていなければreturn
-            if (IsShelled && !IsMove())
-                return;
+            ////殻を持っていて、動いていなければreturn
+            //if (IsShelled && !IsMove())
+            //    return;
 
             //そうでなければ死ぬ
             Dead();

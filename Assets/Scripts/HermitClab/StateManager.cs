@@ -38,6 +38,7 @@ public class StateManager : SingletonMonoBehaviour<StateManager>
     {
         base.Awake();
         needExp = GetNeedExp(growthLv);
+        satiety = 100;
     }
 
 

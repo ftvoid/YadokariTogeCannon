@@ -22,9 +22,17 @@ public class HermitClab : MonoBehaviour
     [SerializeField, Header("貝殻を発射するスピード")]
     float shotShellSpeed = 3000f;
 
+    [SerializeField, Header("殻を持ってるときの速度係数")]
+    float getShellSpeedScale;
+
+    [SerializeField, Header("殻持ってるときに減る満腹度の量")]
+    float getShellSatietyScale;
+
+
     [SerializeField, Header("どのぐらいずつ大きくなるか")]
     float sizeScaler;
 
+  
     enum MoveState
     {
         Stop,
@@ -71,7 +79,15 @@ public class HermitClab : MonoBehaviour
 
         Rotate(x, z);
 
-        this.transform.position += new Vector3(x, 0, z);
+        //Shellついてない時は早い
+        if(!IsShelled)
+            this.transform.position += new Vector3(x, 0, z);
+        else
+        {
+            this.transform.position += new Vector3(x, 0, z) * getShellSpeedScale;
+            StateManager.Instance.AddSatiety(getShellSatietyScale);
+        }
+            
     }
 
     /// <summary>
@@ -105,7 +121,7 @@ public class HermitClab : MonoBehaviour
             return;
 
 
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.Q) || Input.GetButtonDown("Fire1"))
         {
             Rigidbody rigid = shell.GetComponent<Rigidbody>();
             rigid.drag = 0;
@@ -130,7 +146,7 @@ public class HermitClab : MonoBehaviour
         if (!IsShelled || !IsShellExistence())
             return;
 
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) || Input.GetButtonDown("Fire2"))
         {
             ResetShell();
             DelayShellHit();
@@ -159,6 +175,7 @@ public class HermitClab : MonoBehaviour
                 return;
 
             shell = col.gameObject;
+            shell.transform.position = this.transform.position + new Vector3(0,1,0);
             col.gameObject.transform.parent = this.transform;
             IsShelled = true;
         }

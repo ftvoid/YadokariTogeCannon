@@ -66,6 +66,15 @@ MonoBehaviour:
   - seID: Slow
     clip: {fileID: 8300000, guid: d499896dc7a27da45a4dfb25393857aa, type: 3}
     isLoop: 1
+  - seID: Eat
+    clip: {fileID: 8300000, guid: c89c7122cbd091e46be35b5b5b3a063c, type: 3}
+    isLoop: 0
+  - seID: Out
+    clip: {fileID: 8300000, guid: 8cf5c14b0b4d0114aa24d6a48efae122, type: 3}
+    isLoop: 0
+  - seID: In
+    clip: {fileID: 8300000, guid: d54470ce0dff47640adbf04cb40273fc, type: 3}
+    isLoop: 0
   _bgmInfo:
   - bgmID: Title
     clip: {fileID: 8300000, guid: 28a06723d9215934391aa52c304c4d90, type: 3}

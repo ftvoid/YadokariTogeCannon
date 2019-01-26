@@ -56,4 +56,12 @@ MonoBehaviour:
     effectPrefab: {fileID: 4402525690583959889, guid: 988eb04a5c5f4ec4f99b321b48fdda99,
       type: 3}
     cacheNum: 1
+  - effectID: In
+    effectPrefab: {fileID: 7313490105976830834, guid: 6bb30ac54aad6fe428403d578b77f8d0,
+      type: 3}
+    cacheNum: 1
+  - effectID: Out
+    effectPrefab: {fileID: 3856158518200636828, guid: 3bf27dba499f59e4faab863d26856f47,
+      type: 3}
+    cacheNum: 1
   _effectParent: {fileID: 744476297210275708}

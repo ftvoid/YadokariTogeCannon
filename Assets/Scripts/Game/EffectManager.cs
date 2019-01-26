@@ -90,7 +90,7 @@ public class EffectManager : SingletonMonoBehaviour<EffectManager>
     [ContextMenu("テストエフェクト表示")]
     private void TestEffect()
     {
-        ShowEffect("Test", Vector3.zero, Quaternion.identity);
+        ShowEffect("Hit", Vector3.zero, Quaternion.identity);
     }
     #endregion
 }

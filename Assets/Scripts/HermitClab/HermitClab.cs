@@ -31,6 +31,9 @@ public class HermitClab : MonoBehaviour
     [SerializeField, Header("どのぐらいずつ大きくなるか")]
     float sizeScaler = 0.1f;
 
+    [SerializeField, Header("Shell設置用")]
+    GameObject shellPos;
+
     enum MoveState
     {
         Stop,
@@ -50,7 +53,7 @@ public class HermitClab : MonoBehaviour
     /// <returns></returns>
     IEnumerator DelayShellHit()
     {
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < 2; i++)
         {
             yield return null;
         }
@@ -64,6 +67,7 @@ public class HermitClab : MonoBehaviour
     {
         Move();
         TakeOff();
+       // SetShellPostion();
         Shot();
     }
 
@@ -109,6 +113,14 @@ public class HermitClab : MonoBehaviour
 
     }
 
+    void SetShellPostion()
+    {
+        if (!IsShelled || !IsShellExistence())
+            return;
+
+        shell.transform.localPosition = Vector3.zero + new Vector3(0, -0.03f, -0.05f);
+    }
+
     /// <summary>
     /// 殻発射
     /// </summary>
@@ -126,9 +138,9 @@ public class HermitClab : MonoBehaviour
 
             Vector3 dir = new Vector3
                 (90, Mathf.Atan(transform.forward.x / transform.forward.z) * 180 / Mathf.PI, 0);//弾をそちら側に回転させる
-            //shell.transform.Rotate(new Vector3(0, this.transform.eulerAngles.y, 0));
-            Vector3 shotPower = Vector3.Normalize(shell.transform.forward) * shotShellSpeed;
-            shell.GetComponent<Rigidbody>().AddForce(shotPower);
+            shell.transform.Rotate(dir);
+            Vector3 shotPower = Vector3.Normalize(this.gameObject.transform.forward) * shotShellSpeed;
+            shell.GetComponent<Rigidbody>().velocity = shotPower;
 
             ResetShell();
             StartCoroutine(DelayShellHit());
@@ -173,8 +185,10 @@ public class HermitClab : MonoBehaviour
                 return;
 
             shell = col.gameObject;
-            shell.transform.position = Vector3.zero + new Vector3(0,1,0);
-            col.gameObject.transform.parent = this.transform;
+            shell.GetComponent<ChaseObject>().target = this.gameObject;
+            //shell.transform.localPosition = Vector3.zero + new Vector3(0,-0.03f,-0.2f);
+            //shell.transform.eulerAngles = new Vector3(-22f, 0);
+            //col.gameObject.transform.parent = shellPos.transform;
             IsShelled = true;
         }
 
@@ -206,12 +220,33 @@ public class HermitClab : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        //殻にぶつかったとき
+        if (other.tag == "Shell")
+        {
+            //殻持ってたらreturn
+            if (IsShelled)
+                return;
+
+            shell = other.gameObject;
+            shell.GetComponent<ChaseObject>().target = this.gameObject;
+            shell.transform.localScale = this.transform.localScale;
+            //shell.transform.localPosition = Vector3.zero + new Vector3(0,-0.03f,-0.2f);
+            //shell.transform.eulerAngles = new Vector3(-22f, 0);
+            //col.gameObject.transform.parent = shellPos.transform;
+            IsShelled = true;
+        }
+
+    }
+
     /// <summary>
     /// Shellのリセット
     /// </summary>
     void ResetShell()
     {
         shell.transform.parent = this.transform.parent;
+        shell.GetComponent<ChaseObject>().target = null;
         shell = null;
     }
 

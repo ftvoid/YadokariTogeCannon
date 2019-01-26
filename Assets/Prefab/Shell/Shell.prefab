@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: 5854611016346278206}
   - component: {fileID: 4354613505341654182}
   - component: {fileID: 1950183312366265585}
-  m_Layer: 0
+  - component: {fileID: 5205452742603755620}
+  m_Layer: 11
   m_Name: Shell
   m_TagString: Shell
   m_Icon: {fileID: 0}
@@ -30,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 1950183312366265584}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 99.16635, y: 0, z: -149.97324}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalScale: {x: 20, y: 20, z: 20}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -42,7 +43,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1950183312366265584}
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 4300000, guid: 20fe31666f7e2a54e99f97b32f255b6b, type: 3}
 --- !u!23 &6231931289597982120
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -88,12 +89,12 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1950183312366265584}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
+  m_Radius: 0.2
+  m_Height: 0.52
   m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  m_Center: {x: 0, y: 0.16, z: 0}
 --- !u!114 &4354613505341654182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -106,6 +107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c878d6dfafe0f5b42bf8ad8356f8b3eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attack: 0
 --- !u!54 &1950183312366265585
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -122,3 +124,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
+--- !u!114 &5205452742603755620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950183312366265584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89923a1e97e342c4d936fd6ccab55367, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  translatePos: {x: 0, y: 0, z: -0.1}
+  eulerAngle: {x: -22, y: 0, z: 0}

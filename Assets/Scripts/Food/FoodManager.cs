@@ -24,6 +24,9 @@ public class FoodManager : SingletonMonoBehaviour<FoodManager>
     [SerializeField,Header("現在生成中のご飯")]
     List<Food> nowFoodList = new List<Food>();
 
+    [SerializeField,Header("親オブジェクト")]
+    Transform parent;
+
 
     private void Start()
     {
@@ -67,7 +70,9 @@ public class FoodManager : SingletonMonoBehaviour<FoodManager>
     GameObject InstanceFood()
     {
         int ramdom = Random.Range(0, foodList.Count);
-        return Instantiate(foodList[ramdom].gameObject);
+        GameObject obj = Instantiate(foodList[ramdom].gameObject);
+        obj.transform.parent = parent;
+        return obj;
     }
 
     /// <summary>

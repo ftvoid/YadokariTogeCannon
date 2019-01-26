@@ -21,6 +21,8 @@ public class ShellManager : SingletonMonoBehaviour<ShellManager>
     [SerializeField]
     List<Shell> shellList = new List<Shell>();
 
+    [SerializeField,Header("親オブジェクト")]
+    Transform parent;
 
     private void Start()
     {
@@ -50,6 +52,7 @@ public class ShellManager : SingletonMonoBehaviour<ShellManager>
                 float z = Random.Range(rightDown.z,leftUp.z);
                 Vector3 randamPos = new Vector3(x, 4, z);
                 obj.transform.position = randamPos;
+                obj.transform.parent = parent;
                 //リストに加える
                 shellList.Add(obj.GetComponent<Shell>());
             }

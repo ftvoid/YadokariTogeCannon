@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SharkManeger : MonoBehaviour
+public class SharkManeger : SingletonMonoBehaviour<SharkManeger>
 {
 	//サメ出現までの時間最大値
 	[SerializeField] float timerMax = 0;
@@ -13,12 +13,12 @@ public class SharkManeger : MonoBehaviour
 	//タイマー減少を行うか
 	bool timerFlag = true;
 
-	private void Start()
+	void Start()
 	{
 		timer = timerMax;
 	}
 
-	private void Update()
+	void Update()
 	{
 		if(timerFlag)
 		{

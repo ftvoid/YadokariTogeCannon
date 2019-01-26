@@ -5,9 +5,6 @@ using UnityEngine.UI;
 
 public class SharkTimer : MonoBehaviour
 {
-	//サメ出現までの時間を取得
-	SharkManeger sharkManeger;
-
 	//画像コンポーネント
 	Image image;
 
@@ -20,6 +17,6 @@ public class SharkTimer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		image.fillAmount = sharkManeger.GetTimeProportion();
+        image.fillAmount = SharkManeger.Instance.GetTimeProportion() / 100f;
     }
 }

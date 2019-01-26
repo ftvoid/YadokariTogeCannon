@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class HermitClab : MonoBehaviour
 {
-
-
     /// <summary>
     /// 殻をかぶってたらtrue
     /// </summary>
+    [HideInInspector]
     public bool IsShelled;
 
     /// <summary>
@@ -16,14 +15,17 @@ public class HermitClab : MonoBehaviour
     /// </summary>
     GameObject shell;
 
+    [SerializeField,Header("通常時の速度")]
+    float speed;
+
+    [SerializeField, Header("殻を持ってるときの速度係数")]
+    float getShellSpeedScale = 0.3f;
+
     [SerializeField, Header("１秒間に回転する速度")]
     float rotateSpeed = 10f;
 
     [SerializeField, Header("貝殻を発射するスピード")]
     float shotShellSpeed = 3000f;
-
-    [SerializeField, Header("殻を持ってるときの速度係数")]
-    float getShellSpeedScale = 0.3f;
 
     [SerializeField, Header("殻持ってるときに減る満腹度の量")]
     float getShellSatietyScale = 0.5f;
@@ -108,20 +110,19 @@ public class HermitClab : MonoBehaviour
         }
            
 
-
         Rotate(x, z);
 
         //Shellついてない時は早い
         if(!IsShelled)
         {
             //ついてないとき
-            this.transform.position += new Vector3(x, 0, z);
+            this.transform.position += new Vector3(x, 0, z) * speed * Time.deltaTime;
             SoundManager.Instance.StopSE("Slow");
             SoundManager.Instance.PlaySE("Run");
         }
         else
         {
-            this.transform.position += new Vector3(x, 0, z) * getShellSpeedScale;
+            this.transform.position += new Vector3(x, 0, z) * getShellSpeedScale * speed * Time.deltaTime ;
             SoundManager.Instance.StopSE("Run");
             SoundManager.Instance.PlaySE("Slow");
             StateManager.Instance.AddSatiety(getShellSatietyScale);
@@ -179,6 +180,8 @@ public class HermitClab : MonoBehaviour
     {
         StopCoroutine(ReductionScale());
         this.transform.localScale = MyScaleCalc();
+        if (!IsShellExistence())
+            return;
         shell.GetComponent<ChaseObject>().IsChase = true;
         
     }
@@ -240,6 +243,7 @@ public class HermitClab : MonoBehaviour
     //死亡
     void Dead()
     {
+        SoundManager.Instance.StopAllSE();
         Destroy(this.gameObject);
     }
 
@@ -285,14 +289,14 @@ public class HermitClab : MonoBehaviour
 
 
         //敵にぶつかったとき
-        if (col.gameObject.tag == "Clab")
+        if (col.gameObject.tag == "Crab" || col.gameObject.tag == "Shark")
         {
-            ////殻を持っていて、動いていなければreturn
-            //if (IsShelled && !IsMove())
-            //    return;
+            //殻を持っていて、動いていなければreturn
+            if (IsShelled && !IsMove())
+                return;
 
             //そうでなければ死ぬ
-            Dead();
+            //Dead();
         }
     }
 

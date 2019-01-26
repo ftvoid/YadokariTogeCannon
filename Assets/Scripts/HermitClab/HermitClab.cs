@@ -110,10 +110,17 @@ public class HermitClab : MonoBehaviour
 
         //Shellついてない時は早い
         if(!IsShelled)
+        {
+            //ついてないとき
             this.transform.position += new Vector3(x, 0, z);
+            SoundManager.Instance.StopSE("Slow");
+            SoundManager.Instance.PlaySE("Run");
+        }
         else
         {
             this.transform.position += new Vector3(x, 0, z) * getShellSpeedScale;
+            SoundManager.Instance.StopSE("Run");
+            SoundManager.Instance.PlaySE("Slow");
             StateManager.Instance.AddSatiety(getShellSatietyScale);
         }
             
@@ -184,12 +191,15 @@ public class HermitClab : MonoBehaviour
             return;
 
 
-        if (Input.GetKeyDown(KeyCode.Q) || Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1"))
         {
             Rigidbody rigid = shell.GetComponent<Rigidbody>();
             rigid.drag = 0;
+
+            //発射エフェクト
             EffectManager.Instance.ShowEffect("Shot", this.transform.position, this.transform.rotation);
-            SoundManager.Instance.PlayBGM("Title");
+            SoundManager.Instance.PlaySE("Shoot");
+
             Vector3 dir = new Vector3
                 (90, Mathf.Atan(transform.forward.x / transform.forward.z) * 180 / Mathf.PI, 0);//弾をそちら側に回転させる
             shell.transform.Rotate(dir);
@@ -210,8 +220,12 @@ public class HermitClab : MonoBehaviour
         if (!IsShelled || !IsShellExistence())
             return;
 
-        if (Input.GetKeyDown(KeyCode.E) || Input.GetButtonDown("Fire2"))
+        if (Input.GetButtonDown("Fire2"))
         {
+            //脱ぐエフェクト
+            EffectManager.Instance.ShowEffect("Out", this.transform.position, this.transform.rotation);
+            SoundManager.Instance.PlaySE("Out");
+
             ResetShell();
             DelayShellHit();
         }
@@ -237,7 +251,9 @@ public class HermitClab : MonoBehaviour
             if (IsShelled)
                 return;
 
+            //殻に入るエフェクト
             EffectManager.Instance.ShowEffect("In", this.transform.position, this.transform.rotation);
+            SoundManager.Instance.PlaySE("In");
             shell = col.gameObject;
             shell.GetComponent<ChaseObject>().target = this.gameObject;
             //shell.transform.localPosition = Vector3.zero + new Vector3(0,-0.03f,-0.2f);
@@ -305,9 +321,10 @@ public class HermitClab : MonoBehaviour
     }
 
     /// <summary>
-    /// 移動できる？
+    /// 移動してる？
     /// </summary>
-    bool IsMove()
+    ///  /// <returns>移動中ならtrue</returns>
+    public bool IsMove()
     {
         return state == MoveState.Move;
     }
@@ -315,5 +332,14 @@ public class HermitClab : MonoBehaviour
     bool IsShellExistence()
     {
         return shell != null;
+    }
+
+    /// <summary>
+    /// 殻を持っている？
+    /// </summary>
+    /// <returns>持ってたらtrue</returns>
+    public bool IsShell()
+    {
+        return IsShelled;
     }
 }

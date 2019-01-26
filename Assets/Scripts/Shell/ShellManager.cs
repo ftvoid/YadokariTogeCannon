@@ -21,7 +21,16 @@ public class ShellManager : SingletonMonoBehaviour<ShellManager>
     [SerializeField]
     List<Shell> shellList = new List<Shell>();
 
-    void Start()
+
+    private void Start()
+    {
+        StartInstanceShell();
+    }
+
+    /// <summary>
+    /// Shell作成開始
+    /// </summary>
+    public void StartInstanceShell()
     {
         StartCoroutine(InstanceShell());
     }
@@ -48,8 +57,13 @@ public class ShellManager : SingletonMonoBehaviour<ShellManager>
         }
     }
 
+    /// <summary>
+    /// Shell削除するよ
+    /// </summary>
+    /// <param name="obj"></param>
     public void DeleteShell(GameObject obj)
     {
         shellList.Remove(obj.GetComponent<Shell>());
+        Destroy(obj.gameObject);
     }
 }

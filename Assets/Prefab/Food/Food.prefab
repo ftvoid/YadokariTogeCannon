@@ -104,5 +104,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 141f6e0a117398648a72400d7b5f1394, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  increasSatiety: 1
-  increasGrowth: 1
+  increasSatiety: 3
+  increasGrowth: 0.1

@@ -45,5 +45,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shellList:
   - {fileID: 4354613505341654182, guid: 3b49ab5c8fc1f6b418d676ae94d6b175, type: 3}
-  - {fileID: 8596400603518186751, guid: 7b647cf7103341748a687f42d6412ba5, type: 3}
-  - {fileID: 8596400603518186751, guid: fac4a3f72b00267419718d519ed0bb06, type: 3}

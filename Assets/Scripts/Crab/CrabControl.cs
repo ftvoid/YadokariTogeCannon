@@ -28,6 +28,7 @@ public class CrabControl : MonoBehaviour
     private float MoveCounter;
     private Vector3 MoveDirection;
     public float MoveSpeed = 2.0f;
+    public float MoveQuickSpeed = 100.0f;
     public float FieldWidth = 150.0f;
     public float FieldReturnWidth = 30.0f;
 
@@ -92,11 +93,22 @@ public class CrabControl : MonoBehaviour
             else
             {
                 isFoundPlayer = false;
+                if(state == CrabState.StateQuickMove)
+                {
+                    state = CrabState.StateWait;
+                }
             }
 
             bool isShell = ObjPlayer.GetComponent<HermitClab>().IsShell();
             if(isShell == false)
             {
+                if(isFoundBodyPlayer == false)
+                {
+                    state = CrabState.StateDiscovery;
+                }else
+                {
+                    state = CrabState.StateQuickMove;
+                }
                 isFoundBodyPlayer = true;
             }
             else
@@ -126,7 +138,10 @@ public class CrabControl : MonoBehaviour
         {
             if(isFoundPlayer)
             {
-                //Vector3 pos = ObjPlayer.transform.position;
+                Vector3 pos = transform.position;
+                Vector3 plpos = ObjPlayer.transform.position;
+                Vector3 plvec = new Vector3(plpos.x - pos.x, 0.0f, plpos.z - pos.z);
+                MoveDirection = plvec.normalized;
             }
             else
             {
@@ -166,12 +181,17 @@ public class CrabControl : MonoBehaviour
     // discovery
     void CrabDiscovery()
     {
-
+        state = CrabState.StateQuickMove;
     }
 
     // quick move
     void CrabQuickMove()
     {
-
+        Vector3 pos = transform.position;
+        Vector3 plpos = ObjPlayer.transform.position;
+        Vector3 plvec = new Vector3(plpos.x - pos.x, 0.0f, plpos.z - pos.z);
+        MoveDirection = plvec.normalized;
+        // move
+        transform.position += MoveDirection * MoveQuickSpeed * Time.deltaTime;
     }
 }

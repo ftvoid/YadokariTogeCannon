@@ -64,4 +64,8 @@ MonoBehaviour:
     effectPrefab: {fileID: 3856158518200636828, guid: 3bf27dba499f59e4faab863d26856f47,
       type: 3}
     cacheNum: 1
+  - effectID: Crab
+    effectPrefab: {fileID: 8181626345467877298, guid: 6c98879b203e58d45a02aeae16a72f77,
+      type: 3}
+    cacheNum: 1
   _effectParent: {fileID: 744476297210275708}

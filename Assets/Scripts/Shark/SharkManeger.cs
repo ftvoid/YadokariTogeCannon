@@ -13,6 +13,12 @@ public class SharkManeger : SingletonMonoBehaviour<SharkManeger>
 	//タイマー減少を行うか
 	bool timerFlag = true;
 
+    //生成するサメのプレファブ
+    [SerializeField] GameObject sharkPrefab;
+
+    //サメの生成位置
+    [SerializeField] Vector3 sharkStartPosition;
+
 	void Start()
 	{
 		timer = timerMax;
@@ -25,8 +31,8 @@ public class SharkManeger : SingletonMonoBehaviour<SharkManeger>
 			timer -= Time.deltaTime;
 			if(timer <= 0)
 			{
-				//サメ出現までの時間が0になった時に1度だけ行う処理
-
+                //サメ出現までの時間が0になった時に1度だけ行う処理
+                SharkGenerate();
 				timerFlag = false;
 			}
 		}
@@ -48,4 +54,12 @@ public class SharkManeger : SingletonMonoBehaviour<SharkManeger>
 		return (timer / timerMax) * 100;
 	}
 
+    /// <summary>
+    /// サメを生成する
+    /// </summary>
+    private void SharkGenerate()
+    {
+        GameObject shark = Instantiate(sharkPrefab);
+        shark.transform.position = sharkStartPosition;
+    }
 }

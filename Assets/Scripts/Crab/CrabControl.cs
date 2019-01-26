@@ -64,6 +64,13 @@ public class CrabControl : MonoBehaviour
         ObjPlayer = GameObject.FindGameObjectWithTag("Player");
         isFoundPlayer = false;
         isFoundBodyPlayer = false;
+
+        // play se
+        SoundManager.Instance.PlaySE("Shoot");
+
+        // efx
+        Vector3 efxpos = this.transform.position + new Vector3(0.0f, 10.0f, 0.0f);
+        EffectManager.Instance.ShowEffect("Out", efxpos, this.transform.rotation);
     }
 
     // Update is called once per frame
@@ -96,6 +103,10 @@ public class CrabControl : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.P))
         {
             state = CrabState.StateDied;
+
+            // debug
+            Vector3 efxpos = this.transform.position + new Vector3(0.0f, 10.0f, 0.0f);
+            EffectManager.Instance.ShowEffect("In", efxpos, this.transform.rotation);
         }
     }
 
@@ -206,6 +217,8 @@ public class CrabControl : MonoBehaviour
     void CrabDiscovery()
     {
         state = CrabState.StateQuickMove;
+        // play se
+        SoundManager.Instance.PlaySE("Shoot");
     }
 
     // quick move
@@ -249,6 +262,13 @@ public class CrabControl : MonoBehaviour
         {
             bool isShot = collision.gameObject.GetComponent<Shell>().IsShot;
             state = CrabState.StateDied;
+
+            // play se
+            SoundManager.Instance.PlaySE("Shoot");
+
+            // Efx
+            Vector3 efxpos = this.transform.position + new Vector3(0.0f, 10.0f, 0.0f);
+            EffectManager.Instance.ShowEffect("In", efxpos, this.transform.rotation);
         }
     }
 }

@@ -218,7 +218,7 @@ public class CrabControl : MonoBehaviour
     {
         state = CrabState.StateQuickMove;
         // play se
-        SoundManager.Instance.PlaySE("Shoot");
+        SoundManager.Instance.PlaySE("Serious");
     }
 
     // quick move

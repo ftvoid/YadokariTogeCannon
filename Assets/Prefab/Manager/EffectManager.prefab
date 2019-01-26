@@ -49,7 +49,7 @@ MonoBehaviour:
       type: 3}
     cacheNum: 1
   - effectID: Eat
-    effectPrefab: {fileID: 8492594721732562845, guid: 6c7f0568b7059a3489e71456ae9d2145,
+    effectPrefab: {fileID: 7345895321040189780, guid: 6c7f0568b7059a3489e71456ae9d2145,
       type: 3}
     cacheNum: 1
   - effectID: Shot

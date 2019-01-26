@@ -282,7 +282,7 @@ public class HermitClab : MonoBehaviour
 
 
         //敵にぶつかったとき
-        if (col.gameObject.tag == "enemy")
+        if (col.gameObject.tag == "Crab" || col.gameObject.tag == "Shark")
         {
             //殻を持っていて、動いていなければreturn
             if (IsShelled && !IsMove())

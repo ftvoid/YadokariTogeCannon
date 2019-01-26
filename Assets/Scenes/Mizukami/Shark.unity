@@ -443,6 +443,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38adf815fdd5a4c4d9763f69efd99715, type: 3}
+--- !u!1001 &3693331175022692018
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3693331174913373784, guid: b2ca62f1de5f53a4db6fd28e4e7cc11d,
+        type: 3}
+      propertyPath: m_Name
+      value: SharkManeger
+      objectReference: {fileID: 0}
+    - target: {fileID: 3693331174913373785, guid: b2ca62f1de5f53a4db6fd28e4e7cc11d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3693331174913373785, guid: b2ca62f1de5f53a4db6fd28e4e7cc11d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3693331174913373785, guid: b2ca62f1de5f53a4db6fd28e4e7cc11d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3693331174913373785, guid: b2ca62f1de5f53a4db6fd28e4e7cc11d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3693331174913373785, guid: b2ca62f1de5f53a4db6fd28e4e7cc11d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3693331174913373785, guid: b2ca62f1de5f53a4db6fd28e4e7cc11d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3693331174913373785, guid: b2ca62f1de5f53a4db6fd28e4e7cc11d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3693331174913373785, guid: b2ca62f1de5f53a4db6fd28e4e7cc11d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3693331174913373785, guid: b2ca62f1de5f53a4db6fd28e4e7cc11d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3693331174913373785, guid: b2ca62f1de5f53a4db6fd28e4e7cc11d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3693331174913373785, guid: b2ca62f1de5f53a4db6fd28e4e7cc11d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b2ca62f1de5f53a4db6fd28e4e7cc11d, type: 3}
 --- !u!1001 &4250568236710558869
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -454,6 +523,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Shark
+      objectReference: {fileID: 0}
+    - target: {fileID: 4250568236320103792, guid: eadb2eee409f6c448a0ed24f56464a8d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4250568236320103795, guid: eadb2eee409f6c448a0ed24f56464a8d,
         type: 3}

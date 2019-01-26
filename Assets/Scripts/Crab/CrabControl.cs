@@ -27,9 +27,6 @@ public class CrabControl : MonoBehaviour
     public float MoveCounterMax = 2;
     private float MoveCounter;
     private Vector3 MoveDirection;
-    public float MoveSpeed = 2.0f;
-    public float FieldWidth = 150.0f;
-    public float FieldReturnWidth = 30.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -88,28 +85,13 @@ public class CrabControl : MonoBehaviour
         // initialize direction
         if(isDecideDirection == false)
         {
-            Vector3 angleVector = new Vector3(1.0f, 0.0f, 0.0f);
-            MoveDirection = Quaternion.Euler(0.0f, Random.Range(-180.0f, 180.0f), 0.0f) * angleVector;
-
-            // move to center
-            Vector3 pos = transform.position;
-            float width = FieldWidth - FieldReturnWidth;
-            if ( pos.x < -width
-                || pos.x > width
-                || pos.z < -width
-                || pos.z > width )
-            {
-                Vector3 cenVec = new Vector3(-pos.x, 0.0f, -pos.z);
-                MoveDirection = cenVec.normalized;
-                Debug.Log("width");
-            }
-
+//            float rndAngle = 
             isDecideDirection = true;
         }
 
         // move
-        transform.position += MoveDirection * MoveSpeed * Time.deltaTime;
-        
+
+
         // counter
         MoveCounter += Time.deltaTime;
         if(MoveCounter > MoveCounterMax)

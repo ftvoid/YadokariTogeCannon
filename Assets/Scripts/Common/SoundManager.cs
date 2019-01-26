@@ -45,7 +45,7 @@ public class SoundManager : SingletonMonoBehaviour<SoundManager>
     /// <param name="seID"></param>
     public void PlaySE(string seID)
     {
-        var index = Array.FindIndex(_seInfo, x => x.seID == seID);
+        var index = Array.FindIndex(_seInfo, x => x.seID.Equals(seID, StringComparison.CurrentCultureIgnoreCase));
 
         if ( index < 0 )
         {
@@ -71,7 +71,7 @@ public class SoundManager : SingletonMonoBehaviour<SoundManager>
     /// <param name="bgmID"></param>
     public void PlayBGM(string bgmID)
     {
-        var index = Array.FindIndex(_bgmInfo, x => x.bgmID == bgmID);
+        var index = Array.FindIndex(_bgmInfo, x => x.bgmID.Equals(bgmID, StringComparison.CurrentCultureIgnoreCase));
 
         if ( index < 0 )
         {
@@ -97,7 +97,7 @@ public class SoundManager : SingletonMonoBehaviour<SoundManager>
     /// <param name="seID"></param>
     public void StopSE(string seID)
     {
-        var index = Array.FindIndex(_seInfo, x => x.seID == seID);
+        var index = Array.FindIndex(_seInfo, x => x.seID.Equals(seID, StringComparison.CurrentCultureIgnoreCase));
 
         if ( index < 0 )
         {

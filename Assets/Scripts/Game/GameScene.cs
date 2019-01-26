@@ -65,6 +65,8 @@ public class GameScene : SingletonMonoBehaviour<GameScene>
         _sharkManager.enabled = true;
         _player.enabled = true;
 
+        SoundManager.Instance.PlayBGM("Game");
+
         _gameState.Value = GameState.Play;
     }
 

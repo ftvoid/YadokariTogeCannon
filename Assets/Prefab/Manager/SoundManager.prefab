@@ -114,6 +114,9 @@ MonoBehaviour:
   - bgmID: Clear
     clip: {fileID: 8300000, guid: 5b2afeaa64ef9dc438d3e8be92d2e3d0, type: 3}
     isLoop: 0
+  - bgmID: Game
+    clip: {fileID: 8300000, guid: efac85dd2475dfe4bbe9607bd65f4832, type: 3}
+    isLoop: 1
   - bgmID: GameOver
     clip: {fileID: 8300000, guid: d61bb9d06d0f1a445954d690ac6381b7, type: 3}
     isLoop: 0

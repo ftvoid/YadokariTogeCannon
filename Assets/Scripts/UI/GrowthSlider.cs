@@ -5,9 +5,6 @@ using UnityEngine.UI;
 
 public class GrowthSlider : MonoBehaviour
 {
-    //成長度の取得用
-    StateManager stateManager;
-
     //スライダーコンポーネント
     Slider slider;
 
@@ -21,6 +18,6 @@ public class GrowthSlider : MonoBehaviour
     void Update()
     {
         //成長度に応じてスライダーの値を変更
-        slider.value = stateManager.GetGrowth();
+        slider.value = StateManager.Instance.GetGrowth();
     }
 }

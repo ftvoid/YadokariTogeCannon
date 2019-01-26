@@ -11,12 +11,26 @@ using UnityEngine.SceneManagement;
 public class SceneChanger : SingletonMonoBehaviour<SceneChanger>
 {
     /// <summary>
+    /// シーンのトランジション情報
+    /// </summary>
+    [Serializable]
+    private struct TransitionInfo
+    {
+        public string transitionID;
+        public Transition prefab;
+    }
+
+    [Header("トランジション情報"), SerializeField]
+    private TransitionInfo[] _transitionInfo;
+
+    /// <summary>
     /// 絶対に破棄しないシーン
     /// </summary>
-    [SerializeField]
+    [Header("絶対に破棄しないシーン"), SerializeField]
     private List<string> _neverUnloadScenes = new List<string>();
 
-    private Subject<Unit> _onEnd;
+    private Subject<Unit> _onEnd = new Subject<Unit>();
+    private Transition _currentTransition = null;
 
     /// <summary>
     /// シーン遷移終了通知
@@ -33,11 +47,12 @@ public class SceneChanger : SingletonMonoBehaviour<SceneChanger>
     /// </summary>
     /// <param name="scene"></param>
     /// <param name="sceneParams"></param>
+    /// <param name="transitionID"></param>
     /// <param name="collectGc"></param>
-    public static void Load(string scene, Dictionary<string, object> sceneParams = null, bool collectGc = true)
+    public static void Load(string scene, Dictionary<string, object> sceneParams = null, string transitionID = "", bool collectGc = true)
     {
         Instance.SceneParams = sceneParams;
-        Instance.OnLoad(scene, collectGc);
+        Instance.OnLoad(scene, transitionID, collectGc);
     }
 
     /// <summary>
@@ -50,11 +65,21 @@ public class SceneChanger : SingletonMonoBehaviour<SceneChanger>
     }
 
     /// <summary>
+    /// 初期化
+    /// </summary>
+    protected override void Awake()
+    {
+        base.Awake();
+        GameObject.DontDestroyOnLoad(this);
+    }
+
+    /// <summary>
     /// シーンロード処理
     /// </summary>
     /// <param name="scene"></param>
+    /// <param name="transitionID"></param>
     /// <param name="collectGc"></param>
-    private void OnLoad(string scene, bool collectGc)
+    private void OnLoad(string scene, string transitionID, bool collectGc)
     {
         // 以前のシーンをアンロード
         for ( int i = 0 ; i < SceneManager.sceneCount ; ++i )
@@ -73,8 +98,24 @@ public class SceneChanger : SingletonMonoBehaviour<SceneChanger>
         if ( string.IsNullOrEmpty(scene) )
             return;
 
+        // トランジション設定
+        if ( !string.IsNullOrEmpty(transitionID) )
+        {
+            var index = Array.FindIndex(_transitionInfo, x => x.transitionID == transitionID);
+            if ( index >= 0 )
+            {
+                _currentTransition = _transitionInfo[index].prefab;
+                _currentTransition.Begin(() => _onEnd.OnNext(Unit.Default));
+            }
+        }
+
         // 対象のシーンをロード
-        SceneManager.LoadScene(scene, LoadSceneMode.Additive);
+        SceneManager.LoadScene(scene, LoadSceneMode.Single);
+
+        if ( _currentTransition == null )
+        {
+            _onEnd.OnNext(Unit.Default);
+        }
     }
 
     /// <summary>
@@ -98,4 +139,12 @@ public class SceneChanger : SingletonMonoBehaviour<SceneChanger>
     {
         return _neverUnloadScenes.FindIndex(x => x.ToString() == scene) >= 0;
     }
+
+    #region テストコード
+    [ContextMenu("シーン変更")]
+    private void ChangeScene()
+    {
+        Load("mainScene");
+    }
+    #endregion
 }

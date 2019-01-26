@@ -337,7 +337,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _effectInfo:
   - effectID: Test
-    effectPrefab: {fileID: 2325765445963623983, guid: 4c18f286a9b1288428d29316714f5872,
+    effectPrefab: {fileID: 769388347263778915, guid: 4c18f286a9b1288428d29316714f5872,
       type: 3}
     cacheNum: 1
   _effectParent: {fileID: 789222732}

@@ -15,13 +15,13 @@ public class EffectManager : SingletonMonoBehaviour<EffectManager>
     private struct EffectInfo
     {
         public string effectID;
-        public GameObject effectPrefab;
+        public Effect effectPrefab;
         public int cacheNum;
 
         [NonSerialized]
-        public List<GameObject> playingEffects;
+        public List<Effect> playingEffects;
         [NonSerialized]
-        public List<GameObject> poolEffects;
+        public List<Effect> poolEffects;
     }
 
     /// <summary>
@@ -56,6 +56,12 @@ public class EffectManager : SingletonMonoBehaviour<EffectManager>
 
         // TODO : 今は楽な実装。あとでオブジェクトプールを使う方法に切り替える。
         var effect = Instantiate(info.effectPrefab, position, rotation, _effectParent);
+        effect.Play(() =>
+        {
+            info.playingEffects.Remove(effect);
+            GameObject.Destroy(effect.gameObject);
+            Debug.Log($"エフェクト\"{effectID}\"消滅");
+        });
         info.playingEffects.Add(effect);
 
         _effectInfo[index] = info;
@@ -73,8 +79,8 @@ public class EffectManager : SingletonMonoBehaviour<EffectManager>
         {
             var info = _effectInfo[i];
 
-            info.playingEffects = new List<GameObject>();
-            info.poolEffects = new List<GameObject>();
+            info.playingEffects = new List<Effect>();
+            info.poolEffects = new List<Effect>();
 
             _effectInfo[i] = info;
         }

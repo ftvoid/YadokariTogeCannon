@@ -5,22 +5,27 @@ using UnityEngine;
 
 public class Shell : MonoBehaviour
 {
-    protected float attack;
-    private Timer lifeTimer;
+    [SerializeField]
+     float attack;
+
 
     // Update is called once per frame
     void FixedUpdate()
     {
+
     }
 
-
-
-    public virtual void OnTriggerEnter(Collider collider)
+     void OnCollisionEnter(Collision collision)
     {
-        if (collider.gameObject.tag == "Enemy")
+        if (collision.gameObject.tag == "Enemy")
         {
-           
+            Dead();
         }
+    }
+
+    public float GetAttack()
+    {
+        return attack;
     }
 
     void Dead()

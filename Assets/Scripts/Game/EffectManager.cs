@@ -48,7 +48,7 @@ public class EffectManager : SingletonMonoBehaviour<EffectManager>
 
         if ( index < 0 )
         {
-            Debug.LogError($"不正なエフェクトID\"{effectID})\"が指定されました");
+            Debug.LogError($"不正なエフェクトID\"{effectID}\"が指定されました");
             return;
         }
 

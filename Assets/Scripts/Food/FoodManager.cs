@@ -24,7 +24,11 @@ public class FoodManager : SingletonMonoBehaviour<FoodManager>
     [SerializeField,Header("現在生成中のご飯")]
     List<Food> nowFoodList = new List<Food>();
 
-    void Start()
+
+    /// <summary>
+    /// InstanceFood作成開始メソッド
+    /// </summary>
+    public void StartInstanceFood()
     {
         StartCoroutine(ForeverInstanceFood());
     }
@@ -57,22 +61,35 @@ public class FoodManager : SingletonMonoBehaviour<FoodManager>
     /// </summary>
     GameObject InstanceFood()
     {
-        int ramdom = Random.Range(0, foodList.Count - 1);
+        int ramdom = Random.Range(0, foodList.Count);
         return Instantiate(foodList[ramdom].gameObject);
     }
 
     /// <summary>
-    /// 
+    /// ご飯をを指定して生成する
     /// </summary>
     /// <param name="index"></param>
     GameObject InstanceFood(int index)
     {
-        return null;
+        return Instantiate(foodList[index].gameObject);
     }
 
+    /// <summary>
+    /// ご飯を削除する
+    /// </summary>
+    /// <param name="food"></param>
     public void DeleteFood(Food food)
     {
         nowFoodList.Remove(food);
         Destroy(food.gameObject);
+    }
+
+    /// <summary>
+    /// Foodの最大数を決定する
+    /// </summary>
+    /// <param name="value"></param>
+    public void SetFoodCount(int value)
+    {
+        foodCount = value;
     }
 }

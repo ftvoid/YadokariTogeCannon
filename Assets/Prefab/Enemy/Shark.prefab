@@ -45,10 +45,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitXPosition: 95
-  waitTimerMax: 10
-  waitMoveSpeed: 5
-  chargeReadyRange: 0
-  chargeMoveSpeed: 0
+  waitTimerMax: 4
+  waitMoveSpeed: 0.7
+  chargeReadyRange: 20
+  chargeMoveSpeed: 1.5
 --- !u!1001 &4250568236500550090
 PrefabInstance:
   m_ObjectHideFlags: 0

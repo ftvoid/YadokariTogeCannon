@@ -21,7 +21,7 @@ public class TranslateObject : MonoBehaviour
     {
         firstAngle = this.transform.eulerAngles;
         firstPos = this.transform.position;
-       // MoveStart();
+      
     }
 
     public void MoveStart()
@@ -33,6 +33,11 @@ public class TranslateObject : MonoBehaviour
     {
         Move();
         Skip();
+
+        if (Input.GetButtonDown("Jump"))
+        {
+            MoveStart();
+        }
     }
 
     /// <summary>

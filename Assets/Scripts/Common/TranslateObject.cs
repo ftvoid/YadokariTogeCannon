@@ -10,6 +10,9 @@ public class TranslateObject : MonoBehaviour
     [SerializeField]
     Vector3 movePosition;
 
+    [SerializeField]
+    GameObject chaseObject;
+
     Vector3 firstAngle;
     Vector3 firstPos;
 
@@ -23,7 +26,7 @@ public class TranslateObject : MonoBehaviour
         firstPos = this.transform.position;
     }
 
-    public void MoveStart()
+    public void Play()
     {
         IsMove = true;
     }
@@ -35,7 +38,7 @@ public class TranslateObject : MonoBehaviour
 
         if (Input.GetButtonDown("Jump"))
         {
-            MoveStart();
+            Play();
         }
     }
 

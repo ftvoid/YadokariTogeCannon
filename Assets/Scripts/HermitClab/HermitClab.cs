@@ -177,8 +177,9 @@ public class HermitClab : MonoBehaviour
     void OpenShell()
     {
         StopCoroutine(ReductionScale());
-        shell.GetComponent<ChaseObject>().IsChase = true;
         this.transform.localScale = myScale;
+        shell.GetComponent<ChaseObject>().IsChase = true;
+        
     }
 
     /// <summary>
@@ -226,8 +227,10 @@ public class HermitClab : MonoBehaviour
             EffectManager.Instance.ShowEffect("Out", this.transform.position, this.transform.rotation);
             SoundManager.Instance.PlaySE("Out");
 
+            this.transform.position += this.transform.forward * 5f;
+            this.transform.localScale = myScale;
             ResetShell();
-            DelayShellHit();
+            StartCoroutine(DelayShellHit());
         }
     }
 
@@ -297,7 +300,6 @@ public class HermitClab : MonoBehaviour
             //殻持ってたらreturn
             if (IsShelled)
                 return;
-
             
             shell = other.gameObject;
             shell.GetComponent<ChaseObject>().target = shellPos;

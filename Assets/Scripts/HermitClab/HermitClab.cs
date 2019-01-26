@@ -17,11 +17,13 @@ public class HermitClab : MonoBehaviour
     GameObject shell;
 
     [SerializeField, Header("１秒間に回転する速度")]
-    float rotateSpeed;
+    float rotateSpeed = 10f;
 
     [SerializeField, Header("貝殻を発射するスピード")]
-    float shotShellSpeed;
+    float shotShellSpeed = 3000f;
 
+    [SerializeField, Header("どのぐらいずつ大きくなるか")]
+    float sizeScaler;
 
     enum MoveState
     {
@@ -99,7 +101,7 @@ public class HermitClab : MonoBehaviour
     void Shot()
     {
         //殻がなければreturn
-        if (!IsShelled || IsShellExistence())
+        if (!IsShelled || !IsShellExistence())
             return;
 
 
@@ -125,7 +127,7 @@ public class HermitClab : MonoBehaviour
     /// </summary>
     void TakeOff()
     {
-        if (!IsShelled || IsShellExistence())
+        if (!IsShelled || !IsShellExistence())
             return;
 
         if (Input.GetKeyDown(KeyCode.E))
@@ -166,9 +168,14 @@ public class HermitClab : MonoBehaviour
         {
             //餌情報を取得する
             Food food = col.gameObject.GetComponent<Food>();
+            Debug.Log(StateManager.Instance);
             //育成度と満腹度をプラスする
             StateManager.Instance.AddGrowth(food.GetIncreasGrowth());
             StateManager.Instance.AddSatiety(food.GetIncreasSatiety());
+
+            this.transform.localScale += new Vector3(1, 1, 1) * sizeScaler;
+
+            FoodManager.Instance.DeleteFood(col.gameObject.GetComponent<Food>());
         }
 
 

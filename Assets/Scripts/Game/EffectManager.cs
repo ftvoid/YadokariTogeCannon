@@ -44,7 +44,7 @@ public class EffectManager : SingletonMonoBehaviour<EffectManager>
     /// <param name="rotation"></param>
     public void ShowEffect(string effectID, Vector3 position, Quaternion rotation)
     {
-        var index = Array.FindIndex(_effectInfo, x => x.effectID == effectID);
+        var index = Array.FindIndex(_effectInfo, x => x.effectID.Equals(effectID, StringComparison.CurrentCultureIgnoreCase));
 
         if ( index < 0 )
         {

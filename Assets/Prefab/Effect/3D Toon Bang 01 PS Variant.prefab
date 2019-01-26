@@ -22,7 +22,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100002, guid: 3ec490c032ed59b4ead0dcc955f1becd, type: 3}
       propertyPath: m_Name
-      value: 3D Toon Bang 01 PS
+      value: 3D Toon Bang 01 PS Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 3ec490c032ed59b4ead0dcc955f1becd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 3ec490c032ed59b4ead0dcc955f1becd, type: 3}
       propertyPath: m_LocalPosition.x

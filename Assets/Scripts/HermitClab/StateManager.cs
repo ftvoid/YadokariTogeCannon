@@ -34,8 +34,9 @@ public class StateManager : SingletonMonoBehaviour<StateManager>
     int nextExpInterval = 0;
 
 
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
         needExp = GetNeedExp(growthLv);
     }
 
@@ -82,6 +83,7 @@ public class StateManager : SingletonMonoBehaviour<StateManager>
     public void AddGrowth(float value)
     {
         growth += value;
+        LevelUp();
     }
 
 
@@ -102,7 +104,6 @@ public class StateManager : SingletonMonoBehaviour<StateManager>
             Debug.Log("レベルがあがった！");
             growthLv += 1;
 
-            
             growth -= needExp;
             needExp = GetNeedExp(growthLv);
             Debug.Log(needExp);
@@ -128,6 +129,10 @@ public class StateManager : SingletonMonoBehaviour<StateManager>
         return growthLv;
     }
 
+    /// <summary>
+    /// 満腹度を取得
+    /// </summary>
+    /// <returns></returns>
     public float GetSatiety()
     {
         return satiety;

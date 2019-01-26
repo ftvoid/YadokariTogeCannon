@@ -22,4 +22,9 @@ public class Shell : MonoBehaviour
            
         }
     }
+
+    void Dead()
+    {
+        ShellManager.Instance.DeleteShell(this.gameObject);
+    }
 }

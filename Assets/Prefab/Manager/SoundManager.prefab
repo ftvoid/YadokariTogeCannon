@@ -86,7 +86,34 @@ MonoBehaviour:
   - seID: Bubble
     clip: {fileID: 8300000, guid: 5544066036c2fdd4e96bd0b1595f6017, type: 3}
     isLoop: 1
+  - seID: Warning
+    clip: {fileID: 8300000, guid: 5ebce050a8e99764ea763877f1331bb8, type: 3}
+    isLoop: 0
+  - seID: HitShell
+    clip: {fileID: 8300000, guid: 0114b8298b5c422439316d03a8310278, type: 3}
+    isLoop: 0
+  - seID: HitJump
+    clip: {fileID: 8300000, guid: ff2cfa9e06900cf45b06fc59cd198d21, type: 3}
+    isLoop: 0
+  - seID: Piyo
+    clip: {fileID: 8300000, guid: 44f66e9a5a0e280469f3a88415c6fb06, type: 3}
+    isLoop: 0
+  - seID: StrongHit
+    clip: {fileID: 8300000, guid: c03d1db254b969945a18917e8207382a, type: 3}
+    isLoop: 0
+  - seID: Crab
+    clip: {fileID: 8300000, guid: 7a45fdadf3b29384b809ab96b0d51a70, type: 3}
+    isLoop: 0
   _bgmInfo:
   - bgmID: Title
     clip: {fileID: 8300000, guid: 28a06723d9215934391aa52c304c4d90, type: 3}
     isLoop: 1
+  - bgmID: Boss
+    clip: {fileID: 8300000, guid: 6b92b2d1ac1a71b40a7b13ea24aff9a4, type: 3}
+    isLoop: 1
+  - bgmID: Clear
+    clip: {fileID: 8300000, guid: 5b2afeaa64ef9dc438d3e8be92d2e3d0, type: 3}
+    isLoop: 0
+  - bgmID: GameOver
+    clip: {fileID: 8300000, guid: d61bb9d06d0f1a445954d690ac6381b7, type: 3}
+    isLoop: 0

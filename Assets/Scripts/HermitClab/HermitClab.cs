@@ -34,6 +34,8 @@ public class HermitClab : MonoBehaviour
     [SerializeField, Header("Shell設置用")]
     GameObject shellPos;
 
+    Vector3 myScale = Vector3.zero;
+
     enum MoveState
     {
         Stop,
@@ -45,6 +47,7 @@ public class HermitClab : MonoBehaviour
     private void Awake()
     {
         IsShelled = false;
+        myScale = this.transform.localScale;
     }
 
     /// <summary>
@@ -69,6 +72,18 @@ public class HermitClab : MonoBehaviour
         TakeOff();
        // SetShellPostion();
         Shot();
+        Shell();
+    }
+
+    void Shell()
+    {
+        if (!IsShelled)
+            return;
+
+        if (state == MoveState.Move)
+            OpenShell();
+        else
+            CloseShell();
     }
 
     /// <summary>
@@ -78,6 +93,18 @@ public class HermitClab : MonoBehaviour
     {
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
+
+        if (x == 0 && z == 0)
+        {
+            state = MoveState.Stop;
+            return;
+        }
+        else
+        {
+            state = MoveState.Move;
+        }
+           
+
 
         Rotate(x, z);
 
@@ -99,9 +126,7 @@ public class HermitClab : MonoBehaviour
     /// <param name="y"></param>
     void Rotate(float x, float y)
     {
-        if (x == 0 && y == 0)
-            return;
-
+        
         Vector3 target_dir = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
 
         if (target_dir.magnitude < 0.1)
@@ -113,12 +138,37 @@ public class HermitClab : MonoBehaviour
 
     }
 
-    void SetShellPostion()
-    {
-        if (!IsShelled || !IsShellExistence())
-            return;
 
-        shell.transform.localPosition = Vector3.zero + new Vector3(0, -0.03f, -0.05f);
+    /// <summary>
+    /// 殻にこもる
+    /// </summary>
+    void CloseShell()
+    {
+        shell.GetComponent<ChaseObject>().IsChase = false;
+        if(transform.localScale != Vector3.zero)
+        myScale = this.transform.localScale;
+        Debug.Log(myScale);
+        shell.transform.eulerAngles = Vector3.zero;
+        this.transform.localScale = Vector3.zero;
+       // StartCoroutine(ReductionScale());
+    }
+
+    IEnumerator ReductionScale()
+    {
+        for(float time = 0; time<= 1; time += 0)
+        {
+            time += 1 * Time.deltaTime;
+
+            this.transform.localScale = Vector3.Lerp(myScale, Vector3.zero, time);
+            yield return null;
+        }
+    }
+
+    void OpenShell()
+    {
+        StopCoroutine(ReductionScale());
+        shell.GetComponent<ChaseObject>().IsChase = true;
+        this.transform.localScale = myScale;
     }
 
     /// <summary>
@@ -173,7 +223,6 @@ public class HermitClab : MonoBehaviour
     void OnCollisionEnter(Collision col)
     {
         string colTag = col.gameObject.tag;
-        Debug.Log(colTag);
 
         //ぶつかったオブジェクトが餌、殻、敵じゃなければreturn
 
@@ -197,7 +246,6 @@ public class HermitClab : MonoBehaviour
         {
             //餌情報を取得する
             Food food = col.gameObject.GetComponent<Food>();
-            Debug.Log(StateManager.Instance);
             //育成度と満腹度をプラスする
             StateManager.Instance.AddGrowth(food.GetIncreasGrowth());
             StateManager.Instance.AddSatiety(food.GetIncreasSatiety());
@@ -230,8 +278,8 @@ public class HermitClab : MonoBehaviour
                 return;
 
             shell = other.gameObject;
-            shell.GetComponent<ChaseObject>().target = this.gameObject;
-            shell.transform.localScale = this.transform.localScale;
+            shell.GetComponent<ChaseObject>().target = shellPos;
+            shell.transform.localScale = this.transform.localScale * 1.2f;
             //shell.transform.localPosition = Vector3.zero + new Vector3(0,-0.03f,-0.2f);
             //shell.transform.eulerAngles = new Vector3(-22f, 0);
             //col.gameObject.transform.parent = shellPos.transform;

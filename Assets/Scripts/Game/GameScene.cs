@@ -41,6 +41,9 @@ public enum GameState
 /// </summary>
 public class GameScene : SingletonMonoBehaviour<GameScene>
 {
+    [Header("カウントダウン用UI"), SerializeField]
+    private CountDown _countDownUI;
+
     private ReactiveProperty<GameState> _gameState = new ReactiveProperty<GameState>();
 
     /// <summary>
@@ -82,6 +85,11 @@ public class GameScene : SingletonMonoBehaviour<GameScene>
         _gameState.Value = GameState.Init;
     }
 
+    private void Start()
+    {
+        StartCoroutine(Init());
+    }
+
     /// <summary>
     /// 初期化処理
     /// </summary>
@@ -90,9 +98,14 @@ public class GameScene : SingletonMonoBehaviour<GameScene>
     {
         _gameState.Value = GameState.Start;
 
-        yield return 0;
+        // カウントダウンUI表示
+        Debug.Log("GameScene : カウントダウンUI表示");
+        bool isComplete = false;
+        _countDownUI.StartCountDown(() => isComplete = true);
+        yield return new WaitUntil(() => isComplete);
 
-        // TODO : 今はすぐにゲームスタートする。後で削除予定
+        // ゲーム開始
+        Debug.Log("GameScene : ゲーム開始");
         StartGame();
     }
 }

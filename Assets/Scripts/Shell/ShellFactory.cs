@@ -12,7 +12,7 @@ public class ShellFactory : SingletonMonoBehaviour<ShellFactory>
     /// </summary>
     public GameObject InstanceShell()
     { 
-        int ramdom = Random.Range(0, shellList.Count - 1);
+        int ramdom = Random.Range(0, shellList.Count);
         return Instantiate( shellList[ramdom].gameObject);
     }
 

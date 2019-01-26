@@ -23,16 +23,14 @@ public class HermitClab : MonoBehaviour
     float shotShellSpeed = 3000f;
 
     [SerializeField, Header("殻を持ってるときの速度係数")]
-    float getShellSpeedScale;
+    float getShellSpeedScale = 0.3f;
 
     [SerializeField, Header("殻持ってるときに減る満腹度の量")]
-    float getShellSatietyScale;
-
+    float getShellSatietyScale = 0.5f;
 
     [SerializeField, Header("どのぐらいずつ大きくなるか")]
-    float sizeScaler;
+    float sizeScaler = 0.1f;
 
-  
     enum MoveState
     {
         Stop,

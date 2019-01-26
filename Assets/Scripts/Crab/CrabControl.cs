@@ -194,4 +194,13 @@ public class CrabControl : MonoBehaviour
         // move
         transform.position += MoveDirection * MoveQuickSpeed * Time.deltaTime;
     }
+
+    // damage
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "shell")
+        {
+
+        }
+    }
 }

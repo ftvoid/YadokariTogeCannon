@@ -25,6 +25,11 @@ public class FoodManager : SingletonMonoBehaviour<FoodManager>
     List<Food> nowFoodList = new List<Food>();
 
 
+    private void Start()
+    {
+        StartInstanceFood();
+    }
+
     /// <summary>
     /// InstanceFood作成開始メソッド
     /// </summary>

@@ -74,6 +74,18 @@ MonoBehaviour:
   - seID: In
     clip: {fileID: 8300000, guid: d54470ce0dff47640adbf04cb40273fc, type: 3}
     isLoop: 0
+  - seID: Serious
+    clip: {fileID: 8300000, guid: 8001b4024fe4ddd48b2ccf304b85ed2e, type: 3}
+    isLoop: 0
+  - seID: Decide
+    clip: {fileID: 8300000, guid: cbe4679d7181b4741861cb1f78505424, type: 3}
+    isLoop: 0
+  - seID: Cancel
+    clip: {fileID: 8300000, guid: fd63650c3bddae840ab427c2f4b2f46a, type: 3}
+    isLoop: 0
+  - seID: Bubble
+    clip: {fileID: 8300000, guid: 5544066036c2fdd4e96bd0b1595f6017, type: 3}
+    isLoop: 1
   _bgmInfo:
   - bgmID: Title
     clip: {fileID: 8300000, guid: 28a06723d9215934391aa52c304c4d90, type: 3}

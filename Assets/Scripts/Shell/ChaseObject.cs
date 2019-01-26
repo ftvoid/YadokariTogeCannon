@@ -17,11 +17,17 @@ public class ChaseObject : MonoBehaviour {
     [SerializeField]
     Vector3 eulerAngle;
 
+    public bool IsChase = false;
+
     // Update is called once per frame
     void Update()
     {
         if (target == null)
             return;
+
+        if (!IsChase)
+            return;
+
         this.transform.position = target.transform.position + translatePos;
         this.transform.eulerAngles = target.transform.eulerAngles + eulerAngle;
     }

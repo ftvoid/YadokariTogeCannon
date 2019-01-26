@@ -1,14 +1,57 @@
 fileFormatVersion: 2
-guid: aadaf9583df7d3a49afbcb0062fd600a
+guid: 4ad93d890b25a31448272e2d836456fe
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: lambert1
-    2300000: //RootNode
-    3300000: //RootNode
+    100000: LeftEye
+    100002: LeftHand
+    100004: LeftHandTop
+    100006: LeftUpleg1
+    100008: LeftUpLeg2
+    100010: LeftUpleg3
+    100012: LeftUpLeg4
+    100014: LeftUpleg5
+    100016: LeftUpLeg6
+    100018: RightEye
+    100020: RightHand
+    100022: RightHandTop
+    100024: RightUpleg1
+    100026: RightUpLeg2
+    100028: RightUpleg3
+    100030: RightUpLeg4
+    100032: RightUpleg5
+    100034: RightUpLeg6
+    100036: Spine1
+    100038: Spine2
+    100040: yadokari
+    100042: //RootNode
+    400000: LeftEye
+    400002: LeftHand
+    400004: LeftHandTop
+    400006: LeftUpleg1
+    400008: LeftUpLeg2
+    400010: LeftUpleg3
+    400012: LeftUpLeg4
+    400014: LeftUpleg5
+    400016: LeftUpLeg6
+    400018: RightEye
+    400020: RightHand
+    400022: RightHandTop
+    400024: RightUpleg1
+    400026: RightUpLeg2
+    400028: RightUpleg3
+    400030: RightUpLeg4
+    400032: RightUpleg5
+    400034: RightUpLeg6
+    400036: Spine1
+    400038: Spine2
+    400040: yadokari
+    400042: //RootNode
+    2100000: lambert2
     4300000: yadokari
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: yadokari
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -36,7 +79,35 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -61,8 +132,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -89,7 +160,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

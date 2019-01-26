@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &744476297210275706
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 744476297210275708}
+  - component: {fileID: 744476297210275707}
+  m_Layer: 0
+  m_Name: EffectManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &744476297210275708
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 744476297210275706}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &744476297210275707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 744476297210275706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73d7d751350b7b8458554f6ec6aa71df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _effectInfo:
+  - effectID: Hit
+    effectPrefab: {fileID: 2136824634873933294, guid: ee02b9af66d1e4b4493bc16361557b18,
+      type: 3}
+    cacheNum: 1
+  - effectID: Eat
+    effectPrefab: {fileID: 8492594721732562845, guid: 6c7f0568b7059a3489e71456ae9d2145,
+      type: 3}
+    cacheNum: 1
+  - effectID: Shot
+    effectPrefab: {fileID: 4402525690583959889, guid: 988eb04a5c5f4ec4f99b321b48fdda99,
+      type: 3}
+    cacheNum: 1
+  - effectID: In
+    effectPrefab: {fileID: 7313490105976830834, guid: 6bb30ac54aad6fe428403d578b77f8d0,
+      type: 3}
+    cacheNum: 1
+  - effectID: Out
+    effectPrefab: {fileID: 3856158518200636828, guid: 3bf27dba499f59e4faab863d26856f47,
+      type: 3}
+    cacheNum: 1
+  _effectParent: {fileID: 744476297210275708}

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1971341458602578345}
   m_Layer: 0
   m_Name: Crab
-  m_TagString: Untagged
+  m_TagString: Crab
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -107,3 +107,6 @@ MonoBehaviour:
   MaxHp: 1
   WaitCounterMax: 2
   MoveCounterMax: 2
+  MoveSpeed: 2
+  FieldWidth: 150
+  FieldReturnWidth: 30

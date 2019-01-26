@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6694369552845360809
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6694369552845360855}
+  - component: {fileID: 6694369552845360854}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6694369552845360855
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6694369552845360809}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6694369552845360854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6694369552845360809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c7209d9c54a92c46b24318f53c2a7a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _seInfo:
+  - seID: Hit
+    clip: {fileID: 8300000, guid: 220015bde8cc49e42a95e78d9d2b87e9, type: 3}
+    isLoop: 0
+  - seID: Shoot
+    clip: {fileID: 8300000, guid: 35ba3d3e1525b624898626378f0573d5, type: 3}
+    isLoop: 0
+  - seID: Out
+    clip: {fileID: 8300000, guid: 8cf5c14b0b4d0114aa24d6a48efae122, type: 3}
+    isLoop: 0
+  - seID: In
+    clip: {fileID: 8300000, guid: d54470ce0dff47640adbf04cb40273fc, type: 3}
+    isLoop: 0
+  - seID: Run
+    clip: {fileID: 8300000, guid: 842c3a0f8da5d0e49ab1a086bb4be738, type: 3}
+    isLoop: 1
+  - seID: Walk
+    clip: {fileID: 8300000, guid: 62ecb4994b43f3c4d8464f1890fe0ee7, type: 3}
+    isLoop: 1
+  - seID: Slow
+    clip: {fileID: 8300000, guid: d499896dc7a27da45a4dfb25393857aa, type: 3}
+    isLoop: 1
+  _bgmInfo:
+  - bgmID: Title
+    clip: {fileID: 8300000, guid: 28a06723d9215934391aa52c304c4d90, type: 3}
+    isLoop: 1

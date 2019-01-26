@@ -12,7 +12,9 @@ public class Shell : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-
+        if (this.transform.position.x >= 300 || this.transform.position.x <= -300 ||
+            this.transform.position.z >= 300 || this.transform.position.z <= -300)
+            Dead();
     }
 
      void OnCollisionEnter(Collision collision)

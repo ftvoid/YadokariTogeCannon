@@ -31,6 +31,11 @@ public class CrabControl : MonoBehaviour
     public float FieldWidth = 150.0f;
     public float FieldReturnWidth = 30.0f;
 
+    // player check
+    private GameObject ObjPlayer;
+    private bool isFoundPlayer = false;
+    private bool isFoundBodyPlayer = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,6 +43,11 @@ public class CrabControl : MonoBehaviour
         WaitCounter = 0;
         state = CrabState.StateWait;
         isDecideDirection = false;
+
+        // player
+        ObjPlayer = GameObject.FindGameObjectWithTag("Player");
+        isFoundPlayer = false;
+        isFoundBodyPlayer = false;
     }
 
     // Update is called once per frame
@@ -67,7 +77,15 @@ public class CrabControl : MonoBehaviour
     // search hermitcrab
     void SearchHermitCrab()
     {
-
+        if(ObjPlayer == null)
+        {
+            isFoundPlayer = false;
+            isFoundBodyPlayer = false;
+        }
+        else
+        {
+            //ObjPlayer.GetComponent<HermitClab>().
+        }
     }
 
     // wait

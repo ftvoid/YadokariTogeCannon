@@ -53,7 +53,16 @@ public class SoundManager : SingletonMonoBehaviour<SoundManager>
             return;
         }
 
-        _seInfo[index].audioSource?.Play();
+        var audioSource = _seInfo[index].audioSource;
+        if ( audioSource == null )
+        {
+            return;
+        }
+
+        if ( !_seInfo[index].isLoop || !audioSource.isPlaying )
+        {
+            audioSource?.Play();
+        }
     }
 
     /// <summary>
@@ -70,7 +79,16 @@ public class SoundManager : SingletonMonoBehaviour<SoundManager>
             return;
         }
 
-        _bgmInfo[index].audioSource?.Play();
+        var audioSource = _bgmInfo[index].audioSource;
+        if ( audioSource == null )
+        {
+            return;
+        }
+
+        if( !audioSource.isPlaying )
+        {
+            audioSource.Play();
+        }
     }
 
     /// <summary>

@@ -13,7 +13,6 @@ public class ShellManager : SingletonMonoBehaviour<ShellManager>
     [SerializeField,Header("生成する間隔")]
     float instanceInterval;
 
-
     [SerializeField]
     Vector3 leftUp;
     [SerializeField]

@@ -15,6 +15,7 @@ public class CrabControl : MonoBehaviour
         StateMove,
         StateDiscovery,
         StateQuickMove,
+        StateDied,
     };
     private CrabState state;
 
@@ -37,6 +38,15 @@ public class CrabControl : MonoBehaviour
     private bool isFoundPlayer = false;
     private bool isFoundBodyPlayer = false;
 
+    // Died
+    private bool isDied = false;
+    public float CounterOfDiedMax = 1.0f;
+    private float CounterOfDied;
+    private bool isRender;
+    public int blinkCounterMax;
+    private int blinkCounter;
+    private GameObject crabManager;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -44,6 +54,11 @@ public class CrabControl : MonoBehaviour
         WaitCounter = 0;
         state = CrabState.StateWait;
         isDecideDirection = false;
+        isDied = false;
+        CounterOfDied = 0.0f;
+        isRender = false;
+        blinkCounter = 0;
+        crabManager = GameObject.Find("CrabManager");
 
         // player
         ObjPlayer = GameObject.FindGameObjectWithTag("Player");
@@ -72,6 +87,15 @@ public class CrabControl : MonoBehaviour
             case CrabState.StateQuickMove:
                 CrabQuickMove();
                 break;
+            case CrabState.StateDied:
+                CrabDied();
+                break;
+        }
+
+        // debug
+        if(Input.GetKeyDown(KeyCode.P))
+        {
+            state = CrabState.StateDied;
         }
     }
 
@@ -195,12 +219,36 @@ public class CrabControl : MonoBehaviour
         transform.position += MoveDirection * MoveQuickSpeed * Time.deltaTime;
     }
 
+    // Died
+    void CrabDied()
+    {
+        // blink
+        blinkCounter++;
+        if(blinkCounter > blinkCounterMax)
+        {
+            isRender = !isRender;
+            blinkCounter = 0;
+        }
+
+        //Renderer renderComponent = transform.Find("kani").gameObject.GetComponent<Renderer>();
+        //renderComponent.enabled = isRender;
+
+        // counter
+        CounterOfDied += Time.deltaTime;
+        if(CounterOfDied > CounterOfDiedMax)
+        {
+            crabManager.GetComponent<CrabManager>().NextCrabs();
+            Destroy(this.gameObject);
+        }
+    }
+
     // damage
     private void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.tag == "shell")
         {
-
+            bool isShot = collision.gameObject.GetComponent<Shell>().IsShot;
+            state = CrabState.StateDied;
         }
     }
 }

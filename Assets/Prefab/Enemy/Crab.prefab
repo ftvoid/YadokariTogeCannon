@@ -105,6 +105,8 @@ MonoBehaviour:
   FieldReturnWidth: 50
   CounterOfDiedMax: 1
   blinkCounterMax: 0
+  JumpHeightMax: 50
+  JumpRotationMax: 10
 --- !u!1001 &1350007032
 PrefabInstance:
   m_ObjectHideFlags: 0

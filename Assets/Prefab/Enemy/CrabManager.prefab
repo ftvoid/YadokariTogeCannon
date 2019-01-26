@@ -43,9 +43,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d99baf3adacdae14da4cf6a6f8a1cd4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CrabsMax: 5
   StartCrabs: 2
-  CounterOfRespawnMax: 2
+  EndCrabs: 5
+  CounterOfRespawnMax: 20
   ObjCrabs: {fileID: 1971341458602578348, guid: 849b5a55e504d664784246639bc9fcf7,
     type: 3}
   FieldWidth: 150

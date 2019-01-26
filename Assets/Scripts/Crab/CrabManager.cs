@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class CrabManager : MonoBehaviour
 {
-    public int CrabsMax = 5;
     public int StartCrabs = 2;
+    public int EndCrabs = 5;
     private int NumberOfCrabs;
 
     public float CounterOfRespawnMax = 2.0f;
@@ -30,7 +30,6 @@ public class CrabManager : MonoBehaviour
             for (int i = 0; i < nummax; ++i)
             {
                 CreateCrabs();
-                NumberOfCrabs++;
             }
         }
     }
@@ -38,6 +37,16 @@ public class CrabManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // respawn crabs
+        if(NumberOfCrabs < EndCrabs)
+        {
+            CounterOfRespawn += Time.deltaTime;
+            if(CounterOfRespawn > CounterOfRespawnMax)
+            {
+                CreateCrabs();
+                CounterOfRespawn = 0.0f;
+            }
+        }
 
 
 
@@ -51,6 +60,8 @@ public class CrabManager : MonoBehaviour
         float width = FieldWidth - FieldEdgeSpan;
         Vector3 pos = new Vector3( Random.Range( -width, width ), 0.0f, Random.Range( -width, width ) );
         Instantiate(ObjCrabs, pos, Quaternion.identity);
+
+        NumberOfCrabs++;
     }
 
 

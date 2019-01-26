@@ -11,6 +11,11 @@ public class Shell : MonoBehaviour
     [SerializeField]
     float stanTime = 2;
 
+    public bool IsShot
+    {
+        get;
+        set;
+    }
 
     // Update is called once per frame
     void FixedUpdate()
@@ -42,4 +47,6 @@ public class Shell : MonoBehaviour
     {
         ShellManager.Instance.DeleteShell(this.gameObject);
     }
+
+
 }

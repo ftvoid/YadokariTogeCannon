@@ -53,22 +53,6 @@ public class StateManager : SingletonMonoBehaviour<StateManager>
         }
     }
 
-
-    private void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            LevelUp();
-        }
-
-        if (Input.GetMouseButton(0))
-            growth += 1;
-
-        if (Input.GetMouseButton(1))
-            GetGrowth();
-
-    }
-
     /// <summary>
     /// 満腹度を追加
     /// </summary>
@@ -119,6 +103,8 @@ public class StateManager : SingletonMonoBehaviour<StateManager>
 
             growth -= needExp;
             needExp = GetNeedExp(growthLv);
+            SoundManager.Instance.PlaySE("Eat");
+            EffectManager.Instance.ShowEffect("Levelup", GameObject.FindGameObjectWithTag("Player").transform.position,new Quaternion());
             Debug.Log(needExp);
         }
     }

@@ -34,8 +34,6 @@ public class HermitClab : MonoBehaviour
     [SerializeField, Header("Shell設置用")]
     GameObject shellPos;
 
-    Vector3 myScale = Vector3.zero;
-
     enum MoveState
     {
         Stop,
@@ -47,7 +45,6 @@ public class HermitClab : MonoBehaviour
     private void Awake()
     {
         IsShelled = false;
-        myScale = this.transform.localScale;
     }
 
     /// <summary>
@@ -73,6 +70,11 @@ public class HermitClab : MonoBehaviour
        // SetShellPostion();
         Shot();
         Shell();
+    }
+
+    Vector3 MyScaleCalc()
+    {
+        return new Vector3(1,1,1)*(10 + StateManager.Instance.GetGrowthLv() * sizeScaler);
     }
 
     void Shell()
@@ -157,8 +159,6 @@ public class HermitClab : MonoBehaviour
 
         shell.GetComponent<ChaseObject>().IsChase = false;
         if(transform.localScale != Vector3.zero)
-        myScale = this.transform.localScale;
-        Debug.Log(myScale);
         shell.transform.eulerAngles = Vector3.zero;
         this.transform.localScale = Vector3.zero;
        // StartCoroutine(ReductionScale());
@@ -170,7 +170,7 @@ public class HermitClab : MonoBehaviour
         {
             time += 1 * Time.deltaTime;
 
-            this.transform.localScale = Vector3.Lerp(myScale, Vector3.zero, time);
+            this.transform.localScale = Vector3.Lerp(MyScaleCalc(), Vector3.zero, time);
             yield return null;
         }
     }
@@ -178,7 +178,7 @@ public class HermitClab : MonoBehaviour
     void OpenShell()
     {
         StopCoroutine(ReductionScale());
-        this.transform.localScale = myScale;
+        this.transform.localScale = MyScaleCalc();
         shell.GetComponent<ChaseObject>().IsChase = true;
         
     }
@@ -201,8 +201,8 @@ public class HermitClab : MonoBehaviour
             //発射エフェクト
             EffectManager.Instance.ShowEffect("Shot", this.transform.position, this.transform.rotation);
             SoundManager.Instance.PlaySE("Shoot");
-
-            this.transform.localScale = myScale;
+            shell.GetComponent<Shell>().IsShot = true;
+            this.transform.localScale = MyScaleCalc();
 
             Vector3 dir = new Vector3
                 (90, Mathf.Atan(transform.forward.x / transform.forward.z) * 180 / Mathf.PI, 0);//弾をそちら側に回転させる
@@ -231,7 +231,7 @@ public class HermitClab : MonoBehaviour
             SoundManager.Instance.PlaySE("Out");
 
             this.transform.position += this.transform.forward * 5f;
-            this.transform.localScale = myScale;
+            this.transform.localScale = MyScaleCalc();
             ResetShell();
             StartCoroutine(DelayShellHit());
         }
@@ -279,8 +279,7 @@ public class HermitClab : MonoBehaviour
             //ご飯食べたエフェクト
             EffectManager.Instance.ShowEffect("Eat",this.transform.position,this.transform.rotation);
             SoundManager.Instance.PlaySE("Eat");
-            this.transform.localScale += new Vector3(1, 1, 1) * sizeScaler;
-
+    
             FoodManager.Instance.DeleteFood(col.gameObject.GetComponent<Food>());
         }
 

@@ -46,6 +46,10 @@ public class CrabControl : MonoBehaviour
     public int blinkCounterMax;
     private int blinkCounter;
     private GameObject crabManager;
+    public float JumpHeightMax = 100.0f;
+    private float JumpHeight;
+    public float JumpRotationMax = 30.0f;
+    private Vector3 JumpRotation;
 
     // Start is called before the first frame update
     void Start()
@@ -58,6 +62,7 @@ public class CrabControl : MonoBehaviour
         CounterOfDied = 0.0f;
         isRender = false;
         blinkCounter = 0;
+        JumpHeight = 0.0f;
         crabManager = GameObject.Find("CrabManager");
 
         // player
@@ -107,6 +112,8 @@ public class CrabControl : MonoBehaviour
             // debug
             Vector3 efxpos = this.transform.position + new Vector3(0.0f, 10.0f, 0.0f);
             EffectManager.Instance.ShowEffect("In", efxpos, this.transform.rotation);
+            // JumpRotatoin
+            JumpRotation = new Vector3(Random.Range(0.0f, JumpRotationMax), Random.Range(0.0f, JumpRotationMax), 0.0f);
         }
     }
 
@@ -246,6 +253,20 @@ public class CrabControl : MonoBehaviour
         //Renderer renderComponent = transform.Find("kani").gameObject.GetComponent<Renderer>();
         //renderComponent.enabled = isRender;
 
+        // jump
+        float angle = 180.0f * Mathf.Deg2Rad * (float)CounterOfDied / (float)CounterOfDiedMax;
+        JumpHeight = Mathf.Sin(angle) * JumpHeightMax;
+        Vector3 jumppos = new Vector3(transform.position.x, JumpHeight, transform.position.z);
+        transform.position = jumppos;
+
+        // rotation
+        transform.eulerAngles += JumpRotation;
+        //transform.eulerAngles += new Vector3(30.0f, 30.0f, 30.0f);
+
+        // efx
+        Vector3 efxpos = this.transform.position + new Vector3(0.0f, 10.0f, 0.0f);
+        EffectManager.Instance.ShowEffect("In", efxpos, this.transform.rotation);
+
         // counter
         CounterOfDied += Time.deltaTime;
         if(CounterOfDied > CounterOfDiedMax)
@@ -258,7 +279,7 @@ public class CrabControl : MonoBehaviour
     // damage
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "shell")
+        if(collision.gameObject.tag == "Shell")
         {
             bool isShot = collision.gameObject.GetComponent<Shell>().IsShot;
             state = CrabState.StateDied;
@@ -269,6 +290,10 @@ public class CrabControl : MonoBehaviour
             // Efx
             Vector3 efxpos = this.transform.position + new Vector3(0.0f, 10.0f, 0.0f);
             EffectManager.Instance.ShowEffect("In", efxpos, this.transform.rotation);
+
+            // JumpRotatoin
+            JumpRotation = new Vector3( Random.Range(0.0f, JumpRotationMax), Random.Range(0.0f, JumpRotationMax), 0.0f );
+
         }
     }
 }

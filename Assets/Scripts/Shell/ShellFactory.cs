@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ShellFactory : SingletonMonoBehaviour<ShellFactory>
 {
-    [SerializeField]
+    [SerializeField,Header("生成するShellの種類")]
     List<Shell> shellList = new List<Shell>();
 
     /// <summary>
@@ -17,11 +17,11 @@ public class ShellFactory : SingletonMonoBehaviour<ShellFactory>
     }
 
     /// <summary>
-    /// 
+    /// 指定した貝を生成する
     /// </summary>
     /// <param name="index"></param>
     public GameObject InstanceShell(int index)
     {
-        return null;
+        return Instantiate(shellList[index].gameObject);
     }
 }

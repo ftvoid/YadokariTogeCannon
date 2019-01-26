@@ -116,8 +116,7 @@ public class StateManager : SingletonMonoBehaviour<StateManager>
     /// </summary>
     /// <returns></returns>
     public float GetGrowth()
-    {
-        Debug.Log((growth / needExp) * 100);
+    { 
         return (growth / needExp) * 100;
     }
 
@@ -136,10 +135,23 @@ public class StateManager : SingletonMonoBehaviour<StateManager>
     /// <returns></returns>
     public float GetSatiety()
     {
-        return satiety;
+        return satiety; 
     }
 
+    /// <summary>
+    /// 現在満腹度/最大満腹度を作成 最大値100
+    /// </summary>
+    /// <returns></returns>
+    public float GetSatietyProportion()
+    {
+        return (satiety / maxSatiety) * 100;
+    }
 
+    /// <summary>
+    /// 次回のレベルアップに必要な経験値
+    /// </summary>
+    /// <param name="level"></param>
+    /// <returns></returns>
     int GetNeedExp(int level)
     {
         return nextExpBase + nextExpInterval * ((growthLv - 1));

@@ -9,6 +9,7 @@ public class CrabManager : MonoBehaviour
     private int NumberOfCrabs;
 
     public float CounterOfRespawnMax = 2.0f;
+    public float CounterOfNextRespawnMax = 5.0f;
     private float CounterOfRespawn;
 
     public GameObject ObjCrabs;
@@ -47,12 +48,6 @@ public class CrabManager : MonoBehaviour
                 CounterOfRespawn = 0.0f;
             }
         }
-
-
-
-
-        // count crabs
-        CountCrabs();
     }
 
     // Create Crabs
@@ -65,9 +60,18 @@ public class CrabManager : MonoBehaviour
     }
 
 
-    // count crabs
-    void CountCrabs()
+    // Next Crabs by Died
+    public void NextCrabs()
     {
-
+        NumberOfCrabs--;
+        if(NumberOfCrabs <= 0)
+        {
+            NumberOfCrabs = 0;
+        }
+        float nextrespawn = CounterOfRespawnMax - CounterOfNextRespawnMax;
+        if(CounterOfRespawn < nextrespawn)
+        {
+            CounterOfRespawn = nextrespawn;
+        }
     }
 }

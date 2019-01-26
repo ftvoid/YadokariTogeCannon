@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6694369552845360855}
   - component: {fileID: 6694369552845360854}
-  - component: {fileID: 1364192408}
   m_Layer: 0
   m_Name: SoundManager
   m_TagString: Untagged
@@ -79,11 +78,3 @@ MonoBehaviour:
   - bgmID: Title
     clip: {fileID: 8300000, guid: 28a06723d9215934391aa52c304c4d90, type: 3}
     isLoop: 1
---- !u!81 &1364192408
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6694369552845360809}
-  m_Enabled: 1

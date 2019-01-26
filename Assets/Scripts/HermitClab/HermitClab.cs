@@ -96,6 +96,7 @@ public class HermitClab : MonoBehaviour
 
         if (x == 0 && z == 0)
         {
+            SoundManager.Instance.StopAllSE();
             state = MoveState.Stop;
             return;
         }

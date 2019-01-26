@@ -44,6 +44,12 @@ public class GameScene : SingletonMonoBehaviour<GameScene>
     [Header("カウントダウン用UI"), SerializeField]
     private CountDown _countDownUI;
 
+    [Header("サメ管理"), SerializeField]
+    private SharkManeger _sharkManager;
+
+    [Header("プレイヤー"), SerializeField]
+    private HermitClab _player;
+
     private ReactiveProperty<GameState> _gameState = new ReactiveProperty<GameState>();
 
     /// <summary>
@@ -56,6 +62,9 @@ public class GameScene : SingletonMonoBehaviour<GameScene>
     /// </summary>
     public void StartGame()
     {
+        _sharkManager.enabled = true;
+        _player.enabled = true;
+
         _gameState.Value = GameState.Play;
     }
 
@@ -82,6 +91,10 @@ public class GameScene : SingletonMonoBehaviour<GameScene>
     {
         base.Awake();
 
+        _countDownUI.gameObject.SetActive(false);
+        _sharkManager.enabled = false;
+        _player.enabled = false;
+
         _gameState.Value = GameState.Init;
     }
 
@@ -100,6 +113,9 @@ public class GameScene : SingletonMonoBehaviour<GameScene>
 
         // カウントダウンUI表示
         Debug.Log("GameScene : カウントダウンUI表示");
+
+        _countDownUI.gameObject.SetActive(true);
+
         bool isComplete = false;
         _countDownUI.StartCountDown(() => isComplete = true);
         yield return new WaitUntil(() => isComplete);

@@ -44,8 +44,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _effectInfo:
-  - effectID: Test
-    effectPrefab: {fileID: 769388347263778915, guid: 4c18f286a9b1288428d29316714f5872,
+  - effectID: Hit
+    effectPrefab: {fileID: 2136824634873933294, guid: ee02b9af66d1e4b4493bc16361557b18,
+      type: 3}
+    cacheNum: 1
+  - effectID: Eat
+    effectPrefab: {fileID: 8492594721732562845, guid: 6c7f0568b7059a3489e71456ae9d2145,
+      type: 3}
+    cacheNum: 1
+  - effectID: Shot
+    effectPrefab: {fileID: 6839564868380194080, guid: 1614a44384bad934398e22e748ec871a,
       type: 3}
     cacheNum: 1
   _effectParent: {fileID: 744476297210275708}

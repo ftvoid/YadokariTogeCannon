@@ -59,6 +59,14 @@ public class Effect : MonoBehaviour
         }
     }
 
+    private void Awake()
+    {
+        if ( _particleSystem == null )
+        {
+            _particleSystem = GetComponent<ParticleSystem>();
+        }
+    }
+
     private IEnumerator PlayEffect()
     {
         yield return new WaitWhile(() => _particleSystem.IsAlive());

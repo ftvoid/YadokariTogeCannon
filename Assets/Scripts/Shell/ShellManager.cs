@@ -21,6 +21,12 @@ public class ShellManager : SingletonMonoBehaviour<ShellManager>
     [SerializeField]
     List<Shell> shellList = new List<Shell>();
 
+
+    private void Start()
+    {
+        StartInstanceShell();
+    }
+
     /// <summary>
     /// Shell作成開始
     /// </summary>

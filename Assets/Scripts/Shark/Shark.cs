@@ -96,7 +96,7 @@ public class Shark : MonoBehaviour
             case SharkState.Ready : 
                 if(transform.position.x < waitXPosition + chargeReadyRange)
                 {
-                    transform.Translate(0, 0, -0.2f);
+                    transform.position = new Vector3(transform.position.x - 0.2f, transform.position.y, transform.position.z) ;
                     transform.LookAt(player);
                 }
                 else

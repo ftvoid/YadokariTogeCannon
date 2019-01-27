@@ -96,7 +96,7 @@ public class CrabControl : MonoBehaviour
         SearchHermitCrab();
 
         // search Shark
-
+        SearchShark();
 
         // moving
         switch (state)

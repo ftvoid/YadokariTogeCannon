@@ -346,4 +346,16 @@ public class CrabControl : MonoBehaviour
 
         }
     }
+
+    // isDead
+    public bool isDead()
+    {
+        bool val = false;
+        if(state == CrabState.StateDied)
+        {
+            val = true;
+        }
+
+        return val;
+    }
 }

@@ -103,7 +103,7 @@ MonoBehaviour:
   MoveCounterMax: 2
   MoveSpeed: 20
   MoveQuickSpeed: 50
-  FieldWidth: 150
+  FieldWidth: 100
   FieldReturnWidth: 50
   CounterOfDiedMax: 1
   blinkCounterMax: 0

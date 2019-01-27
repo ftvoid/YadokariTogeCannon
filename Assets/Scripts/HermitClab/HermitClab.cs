@@ -80,9 +80,7 @@ public class HermitClab : MonoBehaviour
             SoundManager.Instance.PlaySE("In");
             shell = col.gameObject;
             shell.GetComponent<ChaseObject>().target = this.gameObject;
-            //shell.transform.localPosition = Vector3.zero + new Vector3(0,-0.03f,-0.2f);
-            //shell.transform.eulerAngles = new Vector3(-22f, 0);
-            //col.gameObject.transform.parent = shellPos.transform;
+ 
             IsShelled = true;
         }
 
@@ -109,7 +107,7 @@ public class HermitClab : MonoBehaviour
                 return;
 
             //殻を持っていて、動いていなければreturn
-            if (IsShelled && !IsMove())
+            if (IsShelled)
                 return;
 
             //そうでなければ死ぬ
@@ -325,6 +323,7 @@ public class HermitClab : MonoBehaviour
     {
         SoundManager.Instance.StopAllSE();
         SoundManager.Instance.PlaySE("StrongHit");
+        EffectManager.Instance.ShowEffect("Dead",this.transform.position,this.transform.rotation);
         Destroy(this.gameObject);
     }
 

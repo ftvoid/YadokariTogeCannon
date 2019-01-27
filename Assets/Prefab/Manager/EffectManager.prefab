@@ -72,4 +72,8 @@ MonoBehaviour:
     effectPrefab: {fileID: 7642542761737227723, guid: a5fc529aa2990dc44ab97b9ade0f6ea8,
       type: 3}
     cacheNum: 1
+  - effectID: Dead
+    effectPrefab: {fileID: 4770587125890790957, guid: 4d51bc55f82308c4eb1dbb1964d31444,
+      type: 3}
+    cacheNum: 1
   _effectParent: {fileID: 744476297210275708}

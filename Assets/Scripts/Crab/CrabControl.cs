@@ -279,6 +279,7 @@ public class CrabControl : MonoBehaviour
     // damage
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Hit Crab!!");
         if (other.gameObject.tag == "Shell")
         {
             bool isShot = other.gameObject.GetComponent<Shell>().IsShot;

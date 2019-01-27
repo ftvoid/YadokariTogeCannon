@@ -336,7 +336,7 @@ public class HermitClab : MonoBehaviour
     IEnumerator GameOver()
     {
         Debug.Log("Gameover");
-        SceneChanger.Load("GameOverScene");
+        GameScene.Instance.ShowGameOver();
         yield return new WaitForSeconds(3.0f);
        
         yield return null;

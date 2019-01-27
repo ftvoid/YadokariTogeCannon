@@ -50,10 +50,13 @@ public class Shark : MonoBehaviour
 
     [SerializeField, Header("サメがピヨピヨ状態になる時のノックバックの長さ")]
     int stunKnockFrame = 0;
+    //2つのノックバックで共通で使用
+    int knockFrame = 0;
+    //ピヨピヨ状態になるときのノックバックの力、プレイヤーの殻のダメージ量で変化
+    float knockPower = 1;
 
     [SerializeField, Header("サメがピヨピヨ状態時に殻を受けた時のノックバックの長さ")]
     int damageKnockFrame = 0;
-    int knockFrame = 0;
 
     //[SerializeField, Header("ピヨピヨ状態の持続時間")]
     //ピヨピヨ状態の持続時間(当たった殻の種類によって変化)
@@ -69,6 +72,9 @@ public class Shark : MonoBehaviour
     //撃破演出用
     int endFrame = 0;
 
+    //パーティクルの量調整用
+    int particleDelay = 0;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -83,7 +89,12 @@ public class Shark : MonoBehaviour
         //撃破時演出
         if(endFlag)
         {
-            EffectManager.Instance.ShowEffect("Levelup", new Vector3(transform.position.x + Random.Range(-30f,30f), Random.Range(7f, 13f), transform.position.z + Random.Range(-15f, 15f)), transform.rotation);
+            particleDelay++;
+            if (particleDelay >= 2)
+            {
+                EffectManager.Instance.ShowEffect("Levelup", new Vector3(transform.position.x + Random.Range(-30f, 30f), Random.Range(7f, 13f), transform.position.z + Random.Range(-15f, 15f)), transform.rotation);
+                particleDelay = 0;
+            }
             transform.position = new Vector3(transform.position.x, transform.position.y - 0.1f, transform.position.z);
             if(transform.position.y < -19f)
             {
@@ -207,24 +218,31 @@ public class Shark : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionStay(Collision collision)
     {
         //プレイヤーに当たった時
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player" && sharkState == SharkState.Charge)
         {
-            //サメが突進状態でかつプレイヤーが殻に入っていた場合
-            if (playerScript.IsShell() && sharkState == SharkState.Charge)
+            //サメが突進状態でかつプレイヤーが殻に入っていてかつプレイヤーが停止中の場合
+            if (playerScript.IsShell() &&  !playerScript.IsMove())
             {
                 //ピヨピヨ状態になる
                 stunTimeMax = playerScript.GetStanTime();
                 stunTime = 0;
                 knockFrame = 0;
+                knockPower = 1.2f + (playerScript.GetStanTime() / 10f);
                 sharkState = SharkState.Stun;
             }
+            //サメが突進状態でかつプレイヤーが殻に入っていてかつプレイヤーが移動中の場合
+            else if(playerScript.IsShell() &&  playerScript.IsMove())
+            { 
+                sharkState = SharkState.TurnBack;
+            }
             //サメが突進状態でかつプレイヤーが殻に入っていなかった場合
-            else if (!playerScript.IsShell() && sharkState == SharkState.Charge)
+            else if (!playerScript.IsShell())
             {
                 //ゲームオーバー処理
+                sharkState = SharkState.TurnBack;
             }
         }
     }
@@ -241,6 +259,7 @@ public class Shark : MonoBehaviour
             {
                 Debug.Log("sharkHit");
                 EffectManager.Instance.ShowEffect("Levelup", transform.position, this.transform.rotation);
+
                 //サメのライフ減少
                 life -= (int)shell.GetAttack();
 

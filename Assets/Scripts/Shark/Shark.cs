@@ -105,6 +105,11 @@ public class Shark : MonoBehaviour
             return;
         }
 
+        if(player == null)
+        {
+            return;
+        }
+
         //サメの移動
         switch(sharkState)
         {
@@ -280,5 +285,14 @@ public class Shark : MonoBehaviour
                 }
             }
         }
+    }
+
+    /// <summary>
+    /// サメの撃破演出が始まっていたらTrue
+    /// </summary>
+    /// <returns></returns>
+    public bool SharkDied()
+    {
+        return endFlag;
     }
 }

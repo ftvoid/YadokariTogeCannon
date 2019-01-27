@@ -126,7 +126,7 @@ public class HermitClab : MonoBehaviour
 
             shell = other.gameObject;
             shell.GetComponent<ChaseObject>().target = shellPos;
-            shell.transform.localScale = this.transform.localScale * 1.2f;
+            
             //shell.transform.localPosition = Vector3.zero + new Vector3(0,-0.03f,-0.2f);
             //shell.transform.eulerAngles = new Vector3(-22f, 0);
             //col.gameObject.transform.parent = shellPos.transform;
@@ -161,6 +161,8 @@ public class HermitClab : MonoBehaviour
     {
         if (!IsShelled)
             return;
+        if(this.transform.localScale != Vector3.zero)
+        shell.transform.localScale = this.transform.localScale * 1.2f;
 
         if (state == MoveState.Move)
             OpenShell();

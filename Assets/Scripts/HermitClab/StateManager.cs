@@ -105,7 +105,6 @@ public class StateManager : SingletonMonoBehaviour<StateManager>
             needExp = GetNeedExp(growthLv);
             SoundManager.Instance.PlaySE("Eat");
             EffectManager.Instance.ShowEffect("Levelup", GameObject.FindGameObjectWithTag("Player").transform.position,new Quaternion());
-            Debug.Log(needExp);
         }
     }
 

@@ -185,6 +185,7 @@ public class Shark : MonoBehaviour
         if(collision.gameObject.tag == "Shell")
         {
             Shell shell = collision.gameObject.GetComponent<Shell>();
+            Debug.Log("SharkHit");
             //殻が発射されたものなら
             if (shell.IsShot)
             {

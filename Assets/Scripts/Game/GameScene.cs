@@ -119,7 +119,7 @@ public class GameScene : SingletonMonoBehaviour<GameScene>
         _gameState.Value = GameState.Start;
 
         // カメラ移動
-        _translateObj.MoveStart();
+        _translateObj.Play();
 
         // カウントダウンUI表示
         Debug.Log("GameScene : カウントダウンUI表示");

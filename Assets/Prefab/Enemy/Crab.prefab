@@ -101,7 +101,7 @@ MonoBehaviour:
   WaitCounterMax: 1
   MoveCounterMax: 2
   MoveSpeed: 20
-  MoveQuickSpeed: 20
+  MoveQuickSpeed: 50
   FieldWidth: 150
   FieldReturnWidth: 50
   CounterOfDiedMax: 1

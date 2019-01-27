@@ -65,7 +65,7 @@ MonoBehaviour:
       type: 3}
     cacheNum: 1
   - effectID: Crab
-    effectPrefab: {fileID: 8181626345467877298, guid: 6c98879b203e58d45a02aeae16a72f77,
+    effectPrefab: {fileID: 6683717244715994848, guid: 43b0792c7805de4428bde7b59388b0de,
       type: 3}
     cacheNum: 1
   - effectID: Levelup

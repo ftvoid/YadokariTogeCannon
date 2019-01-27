@@ -49,5 +49,5 @@ MonoBehaviour:
   CounterOfNextRespawnMax: 5
   ObjCrabs: {fileID: 1971341458602578348, guid: 849b5a55e504d664784246639bc9fcf7,
     type: 3}
-  FieldWidth: 150
+  FieldWidth: 100
   FieldEdgeSpan: 30

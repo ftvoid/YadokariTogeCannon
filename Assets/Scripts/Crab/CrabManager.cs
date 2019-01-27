@@ -14,14 +14,24 @@ public class CrabManager : MonoBehaviour
 
     public GameObject ObjCrabs;
 
-    public float FieldWidth = 150.0f;
+    public float FieldWidth = 100.0f;
     public float FieldEdgeSpan = 30.0f;
+
+    public float SpawnWithOutWidth = 40.0f;
+    public int SpawnRetryMax = 100;
+
+    // player check
+    private GameObject ObjPlayer;
+
 
     // Start is called before the first frame update
     void Start()
     {
         NumberOfCrabs = 0;
         CounterOfRespawn = 0.0f;
+
+        // player
+        ObjPlayer = GameObject.FindGameObjectWithTag("Player");
 
         // initialize crab
         if (NumberOfCrabs < StartCrabs)
@@ -53,7 +63,19 @@ public class CrabManager : MonoBehaviour
     // Create Crabs
     void CreateCrabs(){
         float width = FieldWidth - FieldEdgeSpan;
+
         Vector3 pos = new Vector3( Random.Range( -width, width ), 0.0f, Random.Range( -width, width ) );
+        Vector3 plpos = ObjPlayer.transform.position;
+
+//        for(int i = 0;i < SpawnRetryMax)
+//        if( ( pos.x < plpos.x + SpawnWithOutWidth )
+//            && ( pos.x > plpos.x - SpawnWithOutWidth)
+//            && ( pos.z < plpos.z + SpawnWithOutWidth)
+//            && ( pos.z > plpos.z - SpawnWithOutWidth))
+//        {
+//
+//        }
+
         Instantiate(ObjCrabs, pos, Quaternion.identity);
 
         NumberOfCrabs++;

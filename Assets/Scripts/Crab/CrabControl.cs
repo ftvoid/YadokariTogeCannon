@@ -120,7 +120,12 @@ public class CrabControl : MonoBehaviour
     // search hermitcrab
     void SearchHermitCrab()
     {
-        if(ObjPlayer == null)
+        if(state == CrabState.StateDied)
+        {
+            isFoundPlayer = false;
+            isFoundBodyPlayer = false;
+        }
+        else if(ObjPlayer == null)
         {
             isFoundPlayer = false;
             isFoundBodyPlayer = false;

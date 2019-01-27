@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4143601258434291240}
   - component: {fileID: 7642542761737227723}
   m_Layer: 0
-  m_Name: Levelup
+  m_Name: LevelUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,14 +27,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 756605250245637184}
-  m_LocalRotation: {x: -0.0043410636, y: -0.009921519, z: -0.1856817, w: 0.9825503}
+  m_LocalRotation: {x: -0.0043416726, y: -0.009922914, z: -0.1856836, w: 0.9825499}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4862224713897390316}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -0.70000005, y: -1.0250001, z: -21.397001}
 --- !u!198 &4384109107712027631
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -43,7 +43,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 756605250245637184}
   serializedVersion: 6
-  lengthInSec: 0.75
+  lengthInSec: 0.5
   simulationSpeed: 5
   stopAction: 0
   cullingMode: 3
@@ -118,7 +118,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0.5
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -251,7 +251,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 10
+      scalar: 20
       minScalar: 1
       maxCurve:
         serializedVersion: 2

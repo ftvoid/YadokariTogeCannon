@@ -10,8 +10,13 @@ public class CameraManager : SingletonMonoBehaviour<CameraManager>
     {
         mainCamera = Camera.main;
     }
-    public void StartCameraMove()
+    public void PlayStart()
     {
         mainCamera.GetComponent<TranslateObject>().Play();
+    }
+
+    public void PlayEnd()
+    {
+        mainCamera.GetComponent<TranslateObject>().PlayGameOver();
     }
 }

@@ -10,11 +10,18 @@ public class StateManager : SingletonMonoBehaviour<StateManager>
     [SerializeField,Header("満腹度")]
     float satiety = 0;
 
+  
+
     /// <summary>
     /// 成長度
     /// </summary>
     [SerializeField,Header("現在の成長度")]
     float growth = 0;
+
+    /// <summary>
+    /// 成長度のスタック
+    /// </summary>
+    float growthFlow = 0;
 
     [SerializeField, Header("満腹度の最大値")]
     float maxSatiety = 0;
@@ -41,6 +48,7 @@ public class StateManager : SingletonMonoBehaviour<StateManager>
         satiety = 100;
 
         StartCoroutine(Satiety());
+        StartCoroutine(GrowthCalc());
     }
 
     IEnumerator Satiety()
@@ -79,8 +87,28 @@ public class StateManager : SingletonMonoBehaviour<StateManager>
     /// </summary>
     public void AddGrowth(float value)
     {
-        growth += value;
-        LevelUp();
+        growthFlow += value;
+    }
+
+    IEnumerator AddGrowths()
+    {
+        yield return null;
+    }
+
+    IEnumerator GrowthCalc()
+    {
+        for(int i = 0; i < 1;)
+        {
+            if(growthFlow > 0)
+            {
+                float flow = 1 * Time.deltaTime;
+                growthFlow += -flow;
+                growth += flow;
+            }
+
+            LevelUp();
+            yield return null;
+        }
     }
 
 

@@ -75,7 +75,7 @@ public class CrabControl : MonoBehaviour
 
         // efx
         Vector3 efxpos = this.transform.position + new Vector3(0.0f, 10.0f, 0.0f);
-        EffectManager.Instance.ShowEffect("Out", efxpos, this.transform.rotation);
+        EffectManager.Instance.ShowEffect("Crab", efxpos, this.transform.rotation);
     }
 
     // Update is called once per frame

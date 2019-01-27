@@ -104,7 +104,11 @@ public class StateManager : SingletonMonoBehaviour<StateManager>
         {
             if(growthFlow > 0)
             {
-                float flow = 1 * Time.deltaTime;
+                float flow = growthFlow * Time.deltaTime;
+
+                if (flow <= 1 * Time.deltaTime)
+                    flow = 1 * Time.deltaTime;
+
                 growthFlow += -flow;
                 growth += flow;
             }

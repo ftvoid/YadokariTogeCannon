@@ -163,7 +163,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsShelled: 0
   IsMuteki: 0
-  speed: 60
+  speed: 70
   getShellSpeedScale: 0.3
   rotateSpeed: 10
   shotShellSpeed: 300

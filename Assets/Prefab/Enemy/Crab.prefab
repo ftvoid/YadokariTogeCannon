@@ -102,7 +102,7 @@ MonoBehaviour:
   CounterStartWaitMax: 3
   MoveCounterMax: 2
   MoveSpeed: 20
-  MoveQuickSpeed: 70
+  MoveQuickSpeed: 75
   FieldWidth: 100
   FieldReturnWidth: 50
   CounterOfJumpMax: 0.5

@@ -277,6 +277,26 @@ public class CrabControl : MonoBehaviour
     }
 
     // damage
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Shell")
+        {
+            bool isShot = other.gameObject.GetComponent<Shell>().IsShot;
+            state = CrabState.StateDied;
+
+            // play se
+            SoundManager.Instance.PlaySE("Shoot");
+
+            // Efx
+            Vector3 efxpos = this.transform.position + new Vector3(0.0f, 10.0f, 0.0f);
+            EffectManager.Instance.ShowEffect("In", efxpos, this.transform.rotation);
+
+            // JumpRotatoin
+            JumpRotation = new Vector3(Random.Range(0.0f, JumpRotationMax), Random.Range(0.0f, JumpRotationMax), 0.0f);
+
+        }
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.tag == "Shell")

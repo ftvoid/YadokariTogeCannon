@@ -165,13 +165,6 @@ public class Shark : MonoBehaviour
         //プレイヤーに当たった時
         if(collision.gameObject.tag == "Player")
         {
-            //デバッグ用
-            {
-                stunTime = 0;
-                sharkState = SharkState.Stun;
-                return;
-            }
-
             //サメが突進状態でかつプレイヤーが殻に入っていた場合
             if(playerScript.IsShell() && sharkState == SharkState.Charge)
             {

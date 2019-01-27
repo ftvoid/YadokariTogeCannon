@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class GrowthSlider : MonoBehaviour
 {
+    [SerializeField]
+    private Text[] _lvTexts;
+
     //スライダーコンポーネント
     Slider slider;
 
@@ -19,5 +22,11 @@ public class GrowthSlider : MonoBehaviour
     {
         //成長度に応じてスライダーの値を変更
         slider.value = StateManager.Instance.GetGrowth();
+
+        var lvText = $"Lv.{StateManager.Instance.GetGrowthLv()}";
+        for ( var i = 0 ; i < _lvTexts.Length ; i++ )
+        {
+            _lvTexts[i].text = lvText;
+        }
     }
 }

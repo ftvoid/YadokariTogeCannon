@@ -79,6 +79,11 @@ public class GameScene : SingletonMonoBehaviour<GameScene>
     {
         CameraManager.Instance.PlayEnd();
         _gameState.Value = GameState.GameOver;
+
+        SceneChanger.Load("ResultScene", new Dictionary<string, object>()
+        {
+            { "glowthLv", StateManager.Instance.GetGrowthLv() },
+        });
     }
 
     /// <summary>
@@ -87,6 +92,10 @@ public class GameScene : SingletonMonoBehaviour<GameScene>
     public void ShowGameClear()
     {
         _gameState.Value = GameState.GameClear;
+        SceneChanger.Load("ResultScene", new Dictionary<string, object>()
+        {
+            { "glowthLv", StateManager.Instance.GetGrowthLv() },
+        });
     }
 
     /// <summary>

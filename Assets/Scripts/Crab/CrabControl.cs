@@ -11,6 +11,7 @@ public class CrabControl : MonoBehaviour
     // State
     enum CrabState
     {
+        StateStartWait,
         StateWait,
         StateMove,
         StateDiscovery,
@@ -22,6 +23,10 @@ public class CrabControl : MonoBehaviour
     // wait control
     public float WaitCounterMax = 2;
     private float WaitCounter;
+
+    // start wait control
+    public float CounterStartWaitMax = 3.0f;
+    private float CounterStartWait;
 
     // move control
     private bool isDecideDirection;
@@ -56,7 +61,9 @@ public class CrabControl : MonoBehaviour
     {
         Hp = MaxHp;
         WaitCounter = 0;
-        state = CrabState.StateWait;
+        CounterStartWait = 0.0f;
+        //state = CrabState.StateWait;
+        state = CrabState.StateStartWait;
         isDecideDirection = false;
         isDied = false;
         CounterOfDied = 0.0f;
@@ -71,7 +78,7 @@ public class CrabControl : MonoBehaviour
         isFoundBodyPlayer = false;
 
         // play se
-        SoundManager.Instance.PlaySE("Shoot");
+        SoundManager.Instance.PlaySE("Crab");
 
         // efx
         Vector3 efxpos = this.transform.position + new Vector3(0.0f, 10.0f, 0.0f);
@@ -87,6 +94,9 @@ public class CrabControl : MonoBehaviour
         // moving
         switch (state)
         {
+            case CrabState.StateStartWait:
+                CrabStartWait();
+                break;
             case CrabState.StateWait:
                 CrabWait();
                 break;
@@ -165,6 +175,16 @@ public class CrabControl : MonoBehaviour
         }
     }
 
+    // start wait
+    void CrabStartWait()
+    {
+        CounterStartWait += Time.deltaTime;
+        if(CounterStartWait > CounterStartWaitMax)
+        {
+            state = CrabState.StateWait;
+        }
+    }
+    
     // wait
     void CrabWait()
     {
@@ -325,5 +345,17 @@ public class CrabControl : MonoBehaviour
             JumpRotation = new Vector3( Random.Range(0.0f, JumpRotationMax), Random.Range(0.0f, JumpRotationMax), 0.0f );
 
         }
+    }
+
+    // isDead
+    public bool isDead()
+    {
+        bool val = false;
+        if(state == CrabState.StateDied)
+        {
+            val = true;
+        }
+
+        return val;
     }
 }

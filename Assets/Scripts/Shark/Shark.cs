@@ -46,7 +46,8 @@ public class Shark : MonoBehaviour
     [SerializeField, Header("サメ突撃時、プレイヤーを追従する速度")]
     float chargeMoveSpeed = 0;
 
-    [SerializeField, Header("ピヨピヨ状態の持続時間")]
+    //[SerializeField, Header("ピヨピヨ状態の持続時間")]
+    //ピヨピヨ状態の持続時間(当たった殻の種類によって変化)
     float stunTimeMax = 0;
     float stunTime;
 
@@ -169,6 +170,7 @@ public class Shark : MonoBehaviour
             if(playerScript.IsShell() && sharkState == SharkState.Charge)
             {
                 //ピヨピヨ状態になる
+                stunTimeMax = playerScript.GetStanTime();
                 stunTime = 0;
                 sharkState = SharkState.Stun;
             }
@@ -182,11 +184,18 @@ public class Shark : MonoBehaviour
         //殻と当たった時
         if(collision.gameObject.tag == "Shell")
         {
+            Shell shell = collision.gameObject.GetComponent<Shell>();
             //殻が発射されたものなら
-            if(collision.gameObject.GetComponent<Shell>().IsShot)
+            if (shell.IsShot)
             {
                 //サメのライフ減少
-                life -= 1;
+                life -= (int)shell.GetAttack();
+                
+                //体力が0になった場合
+                if(life <= 0)
+                {
+                    GameScene.Instance.ShowGameClear();
+                }
             }
         }
     }

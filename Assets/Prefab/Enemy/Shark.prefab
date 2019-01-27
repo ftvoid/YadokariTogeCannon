@@ -50,7 +50,6 @@ MonoBehaviour:
   waitMoveSpeed: 0.7
   chargeReadyRange: 20
   chargeMoveSpeed: 1.5
-  stunTimeMax: 3
   maxLife: 3
 --- !u!65 &2046304824187344943
 BoxCollider:

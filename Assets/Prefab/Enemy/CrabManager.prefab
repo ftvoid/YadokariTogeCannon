@@ -51,3 +51,5 @@ MonoBehaviour:
     type: 3}
   FieldWidth: 100
   FieldEdgeSpan: 30
+  SpawnWithOutWidth: 40
+  SpawnRetryMax: 100

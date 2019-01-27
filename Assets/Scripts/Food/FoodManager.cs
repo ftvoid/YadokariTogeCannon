@@ -70,7 +70,7 @@ public class FoodManager : SingletonMonoBehaviour<FoodManager>
     GameObject InstanceFood()
     {
         int ramdom = Random.Range(0, foodList.Count);
-        GameObject obj = Instantiate(foodList[ramdom].gameObject);
+        GameObject obj = Instantiate(foodList[0].gameObject);
         obj.transform.parent = parent;
         return obj;
     }
@@ -79,9 +79,19 @@ public class FoodManager : SingletonMonoBehaviour<FoodManager>
     /// ご飯をを指定して生成する
     /// </summary>
     /// <param name="index"></param>
-    GameObject InstanceFood(int index)
+     GameObject InstanceFood(int index)
     {
         return Instantiate(foodList[index].gameObject);
+    }
+
+    /// <summary>
+    /// Foodを生成する
+    /// </summary>
+    /// <param name="pos">生成する地点</param>
+    public void InstanceFood(int index,Vector3 pos)
+    {
+       GameObject obj = InstanceFood(index);
+        obj.transform.position = pos;
     }
 
     /// <summary>

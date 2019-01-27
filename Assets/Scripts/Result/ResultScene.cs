@@ -14,7 +14,7 @@ public class ResultScene : MonoBehaviour
     [Header("オカヤドカリ 到達Lv"), SerializeField]
     private int _rankBLv = 4;
 
-    [Header("コモンヤドカリ 到達Lv"), SerializeField]
+    [Header("ヤシガニ 到達Lv"), SerializeField]
     private int _rankALv = 8;
 
     [Header("タラバガニ 到達Lv"), SerializeField]
@@ -53,13 +53,13 @@ public class ResultScene : MonoBehaviour
         }
         else if ( _growthLv < _rankSLv )
         {
-            yadokariType = "コモンヤドカリ";
-            size = 20;
+            yadokariType = "ヤシガニ";
+            size = 50;
         }
         else
         {
             yadokariType = "タラバガニ";
-            size = 50;
+            size = 100;
         }
 
         _message.text = $"あなたのヤドカリは{size}センチ！\nこのヤドカリは{yadokariType}級！！";

@@ -15,6 +15,7 @@ public class CrabControl : MonoBehaviour
         StateWait,
         StateMove,
         StateDiscovery,
+        StateDiscoveryJump,
         StateQuickMove,
         StateDied,
         StateGameOver,
@@ -38,6 +39,11 @@ public class CrabControl : MonoBehaviour
     public float MoveQuickSpeed = 100.0f;
     public float FieldWidth = 150.0f;
     public float FieldReturnWidth = 30.0f;
+
+    // disovery jump
+    public float CounterOfJumpMax = 0.5f;
+    private float CounterOfJump;
+    public float DiscoveryJumpHeightMax = 10.0f;
 
     // player check
     private GameObject ObjPlayer;
@@ -74,6 +80,7 @@ public class CrabControl : MonoBehaviour
         isRender = false;
         blinkCounter = 0;
         JumpHeight = 0.0f;
+        CounterOfJump = 0.0f;
         crabManager = GameObject.Find("CrabManager");
 
         // player
@@ -112,6 +119,9 @@ public class CrabControl : MonoBehaviour
                 break;
             case CrabState.StateDiscovery:
                 CrabDiscovery();
+                break;
+            case CrabState.StateDiscoveryJump:
+                CrabDiscoveryJump();
                 break;
             case CrabState.StateQuickMove:
                 CrabQuickMove();
@@ -174,7 +184,14 @@ public class CrabControl : MonoBehaviour
                     state = CrabState.StateDiscovery;
                 }else
                 {
-                    state = CrabState.StateQuickMove;
+                    if(state == CrabState.StateDiscoveryJump)
+                    {
+
+                    }
+                    else
+                    {
+                        state = CrabState.StateQuickMove;
+                    }
                 }
                 isFoundBodyPlayer = true;
             }
@@ -258,9 +275,27 @@ public class CrabControl : MonoBehaviour
     // discovery
     void CrabDiscovery()
     {
-        state = CrabState.StateQuickMove;
+        //state = CrabState.StateQuickMove;
+        state = CrabState.StateDiscoveryJump;
         // play se
         SoundManager.Instance.PlaySE("Serious");
+    }
+
+    // discovery jump
+    void CrabDiscoveryJump()
+    {
+        // hight
+        float angle = 180.0f * Mathf.Deg2Rad * (float)CounterOfJump / (float)CounterOfJumpMax;
+        float height = Mathf.Sin(angle) * DiscoveryJumpHeightMax;
+        Vector3 jumppos = new Vector3(transform.position.x, height, transform.position.z);
+        transform.position = jumppos;
+
+        // counter
+        CounterOfJump += Time.deltaTime;
+        if(CounterOfJump > CounterOfJumpMax)
+        {
+            state = CrabState.StateQuickMove;
+        }
     }
 
     // quick move
@@ -338,6 +373,9 @@ public class CrabControl : MonoBehaviour
 
                 // JumpRotatoin
                 JumpRotation = new Vector3(Random.Range(0.0f, JumpRotationMax), Random.Range(0.0f, JumpRotationMax), 0.0f);
+
+                // Create Food
+                FoodManager.Instance.InstanceFood(1, this.transform.position);
             }
 
         }

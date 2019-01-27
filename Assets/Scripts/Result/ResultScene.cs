@@ -43,26 +43,34 @@ public class ResultScene : MonoBehaviour
 
         if ( _growthLv < _rankBLv )
         {
+            _message.text = $"ホンヤドカリ級　1～5センチ\n次はきっと大きくなれるはず。";
+
             yadokariType = "ホンヤドカリ";
             size = 1;
         }
         else if ( _growthLv < _rankALv )
         {
+            _message.text = $"オカヤドカリ級　10センチ\nけっこう育った。";
+
             yadokariType = "オカヤドカリ";
             size = 5;
         }
         else if ( _growthLv < _rankSLv )
         {
+            _message.text = $"ヤシガニ級　50センチ\nBigになってやったぜ！";
+
             yadokariType = "ヤシガニ";
             size = 50;
         }
         else
         {
+            _message.text = $"タラバガニ級　1メートルくらい\nBigもはやカニ！！";
+
             yadokariType = "タラバガニ";
             size = 100;
         }
 
-        _message.text = $"あなたのヤドカリは{size}センチ！\nこのヤドカリは{yadokariType}級！！";
+        //_message.text = $"あなたのヤドカリは{size}センチ！\nこのヤドカリは{yadokariType}級！！";
     }
 
     private void Update()

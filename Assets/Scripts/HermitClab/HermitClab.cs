@@ -162,7 +162,7 @@ public class HermitClab : MonoBehaviour
         if (!IsShelled)
             return;
         if(this.transform.localScale != Vector3.zero)
-        shell.transform.localScale = this.transform.localScale * 1.2f;
+            shell.transform.localScale = this.transform.localScale * 1.2f;
 
         if (state == MoveState.Move)
             OpenShell();

@@ -246,6 +246,8 @@ public class HermitClab : MonoBehaviour
        // StartCoroutine(ReductionScale());
     }
 
+
+
     IEnumerator ReductionScale()
     {
         for(float time = 0; time<= 1; time += 0)
@@ -322,7 +324,7 @@ public class HermitClab : MonoBehaviour
     }
 
     //死亡
-    void Dead()
+    public void Dead()
     {
         SoundManager.Instance.StopAllSE();
         SoundManager.Instance.PlaySE("StrongHit");

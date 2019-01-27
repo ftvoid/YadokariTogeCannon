@@ -455,6 +455,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SharkManeger
       objectReference: {fileID: 0}
+    - target: {fileID: 3693331174913373784, guid: b2ca62f1de5f53a4db6fd28e4e7cc11d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3693331174913373785, guid: b2ca62f1de5f53a4db6fd28e4e7cc11d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -523,11 +528,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Shark
-      objectReference: {fileID: 0}
-    - target: {fileID: 4250568236320103792, guid: eadb2eee409f6c448a0ed24f56464a8d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4250568236320103795, guid: eadb2eee409f6c448a0ed24f56464a8d,
         type: 3}

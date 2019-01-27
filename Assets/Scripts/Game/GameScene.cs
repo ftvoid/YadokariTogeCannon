@@ -91,7 +91,7 @@ public class GameScene : SingletonMonoBehaviour<GameScene>
         _gameState.Value = GameState.GameClear;
         SceneChanger.Load("ResultScene", new Dictionary<string, object>()
         {
-            { "glowthLv", StateManager.Instance.GetGrowthLv() },
+            { "growthLv", StateManager.Instance.GetGrowthLv() },
         });
     }
 

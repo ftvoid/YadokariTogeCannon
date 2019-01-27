@@ -45,7 +45,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shellCount: 10
   instanceInterval: 0
-  leftUp: {x: -150, y: 0, z: 150}
-  rightDown: {x: 150, y: 0, z: -120}
+  leftUp: {x: -75, y: 0, z: 65}
+  rightDown: {x: 75, y: 0, z: -85}
   shellList: []
   parent: {fileID: 1572109268121499684}

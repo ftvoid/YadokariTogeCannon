@@ -45,8 +45,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   foodCount: 100
   instanceInterval: 0
-  leftUp: {x: -150, y: 0, z: 150}
-  rightDown: {x: 150, y: 0, z: -100}
+  leftUp: {x: -90, y: 0, z: 65}
+  rightDown: {x: 90, y: 0, z: -85}
   foodList:
   - {fileID: 6413880438559462006, guid: ebff99ddbce0d9d47bfe5f777bb184dd, type: 3}
   nowFoodList: []

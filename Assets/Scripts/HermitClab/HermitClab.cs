@@ -39,6 +39,8 @@ public class HermitClab : MonoBehaviour
     [SerializeField, Header("Shell設置用")]
     GameObject shellPos;
 
+    bool dontmove = false;
+
     enum MoveState
     {
         Stop,
@@ -107,7 +109,7 @@ public class HermitClab : MonoBehaviour
                 return;
 
             //殻を持っていて、動いていなければreturn
-            if (IsShelled)
+            if (IsShelled || col.gameObject.GetComponent<CrabControl>().isDead())
                 return;
 
             //そうでなければ死ぬ
@@ -176,6 +178,9 @@ public class HermitClab : MonoBehaviour
     /// </summary>
     void Move()
     {
+        if (dontmove)
+            return;
+
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 
@@ -330,15 +335,25 @@ public class HermitClab : MonoBehaviour
         SoundManager.Instance.PlaySE("StrongHit");
         EffectManager.Instance.ShowEffect("Dead",this.transform.position,this.transform.rotation);
         StartCoroutine(GameOver());
-        Destroy(this.gameObject);
+
+        this.gameObject.transform.localScale = Vector3.zero;
     }
 
     IEnumerator GameOver()
     {
-        Debug.Log("Gameover");
+        dontmove = true;
+       for(float i = 0; i < 2.5;)
+        {
+            i += 1 * Time.deltaTime;
+
+            if (Input.GetButtonDown("Fire1"))
+                break;
+
+            yield return null;
+        }
+        Debug.Log("Gameover2");
         GameScene.Instance.ShowGameOver();
-        yield return new WaitForSeconds(3.0f);
-       
+        Destroy(this.gameObject);
         yield return null;
     }
 

@@ -11,18 +11,20 @@ public class ResultScene : MonoBehaviour
     [SerializeField]
     private Text _message;
 
-    float _growthLv;
+    int _growthLv;
 
     private void Start()
     {
         SoundManager.Instance.PlayBGM("Clear");
 
+        Debug.Log("SceneChanger.Instance.SceneParams = " + SceneChanger.Instance.SceneParams);
+
         object growthLv = null;
         SceneChanger.Instance.SceneParams?.TryGetValue("growthLv", out growthLv);
 
-        if ( growthLv != null && growthLv is float )
+        if ( growthLv != null && growthLv is int )
         {
-            _growthLv = (float)growthLv;
+            _growthLv = (int)growthLv;
         }
         else
         {
@@ -32,17 +34,17 @@ public class ResultScene : MonoBehaviour
         string yadokariType;
         int size;
 
-        if ( _growthLv < 2 )
+        if ( _growthLv < 4 )
         {
             yadokariType = "ホンヤドカリ";
             size = 1;
         }
-        else if ( _growthLv < 4 )
+        else if ( _growthLv < 8 )
         {
             yadokariType = "オカヤドカリ";
             size = 5;
         }
-        else if ( _growthLv < 6 )
+        else if ( _growthLv < 12 )
         {
             yadokariType = "コモンヤドカリ";
             size = 20;

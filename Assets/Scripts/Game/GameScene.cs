@@ -52,6 +52,8 @@ public class GameScene : SingletonMonoBehaviour<GameScene>
 
     private ReactiveProperty<GameState> _gameState = new ReactiveProperty<GameState>();
 
+    private TranslateObject _translateObj;
+
     /// <summary>
     /// 状態
     /// </summary>
@@ -97,6 +99,8 @@ public class GameScene : SingletonMonoBehaviour<GameScene>
         _sharkManager.enabled = false;
         _player.enabled = false;
 
+        _translateObj = GameObject.FindObjectOfType<TranslateObject>();
+
         _gameState.Value = GameState.Init;
     }
 
@@ -112,6 +116,9 @@ public class GameScene : SingletonMonoBehaviour<GameScene>
     private IEnumerator Init()
     {
         _gameState.Value = GameState.Start;
+
+        // カメラ移動
+        _translateObj.MoveStart();
 
         // カウントダウンUI表示
         Debug.Log("GameScene : カウントダウンUI表示");

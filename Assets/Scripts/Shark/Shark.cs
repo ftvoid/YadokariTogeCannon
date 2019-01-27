@@ -75,11 +75,19 @@ public class Shark : MonoBehaviour
     //パーティクルの量調整用
     int particleDelay = 0;
 
+    //マテリアル変更用
+    SkinnedMeshRenderer meshRenderer;
+
+    [SerializeField, Header("サメのマテリアル")]
+    Material[] sharkMaterials;
+
     // Start is called before the first frame update
     void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         playerScript = player.gameObject.GetComponent<HermitClab>();
+        GameObject walk = transform.GetChild(0).gameObject;
+        meshRenderer = walk.GetComponentInChildren<SkinnedMeshRenderer>();
         life = maxLife;
     }
 
@@ -185,6 +193,16 @@ public class Shark : MonoBehaviour
                     sharkState = SharkState.TurnBack;
                 }
 
+                particleDelay++;
+                if(particleDelay >= 5)
+                {
+                    EffectManager.Instance.ShowEffect("StunTime", transform.position + 
+                                                     (transform.forward * Random.Range(8f,24f)) + 
+                                                     ( transform.up * Random.Range(7f,11f)) +
+                                                     ( transform.right * Random.Range(-7f,7f)), transform.rotation);
+                    particleDelay = 0;
+                }
+
                 break;
 
             //---------------ピヨピヨ状態から復帰---------------
@@ -221,6 +239,16 @@ public class Shark : MonoBehaviour
 
                 break;
         }
+
+        //サメのマテリアル変更
+        if(sharkState == SharkState.Stun && meshRenderer.material != sharkMaterials[1])
+        {
+            meshRenderer.material = sharkMaterials[1];
+        }
+        else if(sharkState != SharkState.Stun && meshRenderer.material != sharkMaterials[0])
+        {
+            meshRenderer.material = sharkMaterials[0];
+        }
     }
 
     private void OnCollisionStay(Collision collision)
@@ -232,6 +260,7 @@ public class Shark : MonoBehaviour
             if (playerScript.IsShell() &&  !playerScript.IsMove())
             {
                 //ピヨピヨ状態になる
+                EffectManager.Instance.ShowEffect("StunHit", transform.position + (transform.forward * 13f), transform.rotation);
                 stunTimeMax = playerScript.GetStanTime();
                 stunTime = 0;
                 knockFrame = 0;

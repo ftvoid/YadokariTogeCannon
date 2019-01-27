@@ -92,4 +92,6 @@ MonoBehaviour:
   - {fileID: 21300012, guid: 05f12780c5d8842479288b49faf05cc4, type: 3}
   - {fileID: 21300010, guid: 05f12780c5d8842479288b49faf05cc4, type: 3}
   - {fileID: 21300016, guid: 05f12780c5d8842479288b49faf05cc4, type: 3}
+  numberSize: {x: 120, y: 180}
+  textSize: {x: 240, y: 160}
   alphaSpeed: 0.01

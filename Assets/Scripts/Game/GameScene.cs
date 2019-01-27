@@ -134,6 +134,8 @@ public class GameScene : SingletonMonoBehaviour<GameScene>
         Debug.Log("GameScene : カウントダウンUI表示");
         CameraManager.Instance.PlayStart();
 
+        SoundManager.instance.PlaySE("CountDown");
+
         _countDownUI.gameObject.SetActive(true);
 
         bool isComplete = false;

@@ -6,8 +6,9 @@ public class CameraManager : SingletonMonoBehaviour<CameraManager>
 {
     Camera mainCamera;
 
-    private void Start()
+    private void Awake()
     {
+        base.Awake();
         mainCamera = Camera.main;
     }
     public void PlayStart()

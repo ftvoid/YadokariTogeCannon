@@ -104,6 +104,9 @@ MonoBehaviour:
   - seID: Crab
     clip: {fileID: 8300000, guid: 7a45fdadf3b29384b809ab96b0d51a70, type: 3}
     isLoop: 0
+  - seID: Cursor
+    clip: {fileID: 8300000, guid: 59b4ad076fdc09546a3e5666143ca2c0, type: 3}
+    isLoop: 0
   _bgmInfo:
   - bgmID: Title
     clip: {fileID: 8300000, guid: 28a06723d9215934391aa52c304c4d90, type: 3}

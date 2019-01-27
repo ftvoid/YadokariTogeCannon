@@ -373,6 +373,9 @@ public class CrabControl : MonoBehaviour
 
                 // JumpRotatoin
                 JumpRotation = new Vector3(Random.Range(0.0f, JumpRotationMax), Random.Range(0.0f, JumpRotationMax), 0.0f);
+
+                // Create Food
+                FoodManager.Instance.InstanceFood(1, this.transform.position);
             }
 
         }

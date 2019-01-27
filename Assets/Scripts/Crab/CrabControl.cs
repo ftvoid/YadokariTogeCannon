@@ -17,6 +17,7 @@ public class CrabControl : MonoBehaviour
         StateDiscovery,
         StateQuickMove,
         StateDied,
+        StateGameOver,
     };
     private CrabState state;
 
@@ -118,6 +119,8 @@ public class CrabControl : MonoBehaviour
             case CrabState.StateDied:
                 CrabDied();
                 break;
+            case CrabState.StateGameOver:
+                break;
         }
 
         // debug
@@ -136,7 +139,8 @@ public class CrabControl : MonoBehaviour
     // search hermitcrab
     void SearchHermitCrab()
     {
-        if(state == CrabState.StateDied)
+        if(state == CrabState.StateDied
+            || state == CrabState.StateGameOver)
         {
             isFoundPlayer = false;
             isFoundBodyPlayer = false;
@@ -369,7 +373,11 @@ public class CrabControl : MonoBehaviour
         }
         else
         {
-
+            bool isDead = ObjShark.GetComponent<Shark>().SharkDied();
+            if(isDead)
+            {
+                state = CrabState.StateGameOver;
+            }
         }
     }
 

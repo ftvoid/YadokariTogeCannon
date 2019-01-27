@@ -100,7 +100,7 @@ MonoBehaviour:
   MaxHp: 1
   WaitCounterMax: 1
   MoveCounterMax: 2
-  MoveSpeed: 30
+  MoveSpeed: 20
   MoveQuickSpeed: 60
   FieldWidth: 150
   FieldReturnWidth: 50

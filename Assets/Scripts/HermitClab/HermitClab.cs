@@ -10,6 +10,9 @@ public class HermitClab : MonoBehaviour
     [HideInInspector]
     public bool IsShelled;
 
+    [SerializeField,Header("無敵判定")]
+    bool IsMuteki;
+
     /// <summary>
     /// 殻
     /// </summary>
@@ -291,12 +294,15 @@ public class HermitClab : MonoBehaviour
         //敵にぶつかったとき
         if (col.gameObject.tag == "Crab" || col.gameObject.tag == "Shark")
         {
+            if (IsMuteki)
+                return;
+
             //殻を持っていて、動いていなければreturn
             if (IsShelled && !IsMove())
                 return;
 
             //そうでなければ死ぬ
-            //Dead();
+            Dead();
         }
     }
 

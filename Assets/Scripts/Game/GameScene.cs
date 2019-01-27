@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UniRx;
+using UniRx.Triggers;
 
 /// <summary>
 /// ゲームの画面状態
@@ -41,6 +42,9 @@ public enum GameState
 /// </summary>
 public class GameScene : SingletonMonoBehaviour<GameScene>
 {
+    [Header("説明UI"), SerializeField]
+    private GameObject _tutorialUI;
+
     [Header("カウントダウン用UI"), SerializeField]
     private CountDown _countDownUI;
 
@@ -105,6 +109,7 @@ public class GameScene : SingletonMonoBehaviour<GameScene>
     {
         base.Awake();
 
+        _tutorialUI.SetActive(true);
         _countDownUI.gameObject.SetActive(false);
         _sharkManager.enabled = false;
         _player.enabled = false;
@@ -112,11 +117,12 @@ public class GameScene : SingletonMonoBehaviour<GameScene>
         _translateObj = GameObject.FindObjectOfType<TranslateObject>();
 
         _gameState.Value = GameState.Init;
-    }
 
-    private void Start()
-    {
-        StartCoroutine(Init());
+        this.UpdateAsObservable()
+            //.ThrottleFirst(System.TimeSpan.FromSeconds(0.1f))
+            .Where(_ => _gameState.Value == GameState.Init)
+            .Subscribe(_ => OnTutorial())
+            .AddTo(this);
     }
 
     /// <summary>
@@ -145,6 +151,16 @@ public class GameScene : SingletonMonoBehaviour<GameScene>
         // ゲーム開始
         Debug.Log("GameScene : ゲーム開始");
         StartGame();
+    }
+
+    private void OnTutorial()
+    {
+        if ( Input.GetButtonDown("Submit") )
+        {
+            _tutorialUI.SetActive(false);
+            SoundManager.Instance.PlaySE("Decide");
+            StartCoroutine(Init());
+        }
     }
 
 #if UNITY_EDITOR

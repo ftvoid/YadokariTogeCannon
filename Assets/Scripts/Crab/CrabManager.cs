@@ -65,9 +65,17 @@ public class CrabManager : MonoBehaviour
         float width = FieldWidth - FieldEdgeSpan;
 
         Vector3 pos = new Vector3( Random.Range( -width, width ), 0.0f, Random.Range( -width, width ) );
-        Vector3 plpos = ObjPlayer.transform.position;
+        Vector3 plpos = new Vector3(0.0f, 0.0f, 0.0f);
+        if (ObjPlayer == null)
+        {
 
-        for(int i = 0;i < SpawnRetryMax; ++i)
+        }
+        else
+        {
+            plpos = ObjPlayer.transform.position;
+        }
+
+        for (int i = 0;i < SpawnRetryMax; ++i)
         {
             pos = new Vector3(Random.Range(-width, width), 0.0f, Random.Range(-width, width));
             if ( ( pos.x < plpos.x + SpawnWithOutWidth )

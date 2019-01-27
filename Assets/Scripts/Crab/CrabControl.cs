@@ -56,6 +56,9 @@ public class CrabControl : MonoBehaviour
     public float JumpRotationMax = 30.0f;
     private Vector3 JumpRotation;
 
+    // shark
+    private GameObject ObjShark;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -90,6 +93,9 @@ public class CrabControl : MonoBehaviour
     {
         // search
         SearchHermitCrab();
+
+        // search Shark
+
 
         // moving
         switch (state)
@@ -256,12 +262,18 @@ public class CrabControl : MonoBehaviour
     // quick move
     void CrabQuickMove()
     {
-        Vector3 pos = transform.position;
-        Vector3 plpos = ObjPlayer.transform.position;
-        Vector3 plvec = new Vector3(plpos.x - pos.x, 0.0f, plpos.z - pos.z);
-        MoveDirection = plvec.normalized;
-        // move
-        transform.position += MoveDirection * MoveQuickSpeed * Time.deltaTime;
+        if(ObjPlayer==null)
+        {
+
+        }else
+        {
+            Vector3 pos = transform.position;
+            Vector3 plpos = ObjPlayer.transform.position;
+            Vector3 plvec = new Vector3(plpos.x - pos.x, 0.0f, plpos.z - pos.z);
+            MoveDirection = plvec.normalized;
+            // move
+            transform.position += MoveDirection * MoveQuickSpeed * Time.deltaTime;
+        }
     }
 
     // Died
@@ -343,6 +355,20 @@ public class CrabControl : MonoBehaviour
 
             // JumpRotatoin
             JumpRotation = new Vector3( Random.Range(0.0f, JumpRotationMax), Random.Range(0.0f, JumpRotationMax), 0.0f );
+
+        }
+    }
+
+    // search Shark
+    void SearchShark()
+    {
+        ObjShark = GameObject.FindGameObjectWithTag("Shark");
+        if(ObjShark == null)
+        {
+
+        }
+        else
+        {
 
         }
     }

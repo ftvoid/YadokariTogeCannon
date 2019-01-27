@@ -1,0 +1,128 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6694369552845360809
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6694369552845360855}
+  - component: {fileID: 6694369552845360854}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6694369552845360855
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6694369552845360809}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6694369552845360854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6694369552845360809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c7209d9c54a92c46b24318f53c2a7a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _seInfo:
+  - seID: Hit
+    clip: {fileID: 8300000, guid: 220015bde8cc49e42a95e78d9d2b87e9, type: 3}
+    isLoop: 0
+  - seID: Shoot
+    clip: {fileID: 8300000, guid: 35ba3d3e1525b624898626378f0573d5, type: 3}
+    isLoop: 0
+  - seID: Out
+    clip: {fileID: 8300000, guid: 8cf5c14b0b4d0114aa24d6a48efae122, type: 3}
+    isLoop: 0
+  - seID: In
+    clip: {fileID: 8300000, guid: d54470ce0dff47640adbf04cb40273fc, type: 3}
+    isLoop: 0
+  - seID: Run
+    clip: {fileID: 8300000, guid: 842c3a0f8da5d0e49ab1a086bb4be738, type: 3}
+    isLoop: 1
+  - seID: Walk
+    clip: {fileID: 8300000, guid: 62ecb4994b43f3c4d8464f1890fe0ee7, type: 3}
+    isLoop: 1
+  - seID: Slow
+    clip: {fileID: 8300000, guid: d499896dc7a27da45a4dfb25393857aa, type: 3}
+    isLoop: 1
+  - seID: Eat
+    clip: {fileID: 8300000, guid: c89c7122cbd091e46be35b5b5b3a063c, type: 3}
+    isLoop: 0
+  - seID: Out
+    clip: {fileID: 8300000, guid: 8cf5c14b0b4d0114aa24d6a48efae122, type: 3}
+    isLoop: 0
+  - seID: In
+    clip: {fileID: 8300000, guid: d54470ce0dff47640adbf04cb40273fc, type: 3}
+    isLoop: 0
+  - seID: Serious
+    clip: {fileID: 8300000, guid: 8001b4024fe4ddd48b2ccf304b85ed2e, type: 3}
+    isLoop: 0
+  - seID: Decide
+    clip: {fileID: 8300000, guid: cbe4679d7181b4741861cb1f78505424, type: 3}
+    isLoop: 0
+  - seID: Cancel
+    clip: {fileID: 8300000, guid: fd63650c3bddae840ab427c2f4b2f46a, type: 3}
+    isLoop: 0
+  - seID: Bubble
+    clip: {fileID: 8300000, guid: 5544066036c2fdd4e96bd0b1595f6017, type: 3}
+    isLoop: 1
+  - seID: Warning
+    clip: {fileID: 8300000, guid: 5ebce050a8e99764ea763877f1331bb8, type: 3}
+    isLoop: 0
+  - seID: HitShell
+    clip: {fileID: 8300000, guid: 0114b8298b5c422439316d03a8310278, type: 3}
+    isLoop: 0
+  - seID: HitJump
+    clip: {fileID: 8300000, guid: ff2cfa9e06900cf45b06fc59cd198d21, type: 3}
+    isLoop: 0
+  - seID: Piyo
+    clip: {fileID: 8300000, guid: 44f66e9a5a0e280469f3a88415c6fb06, type: 3}
+    isLoop: 0
+  - seID: StrongHit
+    clip: {fileID: 8300000, guid: c03d1db254b969945a18917e8207382a, type: 3}
+    isLoop: 0
+  - seID: Crab
+    clip: {fileID: 8300000, guid: 7a45fdadf3b29384b809ab96b0d51a70, type: 3}
+    isLoop: 0
+  - seID: Cursor
+    clip: {fileID: 8300000, guid: 59b4ad076fdc09546a3e5666143ca2c0, type: 3}
+    isLoop: 0
+  - seID: CountDown
+    clip: {fileID: 8300000, guid: f05fc2b00f5387549842e111dbe6868d, type: 3}
+    isLoop: 0
+  _bgmInfo:
+  - bgmID: Title
+    clip: {fileID: 8300000, guid: 28a06723d9215934391aa52c304c4d90, type: 3}
+    isLoop: 1
+  - bgmID: Boss
+    clip: {fileID: 8300000, guid: 6b92b2d1ac1a71b40a7b13ea24aff9a4, type: 3}
+    isLoop: 1
+  - bgmID: Clear
+    clip: {fileID: 8300000, guid: 5b2afeaa64ef9dc438d3e8be92d2e3d0, type: 3}
+    isLoop: 0
+  - bgmID: Game
+    clip: {fileID: 8300000, guid: efac85dd2475dfe4bbe9607bd65f4832, type: 3}
+    isLoop: 1
+  - bgmID: GameOver
+    clip: {fileID: 8300000, guid: d61bb9d06d0f1a445954d690ac6381b7, type: 3}
+    isLoop: 0

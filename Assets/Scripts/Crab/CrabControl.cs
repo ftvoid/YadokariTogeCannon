@@ -71,7 +71,7 @@ public class CrabControl : MonoBehaviour
         isFoundBodyPlayer = false;
 
         // play se
-        SoundManager.Instance.PlaySE("Shoot");
+        SoundManager.Instance.PlaySE("Crab");
 
         // efx
         Vector3 efxpos = this.transform.position + new Vector3(0.0f, 10.0f, 0.0f);

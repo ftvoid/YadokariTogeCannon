@@ -11,6 +11,7 @@ public class Shark : MonoBehaviour
         3→突進
         4→ピヨピヨ状態
         5→ピヨピヨが治って元の位置に戻る状態
+        6→ピヨピヨ状態時にダメージを受けた時のノックバック
     */
     enum SharkState
     {
@@ -20,6 +21,7 @@ public class Shark : MonoBehaviour
         Charge,
         Stun,
         TurnBack,
+        KnockBack,
     }
 
     SharkState sharkState = SharkState.Appearance;
@@ -45,6 +47,13 @@ public class Shark : MonoBehaviour
 
     [SerializeField, Header("サメ突撃時、プレイヤーを追従する速度")]
     float chargeMoveSpeed = 0;
+
+    [SerializeField, Header("サメがピヨピヨ状態になる時のノックバックの長さ")]
+    int stunKnockFrame = 0;
+
+    [SerializeField, Header("サメがピヨピヨ状態時に殻を受けた時のノックバックの長さ")]
+    int damageKnockFrame = 0;
+    int knockFrame = 0;
 
     //[SerializeField, Header("ピヨピヨ状態の持続時間")]
     //ピヨピヨ状態の持続時間(当たった殻の種類によって変化)
@@ -131,6 +140,11 @@ public class Shark : MonoBehaviour
 
             //---------------ピヨピヨ状態---------------
             case SharkState.Stun:
+                if(knockFrame <= stunKnockFrame)
+                {
+                    knockFrame++;
+                    transform.position -= transform.forward * 0.3f;
+                }
                 stunTime += Time.deltaTime;
                 if(stunTime >= stunTimeMax)
                 {
@@ -172,6 +186,7 @@ public class Shark : MonoBehaviour
                 //ピヨピヨ状態になる
                 stunTimeMax = playerScript.GetStanTime();
                 stunTime = 0;
+                knockFrame = 0;
                 sharkState = SharkState.Stun;
             }
             //サメが突進状態でかつプレイヤーが殻に入っていなかった場合

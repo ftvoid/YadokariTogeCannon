@@ -76,4 +76,12 @@ MonoBehaviour:
     effectPrefab: {fileID: 4770587125890790957, guid: 4d51bc55f82308c4eb1dbb1964d31444,
       type: 3}
     cacheNum: 1
+  - effectID: StunHit
+    effectPrefab: {fileID: 8610471923625884199, guid: 09ed383508176034ca813dbfd567d359,
+      type: 3}
+    cacheNum: 1
+  - effectID: StunTime
+    effectPrefab: {fileID: 9154873648305350899, guid: 74467c7c563f4fa4cae9ff1f16745652,
+      type: 3}
+    cacheNum: 1
   _effectParent: {fileID: 744476297210275708}

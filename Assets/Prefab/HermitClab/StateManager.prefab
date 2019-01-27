@@ -48,5 +48,5 @@ MonoBehaviour:
   maxSatiety: 100
   minSatiety: 0
   growthLv: 1
-  nextExpBase: 1
+  nextExpBase: 3
   nextExpInterval: 1

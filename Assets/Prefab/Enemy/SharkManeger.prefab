@@ -43,7 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7480451fc0a431f48852b70f48a238a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerMax: 5
+  timerMax: 10
   sharkPrefab: {fileID: 4250568236320103792, guid: eadb2eee409f6c448a0ed24f56464a8d,
     type: 3}
   sharkStartPosition: {x: 200, y: 16, z: 0}

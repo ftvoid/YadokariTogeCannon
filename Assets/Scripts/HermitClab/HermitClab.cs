@@ -323,6 +323,7 @@ public class HermitClab : MonoBehaviour
     {
         SoundManager.Instance.StopAllSE();
         SoundManager.Instance.PlaySE("StrongHit");
+        EffectManager.Instance.ShowEffect("Dead",this.transform.position,this.transform.rotation);
         Destroy(this.gameObject);
     }
 

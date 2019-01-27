@@ -279,21 +279,25 @@ public class CrabControl : MonoBehaviour
     // damage
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Hit Crab!!");
         if (other.gameObject.tag == "Shell")
         {
+            Debug.Log("Hit Crabs by Shell!!");
             bool isShot = other.gameObject.GetComponent<Shell>().IsShot;
-            state = CrabState.StateDied;
+            if(isShot)
+            {
+                Debug.Log("Hit Crabs by Shot!!");
+                state = CrabState.StateDied;
 
-            // play se
-            SoundManager.Instance.PlaySE("Shoot");
+                // play se
+                SoundManager.Instance.PlaySE("Shoot");
 
-            // Efx
-            Vector3 efxpos = this.transform.position + new Vector3(0.0f, 10.0f, 0.0f);
-            EffectManager.Instance.ShowEffect("In", efxpos, this.transform.rotation);
+                // Efx
+                Vector3 efxpos = this.transform.position + new Vector3(0.0f, 10.0f, 0.0f);
+                EffectManager.Instance.ShowEffect("In", efxpos, this.transform.rotation);
 
-            // JumpRotatoin
-            JumpRotation = new Vector3(Random.Range(0.0f, JumpRotationMax), Random.Range(0.0f, JumpRotationMax), 0.0f);
+                // JumpRotatoin
+                JumpRotation = new Vector3(Random.Range(0.0f, JumpRotationMax), Random.Range(0.0f, JumpRotationMax), 0.0f);
+            }
 
         }
     }

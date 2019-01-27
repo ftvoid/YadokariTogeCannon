@@ -64,6 +64,10 @@ public class Shark : MonoBehaviour
     int maxLife = 0;
     int life;
 
+    //体力が0になったフラグ
+    bool endFlag = false;
+    //撃破演出用
+    int endFrame = 0;
 
     // Start is called before the first frame update
     void Awake()
@@ -76,6 +80,20 @@ public class Shark : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        //撃破時演出
+        if(endFlag)
+        {
+            EffectManager.Instance.ShowEffect("Levelup", new Vector3(transform.position.x + Random.Range(-30f,30f), Random.Range(7f, 13f), transform.position.z + Random.Range(-15f, 15f)), transform.rotation);
+            transform.position = new Vector3(transform.position.x, transform.position.y - 0.1f, transform.position.z);
+            if(transform.position.y < -19f)
+            {
+                Destroy(this);
+                GameScene.Instance.ShowGameClear();
+                
+            }
+            return;
+        }
+
         //サメの移動
         switch(sharkState)
         {
@@ -237,7 +255,9 @@ public class Shark : MonoBehaviour
                 //体力が0になった場合
                 if(life <= 0)
                 {
-                    GameScene.Instance.ShowGameClear();
+                    gameObject.GetComponent<BoxCollider>().enabled = false;
+                    endFlag = true;
+                    //GameScene.Instance.ShowGameClear();
                 }
             }
         }

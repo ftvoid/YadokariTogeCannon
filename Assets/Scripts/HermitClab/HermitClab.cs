@@ -161,7 +161,8 @@ public class HermitClab : MonoBehaviour
     {
         if (!IsShelled)
             return;
-        if(this.transform.localScale != Vector3.zero)
+        Debug.Log(shell);
+        if(this.transform.localScale != Vector3.zero || !IsShellExistence())
             shell.transform.localScale = this.transform.localScale * 1.2f;
 
         if (state == MoveState.Move)
@@ -326,7 +327,17 @@ public class HermitClab : MonoBehaviour
         SoundManager.Instance.StopAllSE();
         SoundManager.Instance.PlaySE("StrongHit");
         EffectManager.Instance.ShowEffect("Dead",this.transform.position,this.transform.rotation);
+        StartCoroutine(GameOver());
         Destroy(this.gameObject);
+    }
+
+    IEnumerator GameOver()
+    {
+        Debug.Log("Gameover");
+        SceneChanger.Load("GameOverScene");
+        yield return new WaitForSeconds(3.0f);
+       
+        yield return null;
     }
 
 

@@ -9,8 +9,13 @@ public class CountDown : MonoBehaviour
     //カウントダウン画像、0から順番に3,2,1,GO
     [SerializeField] Sprite[] countDownImages;
 
+    [SerializeField] Vector2 numberSize;
+    [SerializeField] Vector2 textSize;
+
     //画像コンポーネント
     Image image;
+    //サイズ変更用
+    RectTransform rect;
 
     //少しずつ透明になっていくフラグ
     bool alphaChange = false;
@@ -24,6 +29,7 @@ public class CountDown : MonoBehaviour
     private void Awake()
     {
         image = gameObject.GetComponent<Image>();
+        rect = gameObject.GetComponent<RectTransform>();
         //開始時は透明化
         image.color = new Color(1, 1, 1, 0);
     }
@@ -57,6 +63,7 @@ public class CountDown : MonoBehaviour
     {
         _onComplete = onComplete;
         image.color = new Color(1, 1, 1, 1);
+        rect.sizeDelta = numberSize;
         StartCoroutine("Count");
     }
 
@@ -70,6 +77,7 @@ public class CountDown : MonoBehaviour
         }
 
         //GOの画像を表示と同時にゲーム開始
+        rect.sizeDelta = textSize;
         image.sprite = countDownImages[countDownImages.Length - 1];
         _onComplete?.Invoke();
         alphaChange = true;

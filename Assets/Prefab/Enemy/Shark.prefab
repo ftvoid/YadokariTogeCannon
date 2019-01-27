@@ -54,6 +54,9 @@ MonoBehaviour:
   stunKnockFrame: 14
   damageKnockFrame: 12
   maxLife: 3
+  sharkMaterials:
+  - {fileID: 2100000, guid: 493fc549d9e73e540b69203a665e7898, type: 2}
+  - {fileID: 2100000, guid: eebde17643662fd47b5b15664b8e3348, type: 2}
 --- !u!65 &2046304824187344943
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -171,6 +174,10 @@ PrefabInstance:
       value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 13700000, guid: ce4f1314b0802c946a17f39cbffb163a, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 13700000, guid: ce4f1314b0802c946a17f39cbffb163a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 493fc549d9e73e540b69203a665e7898, type: 2}
@@ -214,6 +221,10 @@ PrefabInstance:
       propertyPath: m_RootBone
       value: 
       objectReference: {fileID: 4250568236500425546}
+    - target: {fileID: 13700000, guid: ce4f1314b0802c946a17f39cbffb163a, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: eebde17643662fd47b5b15664b8e3348, type: 2}
     - target: {fileID: 100008, guid: ce4f1314b0802c946a17f39cbffb163a, type: 3}
       propertyPath: m_Layer
       value: 13

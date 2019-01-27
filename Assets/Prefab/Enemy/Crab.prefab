@@ -99,6 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHp: 1
   WaitCounterMax: 1
+  CounterStartWaitMax: 3
   MoveCounterMax: 2
   MoveSpeed: 20
   MoveQuickSpeed: 50

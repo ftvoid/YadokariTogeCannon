@@ -339,6 +339,11 @@ public class HermitClab : MonoBehaviour
         return state == MoveState.Move;
     }
 
+    public float GetStanTime()
+    {
+        return shell.GetComponent<Shell>().GetStanTime();
+    }
+
     bool IsShellExistence()
     {
         return shell != null;

@@ -101,8 +101,6 @@ public class TranslateObject : MonoBehaviour
         {
             this.transform.position = movePosition;
             this.transform.eulerAngles = eulerAngle;
-
-            IsMove = false;
         }
     }
 

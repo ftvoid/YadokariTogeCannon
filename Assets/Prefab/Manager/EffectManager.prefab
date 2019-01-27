@@ -69,7 +69,7 @@ MonoBehaviour:
       type: 3}
     cacheNum: 1
   - effectID: Levelup
-    effectPrefab: {fileID: 2599037772434628485, guid: a5fc529aa2990dc44ab97b9ade0f6ea8,
+    effectPrefab: {fileID: 7642542761737227723, guid: a5fc529aa2990dc44ab97b9ade0f6ea8,
       type: 3}
     cacheNum: 1
   _effectParent: {fileID: 744476297210275708}

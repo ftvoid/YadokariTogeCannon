@@ -52,6 +52,91 @@ public class HermitClab : MonoBehaviour
         IsShelled = false;
     }
 
+    // Update is called once per frame
+    void FixedUpdate()
+    {
+        Move();
+        TakeOff();
+        // SetShellPostion();
+        Shot();
+        Shell();
+    }
+
+    void OnCollisionEnter(Collision col)
+    {
+        string colTag = col.gameObject.tag;
+
+        //ぶつかったオブジェクトが餌、殻、敵じゃなければreturn
+
+        //殻にぶつかったとき
+        if (colTag == "Shell")
+        {
+            //殻持ってたらreturn
+            if (IsShelled)
+                return;
+
+            //殻に入るエフェクト
+            EffectManager.Instance.ShowEffect("In", this.transform.position, this.transform.rotation);
+            SoundManager.Instance.PlaySE("In");
+            shell = col.gameObject;
+            shell.GetComponent<ChaseObject>().target = this.gameObject;
+            //shell.transform.localPosition = Vector3.zero + new Vector3(0,-0.03f,-0.2f);
+            //shell.transform.eulerAngles = new Vector3(-22f, 0);
+            //col.gameObject.transform.parent = shellPos.transform;
+            IsShelled = true;
+        }
+
+        //餌にぶつかったとき
+        if (col.gameObject.tag == "Food")
+        {
+            //餌情報を取得する
+            Food food = col.gameObject.GetComponent<Food>();
+            //育成度と満腹度をプラスする
+            StateManager.Instance.AddGrowth(food.GetIncreasGrowth());
+            StateManager.Instance.AddSatiety(food.GetIncreasSatiety());
+            //ご飯食べたエフェクト
+            EffectManager.Instance.ShowEffect("Eat", this.transform.position, this.transform.rotation);
+            SoundManager.Instance.PlaySE("Eat");
+
+            FoodManager.Instance.DeleteFood(col.gameObject.GetComponent<Food>());
+        }
+
+
+        //敵にぶつかったとき
+        if (col.gameObject.tag == "Crab" || col.gameObject.tag == "Shark")
+        {
+            if (IsMuteki)
+                return;
+
+            //殻を持っていて、動いていなければreturn
+            if (IsShelled && !IsMove())
+                return;
+
+            //そうでなければ死ぬ
+            Dead();
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        //殻にぶつかったとき
+        if (other.tag == "Shell")
+        {
+            //殻持ってたらreturn
+            if (IsShelled)
+                return;
+
+            shell = other.gameObject;
+            shell.GetComponent<ChaseObject>().target = shellPos;
+            shell.transform.localScale = this.transform.localScale * 1.2f;
+            //shell.transform.localPosition = Vector3.zero + new Vector3(0,-0.03f,-0.2f);
+            //shell.transform.eulerAngles = new Vector3(-22f, 0);
+            //col.gameObject.transform.parent = shellPos.transform;
+            IsShelled = true;
+        }
+
+    }
+
     /// <summary>
     /// すぐにShellにあたってくっつかないように
     /// </summary>
@@ -67,15 +152,7 @@ public class HermitClab : MonoBehaviour
         yield return null;
     }
 
-    // Update is called once per frame
-    void FixedUpdate()
-    {
-        Move();
-        TakeOff();
-       // SetShellPostion();
-        Shot();
-        Shell();
-    }
+    
 
     Vector3 MyScaleCalc()
     {
@@ -247,84 +324,12 @@ public class HermitClab : MonoBehaviour
     void Dead()
     {
         SoundManager.Instance.StopAllSE();
+        SoundManager.Instance.PlaySE("StrongHit");
         Destroy(this.gameObject);
     }
 
 
-    void OnCollisionEnter(Collision col)
-    {
-        string colTag = col.gameObject.tag;
-
-        //ぶつかったオブジェクトが餌、殻、敵じゃなければreturn
-
-        //殻にぶつかったとき
-        if (colTag == "Shell")
-        {
-            //殻持ってたらreturn
-            if (IsShelled)
-                return;
-
-            //殻に入るエフェクト
-            EffectManager.Instance.ShowEffect("In", this.transform.position, this.transform.rotation);
-            SoundManager.Instance.PlaySE("In");
-            shell = col.gameObject;
-            shell.GetComponent<ChaseObject>().target = this.gameObject;
-            //shell.transform.localPosition = Vector3.zero + new Vector3(0,-0.03f,-0.2f);
-            //shell.transform.eulerAngles = new Vector3(-22f, 0);
-            //col.gameObject.transform.parent = shellPos.transform;
-            IsShelled = true;
-        }
-
-        //餌にぶつかったとき
-        if (col.gameObject.tag == "Food")
-        {
-            //餌情報を取得する
-            Food food = col.gameObject.GetComponent<Food>();
-            //育成度と満腹度をプラスする
-            StateManager.Instance.AddGrowth(food.GetIncreasGrowth());
-            StateManager.Instance.AddSatiety(food.GetIncreasSatiety());
-            //ご飯食べたエフェクト
-            EffectManager.Instance.ShowEffect("Eat",this.transform.position,this.transform.rotation);
-            SoundManager.Instance.PlaySE("Eat");
-    
-            FoodManager.Instance.DeleteFood(col.gameObject.GetComponent<Food>());
-        }
-
-
-        //敵にぶつかったとき
-        if (col.gameObject.tag == "Crab" || col.gameObject.tag == "Shark")
-        {
-            if (IsMuteki)
-                return;
-
-            //殻を持っていて、動いていなければreturn
-            if (IsShelled && !IsMove())
-                return;
-
-            //そうでなければ死ぬ
-            Dead();
-        }
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        //殻にぶつかったとき
-        if (other.tag == "Shell")
-        {
-            //殻持ってたらreturn
-            if (IsShelled)
-                return;
-            
-            shell = other.gameObject;
-            shell.GetComponent<ChaseObject>().target = shellPos;
-            shell.transform.localScale = this.transform.localScale * 1.2f;
-            //shell.transform.localPosition = Vector3.zero + new Vector3(0,-0.03f,-0.2f);
-            //shell.transform.eulerAngles = new Vector3(-22f, 0);
-            //col.gameObject.transform.parent = shellPos.transform;
-            IsShelled = true;
-        }
-
-    }
+   
 
     /// <summary>
     /// Shellのリセット

@@ -143,7 +143,7 @@ public class Shark : MonoBehaviour
                 if(knockFrame <= stunKnockFrame)
                 {
                     knockFrame++;
-                    transform.position -= transform.forward * 0.3f;
+                    transform.position -= transform.forward * 1.3f;
                 }
                 stunTime += Time.deltaTime;
                 if(stunTime >= stunTimeMax)
@@ -169,6 +169,20 @@ public class Shark : MonoBehaviour
                 {
                     waitTimer = 0;
                     sharkState = SharkState.Aiming;
+                }
+
+                break;
+
+            //---------------ノックバック---------------
+            case SharkState.KnockBack:
+                if (knockFrame <= damageKnockFrame)
+                {
+                    knockFrame++;
+                    transform.position -= transform.forward * 1.3f;
+                }
+                else
+                {
+                    sharkState = SharkState.Stun;
                 }
 
                 break;
@@ -211,6 +225,14 @@ public class Shark : MonoBehaviour
                 EffectManager.Instance.ShowEffect("Levelup", transform.position, this.transform.rotation);
                 //サメのライフ減少
                 life -= (int)shell.GetAttack();
+
+                //ピヨピヨ状態であればノックバック処理に移行
+                if(sharkState == SharkState.Stun)
+                {
+                    transform.LookAt(player);
+                    knockFrame = 0;
+                    sharkState = SharkState.KnockBack;
+                }
                 
                 //体力が0になった場合
                 if(life <= 0)

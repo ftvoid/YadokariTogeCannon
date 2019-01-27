@@ -80,7 +80,10 @@ public class GameScene : SingletonMonoBehaviour<GameScene>
         CameraManager.Instance.PlayEnd();
         _gameState.Value = GameState.GameOver;
 
-        SceneChanger.Load("GameOverScene");
+        SceneChanger.Load("GameOverScene", new Dictionary<string, object>()
+        {
+            { "growthLv", StateManager.Instance.GetGrowthLv() },
+        });
     }
 
     /// <summary>

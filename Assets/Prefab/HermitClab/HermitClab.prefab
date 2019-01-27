@@ -163,11 +163,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsShelled: 0
   IsMuteki: 0
-  speed: 40
-  getShellSpeedScale: 0.4
+  speed: 70
+  getShellSpeedScale: 0.3
   rotateSpeed: 10
   shotShellSpeed: 300
-  getShellSatietyScale: -0.1
+  getShellSatietyScale: -0.15
   sizeScaler: 1
   shellPos: {fileID: 1535462971}
 --- !u!54 &2234248046048720675

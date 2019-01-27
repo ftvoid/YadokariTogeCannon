@@ -57,6 +57,9 @@ public class StateManager : SingletonMonoBehaviour<StateManager>
         for(int i = 0; i < 1;i += 0)
         {
             satiety -= 1 * Time.deltaTime;
+
+            if (satiety == 0)
+                GameObject.FindGameObjectWithTag("Player").GetComponent<HermitClab>().Dead();
             yield return null;
         }
     }

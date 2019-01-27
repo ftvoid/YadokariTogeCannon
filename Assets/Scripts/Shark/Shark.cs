@@ -164,10 +164,10 @@ public class Shark : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         //プレイヤーに当たった時
-        if(collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player")
         {
             //サメが突進状態でかつプレイヤーが殻に入っていた場合
-            if(playerScript.IsShell() && sharkState == SharkState.Charge)
+            if (playerScript.IsShell() && sharkState == SharkState.Charge)
             {
                 //ピヨピヨ状態になる
                 stunTimeMax = playerScript.GetStanTime();
@@ -175,19 +175,25 @@ public class Shark : MonoBehaviour
                 sharkState = SharkState.Stun;
             }
             //サメが突進状態でかつプレイヤーが殻に入っていなかった場合
-            else if(!playerScript.IsShell() && sharkState == SharkState.Charge)
+            else if (!playerScript.IsShell() && sharkState == SharkState.Charge)
             {
                 //ゲームオーバー処理
             }
         }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
 
         //殻と当たった時
-        if(collision.gameObject.tag == "Shell")
+        if(other.gameObject.tag == "Shell")
         {
-            Shell shell = collision.gameObject.GetComponent<Shell>();
+            Shell shell = other.gameObject.GetComponent<Shell>();
             //殻が発射されたものなら
             if (shell.IsShot)
             {
+                Debug.Log("sharkHit");
+                EffectManager.Instance.ShowEffect("Levelup", transform.position, this.transform.rotation);
                 //サメのライフ減少
                 life -= (int)shell.GetAttack();
                 

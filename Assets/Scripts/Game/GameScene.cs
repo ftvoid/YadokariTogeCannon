@@ -146,4 +146,18 @@ public class GameScene : SingletonMonoBehaviour<GameScene>
         Debug.Log("GameScene : ゲーム開始");
         StartGame();
     }
+
+#if UNITY_EDITOR
+    private void Update()
+    {
+        if ( Input.GetKeyDown(KeyCode.R) )
+        {
+            ShowGameClear();
+        }
+        else if ( Input.GetKeyDown(KeyCode.G) )
+        {
+            ShowGameOver();
+        }
+    }
+#endif
 }

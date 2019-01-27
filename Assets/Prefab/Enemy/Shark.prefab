@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 436f034c4c3581d408b6defb29e708a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitXPosition: 95
+  waitXPosition: 80
   waitTimerMax: 4
   waitMoveSpeed: 0.7
   chargeReadyRange: 20

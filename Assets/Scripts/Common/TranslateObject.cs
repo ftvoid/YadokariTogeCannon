@@ -18,28 +18,50 @@ public class TranslateObject : MonoBehaviour
 
     float time = 0;
 
+    [SerializeField]
+    bool IsEndMove = false;
+
     bool IsMove = false;
+
+    [SerializeField]
+    bool IsInit = false;
 
     private void Start()
     {
         firstAngle = this.transform.eulerAngles;
         firstPos = this.transform.position;
+        chaseObject = GameObject.FindGameObjectWithTag("Player");
     }
 
     public void Play()
     {
         IsMove = true;
+        InitTime();
+    }
+
+    void InitTime()
+    {
+        time = 0;
+    }
+
+    public void PlayGameOver()
+    {
+        IsEndMove = true;
+        InitTime();
     }
 
     private void Update()
     {
         Move();
+        EndMove();
         Skip();
+        PlayTime();
+    }
 
-        if (Input.GetButtonDown("Jump"))
-        {
-            Play();
-        }
+    void PlayTime()
+    {
+        if(IsInit)
+        time = 0;
     }
 
     /// <summary>
@@ -50,8 +72,23 @@ public class TranslateObject : MonoBehaviour
         if (!IsMove)
             return;
 
+        
         time += 1f * Time.deltaTime * 0.5f;
         this.transform.position = Vector3.Lerp(firstPos, movePosition, time);
+        this.transform.eulerAngles = Vector3.Lerp(firstAngle, eulerAngle, time);
+
+    }
+
+    private void EndMove()
+    {
+        if (!IsEndMove)
+            return;
+
+        Vector3 pos = chaseObject.transform.position + new Vector3(0, 12, -40);
+        Vector3 angle = new Vector3(30, 0, 0);
+        
+        time += 1f * Time.deltaTime * 0.5f;
+        this.transform.position = Vector3.Lerp(movePosition, pos, time);
         this.transform.eulerAngles = Vector3.Lerp(firstAngle, eulerAngle, time);
     }
 
@@ -60,7 +97,7 @@ public class TranslateObject : MonoBehaviour
     /// </summary>
     void Skip()
     {
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1"))
         {
             this.transform.position = movePosition;
             this.transform.eulerAngles = eulerAngle;

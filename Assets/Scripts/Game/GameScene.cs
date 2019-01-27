@@ -75,6 +75,7 @@ public class GameScene : SingletonMonoBehaviour<GameScene>
     /// </summary>
     public void ShowGameOver()
     {
+        CameraManager.Instance.PlayEnd();
         _gameState.Value = GameState.GameOver;
     }
 
@@ -115,6 +116,7 @@ public class GameScene : SingletonMonoBehaviour<GameScene>
 
         // カウントダウンUI表示
         Debug.Log("GameScene : カウントダウンUI表示");
+        CameraManager.Instance.PlayStart();
 
         _countDownUI.gameObject.SetActive(true);
 

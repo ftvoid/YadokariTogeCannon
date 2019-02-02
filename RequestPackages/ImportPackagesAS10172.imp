@@ -1,0 +1,676 @@
+/content/10172
+Assets/ExternalAssets/JMO Assets\!JMO Assets Readme.txt,4ed89c09e8e33984292721c9ef8d4e0b
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CartoonFX3 Readme.txt,b4b74543d449df14b8b77c20282428ab
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Electric\CFX3_Hit_Electric_A_Air.prefab,a536dcb87ae6de8469efd6eab29c9c9b
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Electric\CFX3_Hit_Electric_A_Ground.prefab,1ca16f2a31fb6a548ad8954bed1d321f
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Electric\CFX3_Hit_Electric_B_Air.prefab,ddc205c0c8c9eca43be1bdcb38ef42e7
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Electric\CFX3_Hit_Electric_B_Ground.prefab,a5059ff57361e40419eb3bf51da161cd
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Electric\CFX3_Hit_Electric_C_Air (direct).prefab,d28a7214c5af153409d63aac03865da8
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Electric\CFX3_Hit_Electric_C_Air.prefab,e243632bb3aff9549abdcfcc2ef0c4f0
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Electric\CFX3_Hit_Electric_C_Ground (direct).prefab,978237f01ba8ee344835ec2c05b31b26
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Electric\CFX3_Hit_Electric_C_Ground.prefab,486ad0a82c60c454ca2b47bd83a20539
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Electric\Color Variants\CFX3_Hit_Electric_A_Air (Purple).prefab,636a73512a30db04a9bd6209cfff82e6
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Electric\Color Variants\CFX3_Hit_Electric_A_Air (Red).prefab,21c232b45a0251346b0dd52994ae0e97
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Electric\Color Variants\CFX3_Hit_Electric_A_Air (Yellow).prefab,c31e730a7dfb67e4f95920264816a318
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Electric\Color Variants\CFX3_Hit_Electric_A_Ground (Purple).prefab,2cbb11f601125694781603dc32a896a6
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Electric\Color Variants\CFX3_Hit_Electric_A_Ground (Red).prefab,2a007fa027e990c4fb3c4634e719fb08
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Electric\Color Variants\CFX3_Hit_Electric_A_Ground (Yellow).prefab,6e41374fd68845d468a933576235f933
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Environment\CFX3_SmokeColumn_Black.prefab,d164048b512cbec4d8584577d879c371
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Environment\CFX3_SmokeColumn_Blue.prefab,35d7e0f9d5e708c499b4d2e0c48b92f2
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Environment\CFX3_SmokeColumn_Green.prefab,ec1b2bb0ab8377b40b6f0abaf7a7f1f2
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Environment\CFX3_SmokeColumn_Red.prefab,d3fbd02d1e5752b4b9cd806b0b247da4
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Environment\CFX3_SmokeColumn_White.prefab,70a155c91461538449bc5795c0013315
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Environment\CFX3_SmokeColumn_Wind_Black.prefab,1a220dcd47d8e6241902fedb6c01497c
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Environment\CFX3_SmokeColumn_Wind_Blue.prefab,d1b5cc21cfe12a4459d7da522a88dc86
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Environment\CFX3_SmokeColumn_Wind_Green.prefab,f69a28860cb2b4a44a0d9b292ec416b7
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Environment\CFX3_SmokeColumn_Wind_Red.prefab,069319e0798d8534a8c1ae3313cf01c1
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Environment\CFX3_SmokeColumn_Wind_White.prefab,17263577529e4394b8ee4e26b2631726
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Environment\CFX3_Snow.prefab,292c73f250a10f248baad6f8ad125ccd
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Environment\CFX3_Snow_Dense.prefab,de07bf378e7247444a0715ad2ff509e3
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Environment\CFX3_Snow_Storm.prefab,b0979d8072189df42b5a1dc1ff7e89dc
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Environment\Variants\CFX3_SmokeColumn_Black (Prewarm).prefab,1002ef9b83c8e804b966e98e69a5e88b
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Environment\Variants\CFX3_SmokeColumn_Blue (Prewarm).prefab,6d087041d672f094eac50536991fd884
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Environment\Variants\CFX3_SmokeColumn_Green (Prewarm).prefab,f5bda10ae5b32b743ba7ea26d35ebd3e
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Environment\Variants\CFX3_SmokeColumn_Red (Prewarm).prefab,6f25f6c22344ba64b8d999f5787d3e53
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Environment\Variants\CFX3_SmokeColumn_White (Prewarm).prefab,0a43ccb78268bc042a85dbb00bf22d2a
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Environment\Variants\CFX3_SmokeColumn_Wind_Black (Prewarm).prefab,84ef3a0bd141dbb49ad963e84477eccf
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Environment\Variants\CFX3_SmokeColumn_Wind_Blue (Prewarm).prefab,e8e982134060a8b4baf8794b0108110e
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Environment\Variants\CFX3_SmokeColumn_Wind_Green (Prewarm).prefab,0c2254e2be8f59c4e9b4492b23f16433
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Environment\Variants\CFX3_SmokeColumn_Wind_Red (Prewarm).prefab,0b2c4bcc6f048fb419233f48b27d40f0
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Environment\Variants\CFX3_SmokeColumn_Wind_White (Prewarm).prefab,a551aa07bf84a194c8aa5fa107386fac
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Fire\CFX3_Fireball_A.prefab,8d630e3da9ae7674d95c236d1daf8b79
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Fire\CFX3_Fireball_B.prefab,11a9f9ac0c417ad48983b69ebcb23df0
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Fire\CFX3_FireRain.prefab,f6017328c5fa75a4fb8a29cc54c8cc1e
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Fire\CFX3_Fire_Explosion.prefab,7e48ba6b1b968764490bbc70b66e3fe1
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Fire\CFX3_Fire_Shield.prefab,b0bc1b6b391734647b9bb142bafc0819
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Fire\CFX3_Flying_Ember.prefab,ba240239a4f595044bfaa09e44605ad8
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Fire\CFX3_Flying_Ember_Disrupted_Upward.prefab,d35e92ed975dcbb4eb4ba522b5545261
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Fire\CFX3_Flying_Ember_Upward.prefab,f89732ea99785b94c87bbba1e27f75a3
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Fire\CFX3_Hit_Fire_A_Air.prefab,acb381b49b4c930408b9c5c77c54f600
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Fire\CFX3_Hit_Fire_A_Ground.prefab,2687d26678b65c140adac5314c8c59d1
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Fire\CFX3_Hit_Fire_B_Air.prefab,d463eb55c0118084d919129422844956
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Fire\CFX3_Hit_Fire_B_Ground.prefab,e5e7889b774c34f4a8fe0cc14bc8f2cc
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Fire\Color Variants\CFX3_Fireball_A (Blue).prefab,1c5f7a38c96385d45b5a18aeffd230d5
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Fire\Color Variants\CFX3_Fireball_A (Green).prefab,85904928ec0c0c64192f67ab7429ca66
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Fire\Color Variants\CFX3_Fireball_A (PurpleBlue).prefab,018c2b3ccd77c674b8e1086c44f2bbc7
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Fire\Color Variants\CFX3_Fireball_A (Yellow).prefab,5527884480e785d479fc476691d0fd14
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Fire\Color Variants\CFX3_Flying_Ember (Blue).prefab,1900889898948db4aa6856ba5bfe0d33
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Fire\Color Variants\CFX3_Flying_Ember_Disrupted_Upward (Green).prefab,d66036dfe8c4c134e96ac7fa3beb0151
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Fire\Color Variants\CFX3_Flying_Ember_Disrupted_Upward (Purple).prefab,eb463f761a10ec24b85bed3eaf49cbba
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Fire\Color Variants\CFX3_Flying_Ember_Upward (Blue).prefab,52a01d17becae0945838bcb96349f376
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Fire\Color Variants\CFX3_Hit_Fire_A_Air (Blue).prefab,7cbf2f4111646b14abb475886e7a2e69
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Fire\Color Variants\CFX3_Hit_Fire_A_Air (Green).prefab,7aa05ae3048ae92459881f84b4c8fea5
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Fire\Color Variants\CFX3_Hit_Fire_A_Air (Yellow).prefab,c713a95cdc4bc234693cd7dae21391c7
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Fire\Color Variants\CFX3_Hit_Fire_A_Ground (Blue).prefab,1ea046ea2cbbf5c41bd454829f5ca6ae
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Fire\Color Variants\CFX3_Hit_Fire_A_Ground (Green).prefab,599c014e26e3fc94fb56c4854188370f
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Fire\Color Variants\CFX3_Hit_Fire_A_Ground (Yellow).prefab,fb3a270073242b045841fb9fccc3bfc7
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Fire\Color Variants\CFX3_Hit_Fire_B_Air (Green).prefab,43daa4865ce12644795a6e570b268d01
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Fire\Color Variants\CFX3_Hit_Fire_B_Air (PurpleBlue).prefab,8d1467726628db3429e301a84645e3d7
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Fire\Color Variants\CFX3_Hit_Fire_B_Air (Yellow).prefab,25b8bd5fb39891646aca95ea4843642a
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Fire\Color Variants\CFX3_Hit_Fire_B_Ground (Green).prefab,4c872a41ff6dd64468a34a3c38fcc342
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Fire\Color Variants\CFX3_Hit_Fire_B_Ground (PurpleBlue).prefab,aa8f70c56a29b5b44872dbb310930460
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Fire\Color Variants\CFX3_Hit_Fire_B_Ground (Yellow).prefab,7a4ecf27048a59d468cce466f345cbba
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Ice\CFX3_Hit_Ice_A_Air.prefab,f44902774d068844da61485de6c06d39
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Ice\CFX3_Hit_Ice_A_Ground.prefab,cb7c3c15fca93f448a9813af32cf1beb
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Ice\CFX3_Hit_Ice_B_Air.prefab,0dc3481e235c6cb48996f9a365f50e0f
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Ice\CFX3_Hit_Ice_B_Ground.prefab,b29e415c5d1605c4b990994207d442c4
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Ice\CFX3_IceBall_A.prefab,32fb56b5808e2e74a9b985d779e7b949
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Ice\CFX3_IceBall_B.prefab,b3eac57a161dad74fbd7d2b265fd6280
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Ice\CFX3_Ice_Shield.prefab,1004b309038dbbd4abb77942db0e2bf8
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Ice\Color Variants\CFX3_Hit_Ice_A_Air (Orange).prefab,9e81c5a17f8b79243be6d7974611e3bf
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Ice\Color Variants\CFX3_Hit_Ice_A_Air (Purple).prefab,6c9ac08fa20874a408be96416723668a
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Ice\Color Variants\CFX3_Hit_Ice_A_Air (White).prefab,221679c5b25c3f741a3c3dbf2d5586ed
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Ice\Color Variants\CFX3_Hit_Ice_A_Ground (Orange).prefab,2c4cfddca59a6174ea7d46becba067b7
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Ice\Color Variants\CFX3_Hit_Ice_A_Ground (Purple).prefab,64946074a5bd0f144aac1d871af4c15e
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Ice\Color Variants\CFX3_Hit_Ice_A_Ground (White).prefab,39205107b28f45843a4849400d31083d
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Ice\Color Variants\CFX3_Hit_Ice_B_Air (DarkBlue).prefab,d76b630cb8173ad4f8c0bb7954ab96d9
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Ice\Color Variants\CFX3_Hit_Ice_B_Air (Green).prefab,7f8a93dd7d921b940a6cb23e7dfbeb9f
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Ice\Color Variants\CFX3_Hit_Ice_B_Air (Red).prefab,ad2c4877abaddad4a8fb58bb99ba9e2c
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Ice\Color Variants\CFX3_Hit_Ice_B_Ground (DarkBlue).prefab,35891ae2bd6e6e04c97d20c0e17ea119
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Ice\Color Variants\CFX3_Hit_Ice_B_Ground (Green).prefab,c3ff2662b6816a349a7b3ca7528fc499
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Ice\Color Variants\CFX3_Hit_Ice_B_Ground (Red).prefab,e0fc46b469e41e44dabf1c25049783a2
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Ice\Color Variants\CFX3_IceBall_A (Orange).prefab,77954d208556c414aa9fe7806620b8b4
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Ice\Color Variants\CFX3_IceBall_A (Purple).prefab,56c3096d1b08de44787b60dc5d2a067d
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Ice\Color Variants\CFX3_IceBall_A (White).prefab,de05e690e5d3a6d418f9e593bafb3fba
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\CFX3_Hit_Light_A_Air.prefab,0d142f301e46cb44f8b703d429f489db
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\CFX3_Hit_Light_A_Ground.prefab,4794486a71fe1b542b984f399803eb07
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\CFX3_Hit_Light_B_Air.prefab,b6b904f74a568b146ab9fbe1be4d1d2e
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\CFX3_Hit_Light_B_Ground.prefab,34ba395d4fc08b14096951135971d8e4
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\CFX3_Hit_Light_C_Air.prefab,757df604761b8ef42831192c70ee1099
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\CFX3_Hit_Light_C_Ground.prefab,9c8fb30c1f622e744b0d502c95825d09
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\CFX3_LightBall_A.prefab,ad31b90ebe2fbe5498dfca3f5488be96
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\CFX3_LightBall_B.prefab,76d9ffa6c93a87c4c873bf96caaef96d
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\CFX3_LightGlow_A_Air.prefab,2a00c90f5ea0ec64a832b2d73bcd92ef
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\CFX3_LightGlow_A_Ground.prefab,8bd1e6f014d1f354d86822190501e3d7
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\CFX3_LightGlow_B_Air.prefab,d88fb523125892e4ab37f80105d22ee4
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\CFX3_LightGlow_B_Ground.prefab,2c8dc4f8e05de984eac678dd19636426
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\CFX3_LightGlow_C_Air.prefab,cf8a23ee7ec5b584582f8e448fe4eacc
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\CFX3_ResurrectionLight_Circle.prefab,ada5d62ffe762ce4fbccc70dcdbc9022
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\CFX3_ResurrectionLight_Circle_Looped.prefab,c040f7ccd795db54f898d253a9ed2e7a
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\CFX3_ResurrectionLight_Oval.prefab,e80bbec0e92328e40af6dc221ea5461d
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\CFX3_ResurrectionLight_Oval_Looped.prefab,24f743f479cc0e44aa5a2427c9080fa2
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\CFX3_Shield_Rays.prefab,1be4ba41efa75e94bb174025525dd7dd
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\CFX3_Shield_Rays_Intense.prefab,d9753ca7747684f44a547c9374188901
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\CFX3_SkyRaysSkewed_Loop.prefab,c8e735a7a4829af4bae17dbf713dd368
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\CFX3_SkyRays_Loop.prefab,d1912b480b82d6441a8d97bc2836a977
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\Color Variants\CFX3_Hit_Light_A_Air (Blue).prefab,a1115442be911de479121ed12111432e
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\Color Variants\CFX3_Hit_Light_A_Air (Green).prefab,147c10c0ffbfd1346a0c9e132f2d29c0
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\Color Variants\CFX3_Hit_Light_A_Air (Purple).prefab,6c7e663a08a2bb24c9f59b9a512c7990
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\Color Variants\CFX3_Hit_Light_A_Ground (Blue).prefab,91b84c7ce50fef643b0ef2c9c7128b85
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\Color Variants\CFX3_Hit_Light_A_Ground (Green).prefab,02ed8b3f4d0303746bbd7abe5a950a7a
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\Color Variants\CFX3_Hit_Light_A_Ground (Purple).prefab,fc0b235fe8f025048ab50100c0e8fc46
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\Color Variants\CFX3_Hit_Light_B_Air (Blue).prefab,256a59b2b844e3c42be5cabf0ecc57ab
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\Color Variants\CFX3_Hit_Light_B_Air (Purple).prefab,1380369d881c2bc4cbaaca085a9a9bf8
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\Color Variants\CFX3_Hit_Light_B_Air (Red).prefab,6590f72985f8cc94a997f66385bbb080
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\Color Variants\CFX3_Hit_Light_B_Ground (Blue).prefab,68cbb6a2da60b6f45af8180a97238409
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\Color Variants\CFX3_Hit_Light_B_Ground (Purple).prefab,570091aaf3afc2847b59aba43d12cde8
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\Color Variants\CFX3_Hit_Light_B_Ground (Red).prefab,7d30eec1eda4c6d4792d7bf38cc51c4f
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\Color Variants\CFX3_Hit_Light_C_Air (Blue).prefab,88940599c723ecb47bc4cb5322152956
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\Color Variants\CFX3_Hit_Light_C_Air (Green).prefab,e5086a3eee41eaa409e13164ce9f1d31
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\Color Variants\CFX3_Hit_Light_C_Air (Orange).prefab,7b9f1274967bc7449a26f077f2e9807b
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\Color Variants\CFX3_Hit_Light_C_Ground (Blue).prefab,f08ce149fe20b464297eff27653fb95a
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\Color Variants\CFX3_Hit_Light_C_Ground (Green).prefab,78a8e7c468fb5944d82a17e0006dc76b
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\Color Variants\CFX3_Hit_Light_C_Ground (Orange).prefab,0d613a63db2329c44826ef41353606c1
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\Color Variants\CFX3_LightBall_A (Blue).prefab,ae96f9558f987e843b1115ab652e1f25
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\Color Variants\CFX3_LightBall_A (Green).prefab,8f2e88dbbc1c3d741a539d17a423f821
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\Color Variants\CFX3_LightBall_A (Orange).prefab,ec595540b4648d848b5f610b5d79e823
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\Color Variants\CFX3_LightBall_A (Purple).prefab,9279e159161658a46a5253e92d9f557f
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\Color Variants\CFX3_LightGlow_A_Air (Blue).prefab,e681c9b79bf6a7842b6ec6b3e8b0f22c
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\Color Variants\CFX3_LightGlow_A_Air (Green).prefab,34a3768ab5ff43e4cbfe5f43d221e222
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\Color Variants\CFX3_LightGlow_A_Air (Orange).prefab,c0e68fc016649fc42b4f150d94cd9255
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\Color Variants\CFX3_LightGlow_A_Ground (Blue).prefab,126f386e48cacea40994ad3551244025
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\Color Variants\CFX3_LightGlow_A_Ground (Green).prefab,95f6b5fed7c8d1640b86e0dd926d793d
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\Color Variants\CFX3_LightGlow_A_Ground (Orange).prefab,809ba9b0d7286d64085e2a1858a4305a
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\Color Variants\CFX3_LightGlow_B_Air (Blue).prefab,29401e03e89f81f4c8b27694b965ed5c
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\Color Variants\CFX3_LightGlow_B_Air (Green).prefab,30de1db552cf2b94cbc7c1ec003eac12
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\Color Variants\CFX3_LightGlow_B_Air (Red).prefab,9d66dbdc68d31c940be16a73fb95e8de
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\Color Variants\CFX3_LightGlow_B_Ground (Blue).prefab,6b0bb3f910295074cadc2c7c36c34757
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\Color Variants\CFX3_LightGlow_B_Ground (Green).prefab,e6ca9fb020dba38468822ca4b27a5e2d
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\Color Variants\CFX3_LightGlow_B_Ground (Red).prefab,d0c4ca13715749549bf3c5826c8d4cc4
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\Color Variants\CFX3_LightGlow_C_Air (Blue).prefab,1ee9744c8132d7443acf1667b97754c1
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\Color Variants\CFX3_LightGlow_C_Air (Green).prefab,05fb9a835cbedf146bf7bc47e45679c7
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\Color Variants\CFX3_LightGlow_C_Air (Pink).prefab,3f2a43cade53bd14abd0f9f9ad4ac853
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\Color Variants\CFX3_ResurrectionLight_Circle (Blue).prefab,f453e6385bed1df4fa2555d4bf053f63
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\Color Variants\CFX3_ResurrectionLight_Circle (Orange).prefab,358252323238e0e4aba0cc2a6bde564d
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\Color Variants\CFX3_ResurrectionLight_Circle (Purple).prefab,6daa0b1a26aa60341b66a46ed97a671a
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\Color Variants\CFX3_ResurrectionLight_Oval (Blue).prefab,3bd759ddbb746314aa440abb4efe48d9
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\Color Variants\CFX3_ResurrectionLight_Oval (Green).prefab,dd26f6901d18db44ba8c43fc46ceca46
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\Color Variants\CFX3_ResurrectionLight_Oval (Purple).prefab,c9c38001a5de894409e1f1739acf454c
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\Color Variants\CFX3_Shield_Rays (Blue).prefab,a3883f67e4073334f95255ee37e92dc1
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\Color Variants\CFX3_Shield_Rays (Green).prefab,5e5dea166505e3647800fc902e9169a8
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\Color Variants\CFX3_Shield_Rays (White).prefab,5e4598200ffe493458047d13093d6292
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\Color Variants\CFX3_Shield_Rays_Intense (Blue).prefab,38845a7631d961c489a207fd1c458689
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\Color Variants\CFX3_Shield_Rays_Intense (Purple).prefab,1f037e393c6446b499ea292249bcf3d6
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\Variants\CFX3_SkyRaysSkewed_Loop (Prewarm).prefab,a96e4f59adecc654eb22037a47440e3a
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Light\Variants\CFX3_SkyRays_Loop (Prewarm).prefab,a21084cd076099d4d8b701fa2bf74e64
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Magic Dark\CFX3_Beetles.prefab,a8803b04130200e4a8a2f87e428e44ef
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Magic Dark\CFX3_DarkMagicAura_A.prefab,7b56cd9b663f23f429e131a54ec87db0
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Magic Dark\CFX3_DarkMagicAura_B_Runic.prefab,a64994383c8e6e04da38317305feb78b
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Magic Dark\CFX3_DarkMagicAura_C.prefab,6428af09d35616b4aa4e9c0a4b9fe02d
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Magic Dark\CFX3_Dark_Sun.prefab,31f8d2b89d935174c8728fb4896c4f59
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Magic Dark\Color Variants\CFX3_DarkMagicAura_A (Blue).prefab,d334807fc1e68eb4d8118d3d21cee497
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Magic Dark\Color Variants\CFX3_DarkMagicAura_A (Red).prefab,7adba9fc29a2b9749aab3da48b1bffd1
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Magic Dark\Color Variants\CFX3_DarkMagicAura_B_Runic (Black).prefab,3578fa4117a41244d9106915538cc011
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Magic Dark\Color Variants\CFX3_DarkMagicAura_B_Runic (Blue).prefab,c18ff78f59b685647ac0b14049b0382c
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Magic Dark\Color Variants\CFX3_DarkMagicAura_B_Runic (Green).prefab,37948035eb12d6a4687140bac187dc12
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Magic Misc\CFX3_MagicAura_A.prefab,c1815d8358f3a134e9fa1b3c325a7884
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Magic Misc\CFX3_MagicAura_B_Runic.prefab,60bc526f4be1e044ab9e46340b82ffb3
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Magic Misc\CFX3_MagicAura_C.prefab,fc6b58c00a33dbb4fb82b4d92a635004
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Magic Misc\CFX3_MagicAura_D_Runic.prefab,e3d819d8722fa1f47a3f68574b56dfb3
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Magic Misc\CFX3_Magic_Fountain.prefab,ca8aa923d8105764d9d0efa7475645bc
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Magic Misc\CFX3_VortexTornado.prefab,9d35aaed7dbb6f14fbf391d3b0377ab2
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Magic Misc\CFX3_Vortex_Air.prefab,3cb9f48491c62c14a90616a4ef303e90
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Magic Misc\CFX3_Vortex_Air_Outward.prefab,77d23c5b69ff2914abee9bd9a0e97129
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Magic Misc\CFX3_Vortex_Ground.prefab,3d4907e6bd39f474b8fd8220920e65c4
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Magic Misc\CFX3_Vortex_Ground_Outward.prefab,d3939e07a8119f64691b3f6142d15cbc
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Magic Misc\Color Variants\CFX3_MagicAura_A (Blue).prefab,4f58a9373c89dd84dbc12f19227811c0
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Magic Misc\Color Variants\CFX3_MagicAura_A (Green).prefab,28a06cb91b34ad54db02ca0856d1709f
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Magic Misc\Color Variants\CFX3_MagicAura_A (Pink).prefab,d7854f7c844a7434283d0df23a38a747
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Magic Misc\Color Variants\CFX3_MagicAura_B_Runic (Blue).prefab,6eef8fd94177c2b49bcef51b6eac54f3
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Magic Misc\Color Variants\CFX3_MagicAura_B_Runic (Green).prefab,58c7457b93a02ed41b7ab4c6e07a7f97
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Magic Misc\Color Variants\CFX3_MagicAura_B_Runic (Orange).prefab,5bce25ba7397bb749beb9e8ace52b5c1
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Magic Misc\Color Variants\CFX3_MagicAura_C (Blue).prefab,13787b17ca3a2fe469b1d0de7ebe8836
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Magic Misc\Color Variants\CFX3_MagicAura_C (Green).prefab,cca8252ebe421404c81216310ad00c1d
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Magic Misc\Color Variants\CFX3_MagicAura_C (Red).prefab,31181833046d0c043a905d90d9aae05a
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Magic Misc\Color Variants\CFX3_MagicAura_D_Runic (Blue).prefab,72cf04159eef0d24586fc62a301e40d6
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Magic Misc\Color Variants\CFX3_MagicAura_D_Runic (Red).prefab,58f8c03e5574bd348a97110f99534f49
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Magic Misc\Color Variants\CFX3_MagicAura_D_Runic (Yellow).prefab,efb4102956b03ef4892e4859c39f1703
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Magic Misc\Color Variants\CFX3_Magic_Fountain (Blue).prefab,787f01afbb7ae474f9d8720106a2fe72
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Magic Misc\Color Variants\CFX3_Magic_Fountain (Green).prefab,41227ba463f244f4faf7b0052b9f4f01
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Magic Misc\Color Variants\CFX3_VortexTornado (Blue).prefab,2516cabdceef6844b8622fef61c35a0a
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Magic Misc\Color Variants\CFX3_VortexTornado (Green).prefab,26cc43fe8804b9642b0855c15cb4fa7e
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Magic Misc\Color Variants\CFX3_VortexTornado (Orange).prefab,c4eb3529007d2814396b5ab5f59c34f6
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Magic Misc\Color Variants\CFX3_Vortex_Air (Blue).prefab,1874c1a1006e96d4b9227ae0e8855656
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Magic Misc\Color Variants\CFX3_Vortex_Air (Red).prefab,76663a38c7f2d1a4e80134bd99b5edcc
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Magic Misc\Color Variants\CFX3_Vortex_Air (Yellow).prefab,432634aa5abee4b40a1e5ffaf31c4dd2
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Magic Misc\Color Variants\CFX3_Vortex_Ground (Blue).prefab,d8660f7612ea3124589c0d73e27e710e
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Magic Misc\Color Variants\CFX3_Vortex_Ground (Red).prefab,6b47b07336aeb12418896d72a11a7533
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Magic Misc\Color Variants\CFX3_Vortex_Ground (Yellow).prefab,7d011b3c45919da49a20addc24128fcc
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Misc\CFX3_Broken_Machine_Clouds_Black.prefab,ea5338611093fe1458c8614f310af791
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Misc\CFX3_Broken_Machine_Clouds_White.prefab,2d352f813d949a24aa254f397e947c28
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Misc\CFX3_Hit_Misc_A.prefab,428712205a5dd624db98a8906a5c5ad4
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Misc\CFX3_Hit_Misc_B.prefab,be42452df4fbdcd4b90a088f8f4a9ed2
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Misc\CFX3_Hit_Misc_B_Gravity.prefab,7d6835d9db898fa4bbfda5d62c496786
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Misc\CFX3_Hit_Misc_C.prefab,f2bd70dbbdfe355499235d9fed746bb5
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Misc\CFX3_Hit_Misc_D.prefab,979632a27455af442bd2d8f36eb0ffce
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Misc\CFX3_Hit_Misc_E_Skull.prefab,1d2731d9a53213647be7f697b0f53c7e
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Misc\CFX3_Hit_Misc_F_Skull.prefab,7c199b8cc487e5842af8f47dba6cd3f1
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Misc\CFX3_Hit_SmokePuff.prefab,83cd9cc9f9c88824ba18dc59b05ae328
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Misc\CFX3_Skull_Explosion (direct).prefab,e7010d816a03bfe4083c3b59b38581d2
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Misc\CFX3_Skull_Explosion.prefab,e473029e4c70ad543a6879b82a732f4f
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Misc\CFX3_Suspicious_Cloud_Black.prefab,c1f8fc57878d8244b8d9064edd93ccbf
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Misc\CFX3_Suspicious_Cloud_White.prefab,fec3c765d2861cf48a30431b1a71a1cd
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Misc\Color Variants\CFX3_Hit_Misc_A (Green).prefab,c121316eb135465479b0221a41a2edb1
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Misc\Color Variants\CFX3_Hit_Misc_A (Orange).prefab,7e8d02358ecb0b84686543cac784cc60
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Misc\Color Variants\CFX3_Hit_Misc_B (Blue).prefab,872136b9fc02119418f903ffa4981ddb
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Misc\Color Variants\CFX3_Hit_Misc_B (Yellow).prefab,f718b88e98f1e1743960b704cb1bbf6b
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Misc\Color Variants\CFX3_Hit_Misc_C (Blue).prefab,7d933eecfad69b84880c76006152b46b
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Misc\Color Variants\CFX3_Hit_Misc_C (White).prefab,c226c772f6e8a334193f028445242c08
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Misc\Color Variants\CFX3_Hit_Misc_D (Blue).prefab,7cc1d6cff2aa980478dc1b15e782fc52
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Misc\Color Variants\CFX3_Hit_Misc_D (Orange).prefab,9fdc35e0ff73f614d9f00a5f7cf27b02
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Misc\Color Variants\CFX3_Hit_Misc_E_Skull (Blue).prefab,a09693af1d2aa164abe31a187129d506
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Misc\Color Variants\CFX3_Hit_Misc_E_Skull (Orange).prefab,d4a467a604ad99c4687a006fbf51bcce
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Misc\Color Variants\CFX3_Hit_Misc_F_Skull (Green).prefab,363219de89788bb4eb4847bfe5a62300
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Misc\Color Variants\CFX3_Hit_Misc_F_Skull (Red).prefab,fee50b82461065742b8e9f1848abf322
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Nature\CFX3_FallingLeaves.prefab,064135babc94c734c884325240d4a732
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Nature\CFX3_FallingLeaves_Large.prefab,0cd0d491eca9d16438d4f886f67592a2
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Nature\CFX3_Hit_Leaves_A_Air.prefab,35665ccb8d7722943b81209cbd7e9103
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Nature\CFX3_Hit_Leaves_A_Ground.prefab,8bfe96225e1b7a449b3fe8fab6e77761
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Nature\CFX3_Shield_Leaves.prefab,1edd2952e18c6694584c775f51b8422d
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Nature\CFX3_Shield_Leaves_Raw.prefab,69b3f2e9fd7bcb844a112bc6835b0e80
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Nature\Color Variants\CFX3_FallingLeaves (Brown).prefab,c8b4db8a9c0f87c4982dce9519d289e8
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Nature\Color Variants\CFX3_FallingLeaves (GreenBlue).prefab,71599900b90713541be464744f603d86
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Nature\Color Variants\CFX3_FallingLeaves_Large (Brown).prefab,094b342ad283a0a40a1597e5a9a21c5c
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Nature\Color Variants\CFX3_FallingLeaves_Large (GreenBlue).prefab,e9daf8473bc1c324d8a0e4f1883269d5
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Nature\Color Variants\CFX3_Hit_Leaves_A_Air (Brown).prefab,4fe79e362059eb74fb2df4d0ccaebbcf
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Nature\Color Variants\CFX3_Hit_Leaves_A_Air (GreenBlue).prefab,626cd8265d9f43346b2347f22f6fc5f4
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Nature\Color Variants\CFX3_Hit_Leaves_A_Ground (Brown).prefab,ef5a2ffa8abe3f944af7b19eff501c2b
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Nature\Color Variants\CFX3_Hit_Leaves_A_Ground (GreenBlue).prefab,3e0ebd8d59b41f64f95715db75e3897f
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Nature\Color Variants\CFX3_Shield_Leaves (Brown).prefab,e5d3126a379a5614898025756cc42f8e
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Nature\Color Variants\CFX3_Shield_Leaves (GreenBlue).prefab,4ff9438430116d24bbf5f0baa19a787a
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Nature\Color Variants\CFX3_Shield_Leaves_Raw (Brown).prefab,c365fc1e316b53b4689d13a920c43760
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs\Nature\Color Variants\CFX3_Shield_Leaves_Raw (GreenBlue).prefab,8709a96a43159954d932c0e413c3ec60
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Electric\CFXM3_Hit_Electric_A_Air.prefab,ac5185e3c0685754bafbea431eec817d
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Electric\CFXM3_Hit_Electric_A_Ground.prefab,09e25258800096f4c972f10564686f79
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Electric\CFXM3_Hit_Electric_B_Air.prefab,84d79a244f8190b4abc03f1492b6d101
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Electric\CFXM3_Hit_Electric_B_Ground.prefab,fa074de80d7a5de4094274648527ff33
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Electric\CFXM3_Hit_Electric_C_Air (direct).prefab,6c21d3a6af1791444aa3b35e6b1b719d
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Electric\CFXM3_Hit_Electric_C_Air.prefab,953a2f5ec079f6845ac66bdee24de66c
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Electric\CFXM3_Hit_Electric_C_Ground (direct).prefab,f696e01818015f34392d55b037ea8720
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Electric\CFXM3_Hit_Electric_C_Ground.prefab,a5444b729298e934b83085719932365d
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Electric\Color Variants\CFXM3_Hit_Electric_A_Air (Purple).prefab,d1abf55b7d526f040ad6687e1de42624
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Electric\Color Variants\CFXM3_Hit_Electric_A_Air (Red).prefab,f6ebd47a19daa7b4fab998ffb3191a9e
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Electric\Color Variants\CFXM3_Hit_Electric_A_Air (Yellow).prefab,0900d0ce100e16b4d88749e3aa601b2b
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Electric\Color Variants\CFXM3_Hit_Electric_A_Ground (Purple).prefab,755971aeb4ee7a74e8610a2fcce69917
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Electric\Color Variants\CFXM3_Hit_Electric_A_Ground (Red).prefab,e132a25731aa67d4593c52528bb2ceb5
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Electric\Color Variants\CFXM3_Hit_Electric_A_Ground (Yellow).prefab,a790f5c2815e719418c1407fe4fa7348
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Environment\CFXM3_SmokeColumn_Black.prefab,c4ed3227b07d6ec4381855a0a45b32ba
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Environment\CFXM3_SmokeColumn_Blue.prefab,43fe671edae1c6748ab4371b09e80fcd
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Environment\CFXM3_SmokeColumn_Green.prefab,8cf54124f612a3c44b46c1c5ec3704b6
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Environment\CFXM3_SmokeColumn_Red.prefab,79076ac86465ab4488930201b12cbee9
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Environment\CFXM3_SmokeColumn_White.prefab,828014f3b54d595458efb5dbbf499f37
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Environment\CFXM3_SmokeColumn_Wind_Black.prefab,a7523c7d2921241408874b9627666926
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Environment\CFXM3_SmokeColumn_Wind_Blue.prefab,4939cec4b8d30794e83c3626a7faa995
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Environment\CFXM3_SmokeColumn_Wind_Green.prefab,11082d27cb4465048882ce57e2b65956
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Environment\CFXM3_SmokeColumn_Wind_Red.prefab,6bf40f2481ac1f14ba33aa8d4975a5c8
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Environment\CFXM3_SmokeColumn_Wind_White.prefab,2753ff2e7817be14ca5c1ac003b849b3
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Environment\CFXM3_Snow.prefab,af35e3f0fc78b1d48b023652a2c88648
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Environment\CFXM3_Snow_Dense.prefab,0bfa2074bc6c5374a96c5de2108bae81
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Environment\CFXM3_Snow_Storm.prefab,85c64af0270c7a842a691d3ebc973de6
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Environment\Variants\CFXM3_SmokeColumn_Black (Prewarm).prefab,09f519365350afd4089913f0c1cab459
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Environment\Variants\CFXM3_SmokeColumn_Blue (Prewarm).prefab,6a417a6b4605f354ca0aa6c5288aab53
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Environment\Variants\CFXM3_SmokeColumn_Green (Prewarm).prefab,501f0422f91188244871b78e295bd4cb
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Environment\Variants\CFXM3_SmokeColumn_Red (Prewarm).prefab,29a5fd8ea410fe74a91dbea8834e17e0
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Environment\Variants\CFXM3_SmokeColumn_White (Prewarm).prefab,53573894a245653439c0478de841f2bd
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Environment\Variants\CFXM3_SmokeColumn_Wind_Black (Prewarm).prefab,b548bf4d05a044d4cae7e63ce3b3f29d
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Environment\Variants\CFXM3_SmokeColumn_Wind_Blue (Prewarm).prefab,5c0d99ee173f71a4dbcf669f563c2fd4
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Environment\Variants\CFXM3_SmokeColumn_Wind_Green (Prewarm).prefab,7ca3676b66749464fa09ce03e35a112a
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Environment\Variants\CFXM3_SmokeColumn_Wind_Red (Prewarm).prefab,ce6b8945cfcc1e74c8626878834eb94b
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Environment\Variants\CFXM3_SmokeColumn_Wind_White (Prewarm).prefab,92710111561f26b46a778b15f8435c0a
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Fire\CFXM3_Fireball_A.prefab,3cbc5e57ce812b2499ca293964c1810c
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Fire\CFXM3_Fireball_B.prefab,e88b1a61e48ccc74688a46b4b1fd0616
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Fire\CFXM3_FireRain.prefab,8e9c479de268c024ba579ad260d20a59
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Fire\CFXM3_Fire_Explosion.prefab,c14edc49db3166740ab4df97e2bf8fcf
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Fire\CFXM3_Fire_Shield.prefab,b58b2fa9f2653bd4c9a91ba7e53640b3
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Fire\CFXM3_Flying_Ember.prefab,f55b65f47fd49814caa4fb493775ce06
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Fire\CFXM3_Flying_Ember_Disrupted_Upward.prefab,8c09a7c54f3b539488a04624a10d17d7
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Fire\CFXM3_Flying_Ember_Upward.prefab,7a85c3b65b0fedc46921f5b3a4c4749e
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Fire\CFXM3_Hit_Fire_A_Air.prefab,52166613422214f41aabe85899bbd712
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Fire\CFXM3_Hit_Fire_A_Ground.prefab,161817e74474c2b45943971de2dfdac0
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Fire\CFXM3_Hit_Fire_B_Air.prefab,8e77a7a577ae6e949bab63863484234a
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Fire\CFXM3_Hit_Fire_B_Ground.prefab,e356103c85845a84ea5c3934c036d9df
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Fire\Color Variants\CFXM3_Fireball_A (Blue).prefab,e104fe72f07f87448ae72bbbef4a1b3a
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Fire\Color Variants\CFXM3_Fireball_A (Green).prefab,1c6331bb0110e71498a29ef7de96b854
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Fire\Color Variants\CFXM3_Fireball_A (PurpleBlue).prefab,585e65d366da32342b6b5eb802717895
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Fire\Color Variants\CFXM3_Fireball_A (Yellow).prefab,ad703bc0467fd4d4098034534be16d18
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Fire\Color Variants\CFXM3_Flying_Ember (Blue).prefab,41bc699ed8d9dee4e8ad33e10f3d4425
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Fire\Color Variants\CFXM3_Flying_Ember_Disrupted_Upward (Green).prefab,5f822c6994ef3b24aba5de478c4dff49
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Fire\Color Variants\CFXM3_Flying_Ember_Disrupted_Upward (Purple).prefab,ce0380b3c737c1646b8d478c576608fc
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Fire\Color Variants\CFXM3_Flying_Ember_Upward (Blue).prefab,08936a70f7662b74c96766e421e7e912
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Fire\Color Variants\CFXM3_Hit_Fire_A_Air (Blue).prefab,fc8d490fd1d590644b736b2fe22dc820
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Fire\Color Variants\CFXM3_Hit_Fire_A_Air (Green).prefab,b4e5b3eaa4e88ee4c818191d9bc374ab
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Fire\Color Variants\CFXM3_Hit_Fire_A_Air (Yellow).prefab,19e0f3056a9598b41bb52476eb0593b3
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Fire\Color Variants\CFXM3_Hit_Fire_A_Ground (Blue).prefab,09bb166f8c23d2b48a749ce6d54dedce
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Fire\Color Variants\CFXM3_Hit_Fire_A_Ground (Green).prefab,c07b6b873601abd4aa93233d0a276994
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Fire\Color Variants\CFXM3_Hit_Fire_A_Ground (Yellow).prefab,95d4bee038744e54d9eafd5d58a83ff6
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Fire\Color Variants\CFXM3_Hit_Fire_B_Air (Green).prefab,a5e06d08ac313a444a31ba55c440069b
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Fire\Color Variants\CFXM3_Hit_Fire_B_Air (PurpleBlue).prefab,dcd93b22084bf21409f1df81fab104b6
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Fire\Color Variants\CFXM3_Hit_Fire_B_Air (Yellow).prefab,2a662013e99b91e4b99af5fa65b54ba4
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Fire\Color Variants\CFXM3_Hit_Fire_B_Ground (Green).prefab,e86c2375eda53b248aa2238031f9f7e4
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Fire\Color Variants\CFXM3_Hit_Fire_B_Ground (PurpleBlue).prefab,34b6c2342b0b89847a7985671749a487
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Fire\Color Variants\CFXM3_Hit_Fire_B_Ground (Yellow).prefab,e4db3696626987540a86db40917eeaae
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Ice\CFXM3_Hit_Ice_A_Air.prefab,b961e8aa4ae9b6b49942b2a949ea5f90
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Ice\CFXM3_Hit_Ice_A_Ground.prefab,d80c1a43a8756f84f9b7d01a57ad99fd
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Ice\CFXM3_Hit_Ice_B_Air.prefab,7b246d9636f4c7c45b6e199676ff4f61
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Ice\CFXM3_Hit_Ice_B_Ground.prefab,d59f5a7d01b5dec44b14e08b7aabff08
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Ice\CFXM3_IceBall_A.prefab,241c314d096d7a64aa5c3b20c021dd1b
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Ice\CFXM3_IceBall_B.prefab,0c6b44bc1c4ff034b907d51d04682992
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Ice\CFXM3_Ice_Shield.prefab,d9ff999f14db2c44ea3d654f7f7304ab
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Ice\Color Variants\CFXM3_Hit_Ice_A_Air (Orange).prefab,7df62410f72c4d04ead52df3b09c28ba
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Ice\Color Variants\CFXM3_Hit_Ice_A_Air (Purple).prefab,aa51c393a2d08654fa5e3269433604b3
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Ice\Color Variants\CFXM3_Hit_Ice_A_Air (White).prefab,ddb8350996718764ca1cc92b3d5e2a77
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Ice\Color Variants\CFXM3_Hit_Ice_A_Ground (Orange).prefab,1553b64894cf0254d8526a8b407e4bf8
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Ice\Color Variants\CFXM3_Hit_Ice_A_Ground (Purple).prefab,e58cb75340258954896244383c28a67d
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Ice\Color Variants\CFXM3_Hit_Ice_A_Ground (White).prefab,f9386d8131a25a0428b00fe4a7c20536
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Ice\Color Variants\CFXM3_Hit_Ice_B_Air (DarkBlue).prefab,28ba449969dde424fa63f4ff7f76bdd8
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Ice\Color Variants\CFXM3_Hit_Ice_B_Air (Green).prefab,c031585897362c2478fbd8b1dd318eba
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Ice\Color Variants\CFXM3_Hit_Ice_B_Air (Red).prefab,2b303ea20fecd2f4694e8c0faf7d9644
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Ice\Color Variants\CFXM3_Hit_Ice_B_Ground (DarkBlue).prefab,b205605d5c1f514438f75deb87825882
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Ice\Color Variants\CFXM3_Hit_Ice_B_Ground (Green).prefab,f670608049d07a8468a1091a83c44041
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Ice\Color Variants\CFXM3_Hit_Ice_B_Ground (Red).prefab,05e92be135d12034984ebe6bd970489c
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Ice\Color Variants\CFXM3_IceBall_A (Orange).prefab,0e0b952f3ae252144ba460c9a75607b6
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Ice\Color Variants\CFXM3_IceBall_A (Purple).prefab,8df908219298a184383824096db255c6
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Ice\Color Variants\CFXM3_IceBall_A (White).prefab,bf956d8b36f613f49aac72368eca55e8
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\CFXM3_Hit_Light_A_Air.prefab,1d3f4fec24cd01e4fbd32504018ecd5b
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\CFXM3_Hit_Light_A_Ground.prefab,230c9bc6c4489af49a37fbd43d58c5f9
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\CFXM3_Hit_Light_B_Air.prefab,adf0845286865f74091eaaded9f307ee
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\CFXM3_Hit_Light_B_Ground.prefab,006dcf19c33b2cd498bfb0a8b4c75f0d
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\CFXM3_Hit_Light_C_Air.prefab,4b976925764c1444a9b5d00eafb8dbe7
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\CFXM3_Hit_Light_C_Ground.prefab,572f72b2e6d654d428e30a1f816df869
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\CFXM3_LightBall_A.prefab,ebc47be7501f6634d9f97797c437510d
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\CFXM3_LightBall_B.prefab,e8f3a6c210e26754786dee1275ced043
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\CFXM3_LightGlow_A_Air.prefab,96a4f5398cd106345a8f182b91d19f21
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\CFXM3_LightGlow_A_Ground.prefab,f5975161d1f274f4084bbbf778656d92
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\CFXM3_LightGlow_B_Air.prefab,24fbac1ef02076245b6b8bfca5a199dc
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\CFXM3_LightGlow_B_Ground.prefab,74034e1c25204a4408a2fe89159c45b3
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\CFXM3_LightGlow_C_Air.prefab,a782388c66d48aa4890ba4d20cd648c8
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\CFXM3_ResurrectionLight_Circle.prefab,628ac2a3870983349a8620f55d320591
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\CFXM3_ResurrectionLight_Circle_Looped.prefab,33972cf252133b444839306c4f53ece9
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\CFXM3_ResurrectionLight_Oval.prefab,22d794886af423b4681e069f4a8d51ca
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\CFXM3_ResurrectionLight_Oval_Looped.prefab,867fc99a21acdc04db6a5304ec16759e
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\CFXM3_Shield_Rays.prefab,05ee0786681adf147b99c7f90eac53b3
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\CFXM3_Shield_Rays_Intense.prefab,3968c1a4d7224bf478df6060a90efa3f
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\CFXM3_SkyRaysSkewed_Loop.prefab,db917303e284d31418a56292ce270a5e
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\CFXM3_SkyRays_Loop.prefab,f99132d95e020314fa25cc15d686e7fc
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\Color Variants\CFXM3_Hit_Light_A_Air (Blue).prefab,fc5a8a0c79e254b4f825baef640c8924
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\Color Variants\CFXM3_Hit_Light_A_Air (Green).prefab,707e24352bed9db45a33d6b99b5682b8
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\Color Variants\CFXM3_Hit_Light_A_Air (Purple).prefab,fbb2eb166eba3b34fb3ecc694d747fc5
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\Color Variants\CFXM3_Hit_Light_A_Ground (Blue).prefab,c6215e4cf20b9d24c88f9ec15fd2892b
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\Color Variants\CFXM3_Hit_Light_A_Ground (Green).prefab,74c8b4597c357894e9ef81c77147b140
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\Color Variants\CFXM3_Hit_Light_A_Ground (Purple).prefab,3c0a2e682eacbf948a28b30bb9765cff
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\Color Variants\CFXM3_Hit_Light_B_Air (Blue).prefab,ad3a076ec7267b34fa3d178eb6dc508d
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\Color Variants\CFXM3_Hit_Light_B_Air (Purple).prefab,de88cb20dc2fe654cafcce71e6baa136
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\Color Variants\CFXM3_Hit_Light_B_Air (Red).prefab,709acf05d4eafa3418eff04e6e0d1774
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\Color Variants\CFXM3_Hit_Light_B_Ground (Blue).prefab,382b21ed32ca4a446b3c782c61a1635a
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\Color Variants\CFXM3_Hit_Light_B_Ground (Purple).prefab,dc648b17fac6c9044bcfd08a5aefb2ad
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\Color Variants\CFXM3_Hit_Light_B_Ground (Red).prefab,ede6f6ddb617a584580726913a7a8a86
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\Color Variants\CFXM3_Hit_Light_C_Air (Blue).prefab,805b43a5ec9456042b1d53b8844c760e
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\Color Variants\CFXM3_Hit_Light_C_Air (Green).prefab,aefc32ad9b8e28c4b820f4bc1f726bf1
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\Color Variants\CFXM3_Hit_Light_C_Air (Orange).prefab,251320215664bf04fabf1af507f485bc
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\Color Variants\CFXM3_Hit_Light_C_Ground (Blue).prefab,88f052f9c6dc1ea46bb5eade174d6351
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\Color Variants\CFXM3_Hit_Light_C_Ground (Green).prefab,115871bcbe90bb34e8391fe90f7dc753
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\Color Variants\CFXM3_Hit_Light_C_Ground (Orange).prefab,b0e21d18f529ba54e8af205c514e081a
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\Color Variants\CFXM3_LightBall_A (Blue).prefab,688000f3cd5e28c4cbc28d781e215d06
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\Color Variants\CFXM3_LightBall_A (Green).prefab,245ffbbc551809e4fbed7da0c4e3019d
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\Color Variants\CFXM3_LightBall_A (Orange).prefab,8307bc03673fcb94b9281db57d35007c
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\Color Variants\CFXM3_LightBall_A (Purple).prefab,f6ac2617c188cee47b66ae23f29e49db
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\Color Variants\CFXM3_LightGlow_A_Air (Blue).prefab,dfab7bc700cbeea4db84e813ed8f4f92
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\Color Variants\CFXM3_LightGlow_A_Air (Green).prefab,bd5207ae29707c14b9b0398e85a1729a
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\Color Variants\CFXM3_LightGlow_A_Air (Orange).prefab,d35083baa0e74fd4bb47581a894d1361
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\Color Variants\CFXM3_LightGlow_A_Ground (Blue).prefab,11b9620be8a534349ade2daaa017de0c
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\Color Variants\CFXM3_LightGlow_A_Ground (Green).prefab,6f0913d59df3bf94f852599ab7c79e53
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\Color Variants\CFXM3_LightGlow_A_Ground (Orange).prefab,a8439552578be8e4b8dbcc398bf57b48
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\Color Variants\CFXM3_LightGlow_B_Air (Blue).prefab,6e71e1b729af0c041ac91173fd0a72da
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\Color Variants\CFXM3_LightGlow_B_Air (Green).prefab,3f7d30388d6d6364697aa6d41dd7ea60
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\Color Variants\CFXM3_LightGlow_B_Air (Red).prefab,8f8ea30811773134691a33ac1e8258f6
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\Color Variants\CFXM3_LightGlow_B_Ground (Blue).prefab,8293e3bf91c594d45936c7d358edfdec
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\Color Variants\CFXM3_LightGlow_B_Ground (Green).prefab,95736da5299a2bd49826db489e25cadd
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\Color Variants\CFXM3_LightGlow_B_Ground (Red).prefab,0a0338ba59244924792ebae08c5191c7
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\Color Variants\CFXM3_LightGlow_C_Air (Blue).prefab,f400cde318d31f04ba38cc8142655412
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\Color Variants\CFXM3_LightGlow_C_Air (Green).prefab,e1b344384cdc5194382161dc51934f68
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\Color Variants\CFXM3_LightGlow_C_Air (Pink).prefab,17f2c5d00ccfa0f469e63eb5675307af
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\Color Variants\CFXM3_ResurrectionLight_Circle (Blue).prefab,09d7942ca71ca0b4a8bd36907c78fa78
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\Color Variants\CFXM3_ResurrectionLight_Circle (Orange).prefab,5bbcdbfd67d0ee14888fc2c87b4d0f05
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\Color Variants\CFXM3_ResurrectionLight_Circle (Purple).prefab,c6f8ffac458182640856473959d3fd31
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\Color Variants\CFXM3_ResurrectionLight_Oval (Blue).prefab,b743e22d8b974f74cb3bd2f288ce1ac6
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\Color Variants\CFXM3_ResurrectionLight_Oval (Green).prefab,09e54fae56444954da9661fb24c3a5e1
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\Color Variants\CFXM3_ResurrectionLight_Oval (Purple).prefab,a6bc235ae8e65fa40b37169b49137645
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\Color Variants\CFXM3_Shield_Rays (Blue).prefab,971aa1276a7481e40ba5e0368fe608cd
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\Color Variants\CFXM3_Shield_Rays (Green).prefab,e9ffa68cdbc6b8b47b9b4db395258466
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\Color Variants\CFXM3_Shield_Rays (White).prefab,edb88353b28a4964984cca9a32dcc236
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\Color Variants\CFXM3_Shield_Rays_Intense (Blue).prefab,bb8bc9b227bffc84a8b663ab7e5dfdf2
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\Color Variants\CFXM3_Shield_Rays_Intense (Purple).prefab,de82e0a08b126a243b0f2305f0ad93d9
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\Variants\CFXM3_SkyRaysSkewed_Loop (Prewarm).prefab,36975c8194f3771439099e605b2de0ef
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Light\Variants\CFXM3_SkyRays_Loop (Prewarm).prefab,a91abdb4ee7a0194bb7c7c2365d69456
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Magic Dark\CFXM3_Beetles.prefab,976fe8b5be3d34747ad3d44bf4531a3c
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Magic Dark\CFXM3_DarkMagicAura_A.prefab,215f475cc03e7594a9d3759fe63e199f
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Magic Dark\CFXM3_DarkMagicAura_B_Runic.prefab,6c21187baa5ecc340a8350785399be8e
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Magic Dark\CFXM3_DarkMagicAura_C.prefab,30dd85a2a8a9d6d42bba591e182fa1cd
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Magic Dark\CFXM3_Dark_Sun.prefab,84232eacec442c54c80d2e6a52e4a872
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Magic Dark\Color Variants\CFXM3_DarkMagicAura_A (Blue).prefab,41cac7e037b524644b1e9648780af255
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Magic Dark\Color Variants\CFXM3_DarkMagicAura_A (Red).prefab,1146a852a44b89d4296319effa0b7b07
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Magic Dark\Color Variants\CFXM3_DarkMagicAura_B_Runic (Black).prefab,4a8f03f6ef9ca914baf0934a4c802692
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Magic Dark\Color Variants\CFXM3_DarkMagicAura_B_Runic (Blue).prefab,3b4f7c0880988e14ab94359246f6f5b2
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Magic Dark\Color Variants\CFXM3_DarkMagicAura_B_Runic (Green).prefab,966192b95b83ba848873a018f467418a
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Magic Misc\CFXM3_MagicAura_A.prefab,9df8d807bb5c6204188aba983be9692a
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Magic Misc\CFXM3_MagicAura_B_Runic.prefab,f7cc9b5587ba97140a9717e05f28402f
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Magic Misc\CFXM3_MagicAura_C.prefab,b0370a07bce7c9a459f9381b74a3b9a9
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Magic Misc\CFXM3_MagicAura_D_Runic.prefab,6d4cd34ceeae83743ab8856161488b61
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Magic Misc\CFXM3_Magic_Fountain.prefab,f1faf822e9cc86f41b5deed4282911c5
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Magic Misc\CFXM3_VortexTornado.prefab,ddc0b5b6900ad784fa12214dd34bf029
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Magic Misc\CFXM3_Vortex_Air.prefab,f2981d90f5eecd347aa55eeec2ef52ce
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Magic Misc\CFXM3_Vortex_Air_Outward.prefab,a7528279340058e4c8627dc3f5fd6445
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Magic Misc\CFXM3_Vortex_Ground.prefab,505264c4d0cb653448f053aab5306766
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Magic Misc\CFXM3_Vortex_Ground_Outward.prefab,82747b1267573684bb177fa91d0d29a1
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Magic Misc\Color Variants\CFXM3_MagicAura_A (Blue).prefab,784e55ede4f891c4d9629d97fe7c1063
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Magic Misc\Color Variants\CFXM3_MagicAura_A (Green).prefab,57977dfc64f23f647bf8f9ffc2dc7afc
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Magic Misc\Color Variants\CFXM3_MagicAura_A (Pink).prefab,8572d020d6854634fb24387b1c6084a6
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Magic Misc\Color Variants\CFXM3_MagicAura_B_Runic (Blue).prefab,1af1be69962aeb848a859d16f834d8b1
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Magic Misc\Color Variants\CFXM3_MagicAura_B_Runic (Green).prefab,24f96bf1bf2e32d4aa261afaa6529632
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Magic Misc\Color Variants\CFXM3_MagicAura_B_Runic (Orange).prefab,4bb990bfbfd2a1746ae4044142a87ac0
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Magic Misc\Color Variants\CFXM3_MagicAura_C (Blue).prefab,610ce0e8d0d6048478ed0b319a6e057c
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Magic Misc\Color Variants\CFXM3_MagicAura_C (Green).prefab,4190a4f6e6f760a4b9d0e9f2316f826c
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Magic Misc\Color Variants\CFXM3_MagicAura_C (Red).prefab,924cdf12110453945999eb99ba80aa6b
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Magic Misc\Color Variants\CFXM3_MagicAura_D_Runic (Blue).prefab,9a85d1c10cff61a428a37e51a8050885
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Magic Misc\Color Variants\CFXM3_MagicAura_D_Runic (Red).prefab,afc5c59b672613241aa1da84f81d109f
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Magic Misc\Color Variants\CFXM3_MagicAura_D_Runic (Yellow).prefab,62062acd3ac614941b1b5d1677f8a019
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Magic Misc\Color Variants\CFXM3_Magic_Fountain (Blue).prefab,993ef68ad8296df48a76c561981dda53
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Magic Misc\Color Variants\CFXM3_Magic_Fountain (Green).prefab,cdc574f3b78b6a840816efa4e155f6d5
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Magic Misc\Color Variants\CFXM3_VortexTornado (Blue).prefab,4d69d893da0dc6c4cac5defa8005b921
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Magic Misc\Color Variants\CFXM3_VortexTornado (Green).prefab,02aeffbe6b045364b9f61db764d8d966
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Magic Misc\Color Variants\CFXM3_VortexTornado (Orange).prefab,0f16efeaab6f7664fb7b65f958b469af
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Magic Misc\Color Variants\CFXM3_Vortex_Air (Blue).prefab,a684b602b7ef532408ec077cc6871851
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Magic Misc\Color Variants\CFXM3_Vortex_Air (Red).prefab,4ba356f0db2b5114587cd40d71113be5
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Magic Misc\Color Variants\CFXM3_Vortex_Air (Yellow).prefab,5050852f0a10d584fa37b86817cad985
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Magic Misc\Color Variants\CFXM3_Vortex_Ground (Blue).prefab,ce006e497e56e494aad7f605a9f61840
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Magic Misc\Color Variants\CFXM3_Vortex_Ground (Red).prefab,e5e635c5884aff245bf29382394f829b
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Magic Misc\Color Variants\CFXM3_Vortex_Ground (Yellow).prefab,949c6f6e3a98c60429004a51eae1e379
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Misc\CFXM3_Broken_Machine_Clouds_Black.prefab,4a3d0f7af36e88d44b1712a25d7f13ae
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Misc\CFXM3_Broken_Machine_Clouds_White.prefab,97e3ff632a665f54e9e1ea4698b9d9d5
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Misc\CFXM3_Hit_Misc_A.prefab,bad73d4c8fc18604491f9ae365112d15
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Misc\CFXM3_Hit_Misc_B.prefab,301090b18d7568f4d996ce90735ddb6e
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Misc\CFXM3_Hit_Misc_B_Gravity.prefab,fc182f9e837af16489b6b2b475c7b458
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Misc\CFXM3_Hit_Misc_C.prefab,678712623bbcf994ebdd32efbfa27265
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Misc\CFXM3_Hit_Misc_D.prefab,eb5985801a4246b43b60c3e68afc9c06
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Misc\CFXM3_Hit_Misc_E_Skull.prefab,10fc21a44cf09ef4b9c6ed576520bce5
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Misc\CFXM3_Hit_Misc_F_Skull.prefab,1a6f1ff2d3ea3fd49b0093ecc9a852be
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Misc\CFXM3_Hit_SmokePuff.prefab,3b9bac949dbca6048ac36631722dce4b
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Misc\CFXM3_Skull_Explosion (direct).prefab,a8d024a7bbebd8d48b826e183fe3b6a4
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Misc\CFXM3_Skull_Explosion.prefab,7d83a1337fcb308499d6e7e8b1cb52d6
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Misc\CFXM3_Suspicious_Cloud_Black.prefab,8881485be1934f94996fcf37cfe07274
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Misc\CFXM3_Suspicious_Cloud_White.prefab,2afd58de8f3ab874081725ccf9c852ff
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Misc\Color Variants\CFXM3_Hit_Misc_A (Green).prefab,984ced96638aeb2469ef6b1efb4224c5
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Misc\Color Variants\CFXM3_Hit_Misc_A (Orange).prefab,c6b221a1de128cf41990822f809ba877
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Misc\Color Variants\CFXM3_Hit_Misc_B (Blue).prefab,50195a3a96f0ef14f80a4f4e9967a459
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Misc\Color Variants\CFXM3_Hit_Misc_B (Yellow).prefab,b58e1e7f940f0004fa4c854896a409df
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Misc\Color Variants\CFXM3_Hit_Misc_C (Blue).prefab,1078d939db805934daccc70e64fb242f
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Misc\Color Variants\CFXM3_Hit_Misc_C (White).prefab,b888ddc95e6c32440a3c015633698ddb
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Misc\Color Variants\CFXM3_Hit_Misc_D (Blue).prefab,2e3c5cdf8baa7fb4d86ab8c89d18e80a
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Misc\Color Variants\CFXM3_Hit_Misc_D (Orange).prefab,d9dd3d5fc19187d4fa703b7c7478e53f
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Misc\Color Variants\CFXM3_Hit_Misc_E_Skull (Blue).prefab,ec77ef08fa5766742949a3db9ae94f87
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Misc\Color Variants\CFXM3_Hit_Misc_E_Skull (Orange).prefab,e2cf84f8d06cd4042b09e90ec1e59287
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Misc\Color Variants\CFXM3_Hit_Misc_F_Skull (Green).prefab,38f9bc118a26b1e44a1754f727f4548b
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Misc\Color Variants\CFXM3_Hit_Misc_F_Skull (Red).prefab,a1f8a878592a64c4ea820d6e9a40b56c
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Nature\CFXM3_FallingLeaves.prefab,a454a632e7ca40e45b0742f8e1d4528c
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Nature\CFXM3_FallingLeaves_Large.prefab,02bf3c333107b3145bbf3ae84bf2f3b0
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Nature\CFXM3_Hit_Leaves_A_Air.prefab,ec756f75ebce1a64d84cad513d237c02
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Nature\CFXM3_Hit_Leaves_A_Ground.prefab,94d3f145ee249464ba44a26c719ba7f5
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Nature\CFXM3_Shield_Leaves.prefab,d464cfd295013264b9ceef6a1566da0b
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Nature\CFXM3_Shield_Leaves_Raw.prefab,8ddfd76e88f42ed4fb8c84a72e804889
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Nature\Color Variants\CFXM3_FallingLeaves (Brown).prefab,1e2fb12b94c094e4e82b200a0d1ab7f6
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Nature\Color Variants\CFXM3_FallingLeaves (GreenBlue).prefab,ac22eaa4b80026b448020c7be6dfddb4
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Nature\Color Variants\CFXM3_FallingLeaves_Large (Brown).prefab,f89a49f0a0562b74b94b1570a685aa25
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Nature\Color Variants\CFXM3_FallingLeaves_Large (GreenBlue).prefab,14a1bc858a0ece94397cfc0ee5120e6c
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Nature\Color Variants\CFXM3_Hit_Leaves_A_Air (Brown).prefab,22a7703b83e081e46accc1b094c01c58
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Nature\Color Variants\CFXM3_Hit_Leaves_A_Air (GreenBlue).prefab,d9014a60bb9ec2344819a79e1490599c
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Nature\Color Variants\CFXM3_Hit_Leaves_A_Ground (Brown).prefab,b7fe1fc80aa54de46af482a923a576a5
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Nature\Color Variants\CFXM3_Hit_Leaves_A_Ground (GreenBlue).prefab,b2823faedf0a66b499e41cc0e3516a4e
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Nature\Color Variants\CFXM3_Shield_Leaves (Brown).prefab,6bd7834634b257b43bf951e7cb6298d7
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Nature\Color Variants\CFXM3_Shield_Leaves (GreenBlue).prefab,ff2351eac598e2e48b1a08359009ea02
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Nature\Color Variants\CFXM3_Shield_Leaves_Raw (Brown).prefab,e85dd29868cdf844980a9f7015d7fc21
+Assets/ExternalAssets/JMO Assets\Cartoon FX\CFX3 Prefabs (Mobile)\Nature\Color Variants\CFXM3_Shield_Leaves_Raw (GreenBlue).prefab,aa4269943ca538a42b9f6120f411d86f
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Demo\CFX3 Demo.unity,0b10d95a2a4d52c42ab5f231b90bb1a1
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Demo\Assets\CFX3_Demo_Ground.mat,27c0192fda96967429e68c68b13352fe
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Demo\Assets\CFX3_T_Ground.png,eaf4a9d9f8ba2d847b4febb8ec639803
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Demo\Assets\CFX_AutoStopLoopedEffect.cs,d9c4e89389fa607479b0744ec6611490
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_New.cs,8b17383a625e88348a99a6eeef772d40
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RotateCamera.cs,f71e90e62dfae594490eb4d9b611f930
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_Translate.cs,1e42ac40a6fba2e4d94a0070ef45cea1
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Demo\UI Canvas\CFX Demo Btn Arrow R.png,3783f195e2c8dc84cb1461fbe881e9cb
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Demo\UI Canvas\CFX Demo Btn Arrow.png,6ca93523b0317c242b05932fedb07cb3
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Demo\UI Canvas\CFX Demo Btn Camera H.png,90cdb91b8028d984b9adf63a23402f86
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Demo\UI Canvas\CFX Demo Btn Camera.png,4c72f3c555f96274787f31379fabb6ff
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Demo\UI Canvas\CFX Demo Btn Ground H.png,5cc9c4a6db9a74a40aaed761fc99294c
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Demo\UI Canvas\CFX Demo Btn Ground.png,a2bcf923df54ffa4ba7e795955c5dc22
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Demo\UI Canvas\CFX Demo Btn SlowMo H.png,48624f05b683e4a4ab1a142e40fd6971
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Demo\UI Canvas\CFX Demo Btn SlowMo.png,5ec8fc5d939ea2244985ca77a114c9d0
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Demo\UI Canvas\CFX3 Demo Logo.png,18a39eb748b6d664eb57f4b97b68bef3
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Editor\CFX_InspectorHelpEditor.cs,5fefbc813de49524d89e5fcce98dc957
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Editor\CFX_SpawnSystemEditor.cs,a20330d93336f2245901dbd9a34b88f8
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials\Animated\CFX_Anim_Electricity_Add.mat,fcb97c6faf083ca4f978210036f3832b
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials\Animated\CFX_Anim_Triangle_AddSoft.mat,944bc1016f6ac38439ec1bf04fab9550
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials\Electric\CFX_ElectricBolt_Add.mat,9c36c09a0f6dd93458248f001ebce5ab
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials\Electric\CFX_Sparkles_Add.mat,f70f45ac7c9fb644c9a039b7d3aab297
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials\Fire\CFX3_FireBulk ADD.mat,67c3db2f0d5b4aa4eaa1d7aec0699d15
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials\Fire\CFX3_FireSparkle ADD.mat,c9386fd37103dcb479f09e942849a1ce
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials\Light\CFX3_AuraRays ADD.mat,613896d51d8db5546ae93740815f0c7b
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials\Light\CFX3_AuraRays MULT.mat,63729df9e952c1f4b8fe34b9cd435a79
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials\Light\CFX3_AuraRays_Oval ADD.mat,fb8df75c5c0465644b8ab8de21480bbe
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials\Light\CFX3_AuraRunic ADD.mat,5bf91ad953f78d54baebb31d5f5ae4a5
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials\Light\CFX3_AuraRunic MULT.mat,86742e5b8ca0d60438366fde15e7ed28
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials\Light\CFX3_CircleSoft ADDSOFT.mat,c26f3dc2706e5764eb5100c273a349d7
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials\Light\CFX3_GlowDot ADD.mat,d1f61967133f9e64f9ecfc7d722581a4
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials\Light\CFX3_GlowDot ADDSOFT.mat,b692d0ba979c41946bbe57f2baba17eb
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials\Light\CFX3_GlowDot MULT.mat,0e9094c1cb53cc44595d77cdcf14b8d1
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials\Light\CFX3_GlowSpike ADD.mat,1de66e5f4e86e2e4cb564890916f7a9c
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials\Light\CFX3_GlowStar ADD.mat,6b22999712355474795091cef25021b4
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials\Light\CFX3_HollowCircle ADD.mat,0438adcdefc12d349a285d0ec6295fc2
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials\Light\CFX3_HollowCircle MULT.mat,703fe30effad69d4d91bb04105d28240
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials\Light\CFX3_HollowOval ADD.mat,9edde2ecb823a344dabc7024f0c60439
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials\Light\CFX3_RayStraight ADD.mat,695873166113ab64997efed81c2426c7
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials\Light\CFX3_SkyRays ADD.mat,034c914d1fd2f1740899631cb58631b5
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials\Light\CFX3_SmallRay ADDSOFT.mat,d9f8ab332ba6f4a45bd1913a9ff33b10
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials\Light\CFX3_Star4 ADDSOFT.mat,594232b6adb9da84bb10967e6833f50f
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials\Misc\CFX2_Glow Soft.mat,b6a4ebddb006a4a4bb0bea6365c7512a
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials\Misc\CFX2_Glow.mat,b479681f08574fd4188237f92866cbac
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials\Misc\CFX2_WhiteCircle AB.mat,7c9d6983f275678479ebf019a670f9cf
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials\Misc\CFX3_SmokePuff ADDSOFT.mat,f12d680b3c37c3c4fae5c220798d9977
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials\Misc\CFX3_SmokePuff MULT.mat,25cbaca39ac0e3f47b4db172e11cb9aa
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials\Stretched\CFX3_Ray MULT.mat,118c317da13d42a458832f85960e9081
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials\Stretched\CFX_RayRounded.mat,7cd73ef8e5a31a244a672ae32c0f6ddb
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials\Stretched\CFX_SpacedLine.mat,7df81ca1ef2a4ef40a7c08d1e1d04a50
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials\Symbols\CFX3_Leaf AB.mat,e4bcbac984e39814c8efbda57b023a63
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials\Symbols\CFX3_Skull ADDSOFT.mat,30db71c1add78bc42a3d83af298a4f5a
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials\Water\CFX3_IceBulk ADD.mat,c4c942715886fc6478f6514631d02a17
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials\Water\CFX3_IceSmoke ADD.mat,bb55ee7afd6389e40b30d89d435fa574
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials\Water\CFX3_IceSmoke Intense ADD.mat,a1b51a897f8d66c4f89b7b2782a1e43e
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials\Water\CFX_Ripple_AddSoft.mat,aae5c8d1fd84746428a2239fd95e4b98
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials (Mobile)\Animated\CFXM_Anim_Electricity_Add.mat,241162cab21b3a24489698fc154590ab
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials (Mobile)\Animated\CFXM_Anim_Triangle_AddSoft.mat,79220e4fd451ede47b95fd2057726b3b
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials (Mobile)\Electric\CFXM_ElectricBolt_Add.mat,ad56509abd71fbb4a8897f721cd3fed0
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials (Mobile)\Electric\CFXM_Sparkles_Add.mat,b6e1e16c0dbbc534bb9265a53ea7b3c0
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials (Mobile)\Fire\CFXM3_FireBulk ADD.mat,21ef559fcb6cd4a42886ff15cc10aa4e
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials (Mobile)\Fire\CFXM3_FireSparkle ADD.mat,d518031299ed73a4588afa71c0db3f5f
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials (Mobile)\Light\CFXM3_AuraRays ADD.mat,77e3cbacb5b834b42a5ccfe9ad151923
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials (Mobile)\Light\CFXM3_AuraRays MULT.mat,1823eba83580bbc439464a5ef374e5c8
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials (Mobile)\Light\CFXM3_AuraRays_Oval ADD.mat,3f24cd25bd5974c46b835cacdd81890e
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials (Mobile)\Light\CFXM3_AuraRunic ADD.mat,f61151e0d2f89264582eb0f567b29847
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials (Mobile)\Light\CFXM3_AuraRunic MULT.mat,864c9750f84ba2f4ca1a460a75af9cb2
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials (Mobile)\Light\CFXM3_CircleSoft ADDSOFT.mat,e36fd0c9a4c1c3d408f0ccdc79cb168c
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials (Mobile)\Light\CFXM3_GlowDot ADD.mat,64787e354b16ddf41ab85b12fe15dbff
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials (Mobile)\Light\CFXM3_GlowDot ADDSOFT.mat,62081b2b7f838d849912103df9370500
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials (Mobile)\Light\CFXM3_GlowDot MULT.mat,9f622be4864d9704faacc33dd18b155d
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials (Mobile)\Light\CFXM3_GlowSpike ADD.mat,0a32c42115c5e4d418c034afced866a7
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials (Mobile)\Light\CFXM3_GlowStar ADD.mat,0053b65302e6f7649b1c013c4c41906b
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials (Mobile)\Light\CFXM3_HollowCircle ADD.mat,b84aa919c49ac494eac6bfc0c791a24c
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials (Mobile)\Light\CFXM3_HollowCircle MULT.mat,a8406dd2557b3d8469af4060edcea1e8
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials (Mobile)\Light\CFXM3_HollowOval ADD.mat,781f5221ac266194ca7b03db944f10e2
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials (Mobile)\Light\CFXM3_RayStraight ADD.mat,fdf825eb3a5464a43896eb003acabe52
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials (Mobile)\Light\CFXM3_SkyRays ADD.mat,a594729874b286444bb34ee147c3b121
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials (Mobile)\Light\CFXM3_SmallRay ADDSOFT.mat,8971edfe59b345646b9af9f2088099e3
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials (Mobile)\Light\CFXM3_Star4 ADDSOFT.mat,8870bc32fcf2e4749a397b7efee3194c
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials (Mobile)\Misc\CFXM2_Glow Soft.mat,2b46ee04ee00df54d8a019afc70ae405
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials (Mobile)\Misc\CFXM2_Glow.mat,c51a3ff7fb052ba43ace81da2422523e
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials (Mobile)\Misc\CFXM2_WhiteCircle AB.mat,e927ed5c38ac53b4cbe16f9a3ddacfd8
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials (Mobile)\Misc\CFXM3_SmokePuff ADDSOFT.mat,dace1be5c39ca544f9b612fc59554b11
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials (Mobile)\Misc\CFXM3_SmokePuff MULT.mat,2159a6a2250430c4492d6e22e637a9d4
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials (Mobile)\Stretched\CFXM3_Ray MULT.mat,df17448793b44da4fa3b2ae241831537
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials (Mobile)\Stretched\CFXM_RayRounded.mat,8164c58bbdb1a1944af4c3c06492ccc0
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials (Mobile)\Stretched\CFXM_SpacedLine.mat,1a932e5aa6c9ba14ea1f38d3127288cd
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials (Mobile)\Symbols\CFXM3_Leaf AB.mat,e6071c4e8af729a47bb01b9cc165cd36
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials (Mobile)\Symbols\CFXM3_Skull ADDSOFT.mat,973787c765ff1f648973a163ed3a5426
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials (Mobile)\Water\CFXM3_IceBulk ADD.mat,b85bac8660bfec243b2385f00819aa04
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials (Mobile)\Water\CFXM3_IceSmoke ADD.mat,0bae96837733cfe40ad617e2bc581c34
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials (Mobile)\Water\CFXM3_IceSmoke Intense ADD.mat,dbc0726520a1c2a4ea1190e959325a4b
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Materials (Mobile)\Water\CFXM_Ripple_AddSoft.mat,67eca0d373e5537439e64ae64359ea27
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Mesh\CFX_Mesh_Circular.FBX,33e6621d2756c044d88f4f9de1a55e7e
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Mesh\CFX_Mesh_Circular1.5.asset,885d6c99746f9db4a83145e1d01a84e2
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Mesh\CFX_Mesh_Circular2.FBX,645a11d137d568d4bb4e5e97f259a333
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Mesh\CFX_Mesh_CircularAngle.FBX,cd0e4347930affd4f81cb4698d17c2ca
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Mesh\CFX_Mesh_CircularBig.FBX,21768c9bb8f895f499a017c4b2ce392c
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Scripts\CFX_AutoDestructShuriken.cs,6fd2e8874f60266498a388d7229a1bac
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Scripts\CFX_AutodestructWhenNoChildren.cs,aeafe347c69d67e41b5deb895305e834
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Scripts\CFX_InspectorHelp.cs,79c859f5f7a87c8438b7a5e91d7f499e
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Scripts\CFX_LightIntensityFade.cs,c2255468ea97f384a9ebbb13e497e050
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Scripts\CFX_ShurikenThreadFix.cs,275fc5543f4e43c48a8b9ce3c3b559e0
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Shaders\CFX3 Invert.shader,bc5c65c64d948bf438dd916daa892958
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Shaders\CFX3 Multiply Color.shader,d09abe9036011f94a9e27ccc73cea0ac
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Shaders\CFXM_MobileParticleAdd_Alpha8.shader,bccaaca1f83315c4aad8d95e28fd9149
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Spawn System\CFX_SpawnSystem.cs,ec1683be71e02f548b9023d92d51ac31
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Spawn System\SpawnSystem Template.prefab,4f752d70fdcea284c8c3e3129cc58ff4
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures\CFX2_T_Glow.png,e387f662afce60c4cbf4689043469d34
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures\CFX2_T_GlowSoft.png,8a75e78ce03d6bf4aa7ab9b759c2ca32
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures\CFX3_T_AuraRays.png,7bb9dadd2444bf3439822eed5645b2a0
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures\CFX3_T_AuraRays_Oval.png,024ceff4177a43a49b7e6e9083f8c597
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures\CFX3_T_AuraRunic.png,d14d0e475cccac4459575f61f2a79a70
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures\CFX3_T_CircleSoft.png,da8f1c2ca73fa7849812d48c57b95295
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures\CFX3_T_FireBulk.png,e6d1dbabd3135d546b6c48db6a6879f3
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures\CFX3_T_FireSparkle.png,52c1a422bfc04b543adc653b160af1e6
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures\CFX3_T_GlowDot.png,3deb8633c6b720d42aab1c61a340a3af
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures\CFX3_T_GlowSpike.png,ef7c6c2563f24da42b7c53853678ae82
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures\CFX3_T_GlowStar.png,91d3d754c3f2ed742b805399cbbbe0e9
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures\CFX3_T_HollowCircle.png,c3fcf89fb2ad67b4cbfbebbe0e2edd3d
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures\CFX3_T_HollowOval.png,d1ed24bc20f2aeb4b87d6da154367037
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures\CFX3_T_IceBulk.png,f103820c13bdb524b9416caf8fa215b9
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures\CFX3_T_IceSmoke.png,962c1ab87533f4147a2a711570bea884
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures\CFX3_T_Leaf.tga,5fdc25eb8487e2548bd4bc27b7d11789
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures\CFX3_T_RayStraight.png,25fe726fd84d1154790a6f91bccc02c5
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures\CFX3_T_Skull.png,6c1c207199cd6d044858440b08f67726
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures\CFX3_T_SkyRay.png,8037018a43c73ce40960ff49fdbf8bfa
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures\CFX3_T_SmallRay.png,0659a2faaee9f7442a45c7ec908dabcb
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures\CFX3_T_SmokePuff.png,aff991a95cb92204fa62dffc7e7b6ead
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures\CFX3_T_Star4.png,1bfdf79f8999b784ba6a9eef9b1a9a23
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures\CFX_ElectricSparkle.png,a070c34b838259a4eb4338c1c5b753b3
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures\CFX_T_Anim4_Triangle1.png,457b1e2e96148da47ac7049226511eff
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures\CFX_T_Anim7_Electricity.png,67b0a4cd4c72b86469e7ca179598fcaf
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures\CFX_T_Bolt.png,347a4af640f58824d8438fae9b34a012
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures\CFX_T_Ray.png,2a23c90b6f28bf849a5ac28e2e9e6e41
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures\CFX_T_RayRounded.png,80afd895097ad144893ad78943aaf475
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures\CFX_T_Ripple.png,8ac4371e521dca847a52403df09e80d7
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures\CFX_T_SpacedLine.png,31ea030e6226b8241a5cfea71dc780f1
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures\CFX_T_WhiteCircleSmall.png,7b11eec997e4c3044a59e4a2ff710b4e
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures (Mobile)\CFXM2_T_Glow.png,0f52056d1e0975b45897abf22078ebd9
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures (Mobile)\CFXM2_T_GlowSoft.png,f97ec305e3ceffd4a9866904974792e7
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures (Mobile)\CFXM3_T_AuraRays.png,13807a919991cfe44b57d7db2be003d8
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures (Mobile)\CFXM3_T_AuraRays_Oval.png,e51ed13aaaae4fd418b3d4abb45419a5
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures (Mobile)\CFXM3_T_AuraRunic.png,dabb532089f004b4da7e78f1ee6213a5
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures (Mobile)\CFXM3_T_CircleSoft.png,b64812a58df4a9e4d95fd3618c222bac
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures (Mobile)\CFXM3_T_FireBulk.png,ed1817534d2dd954e8315150374ca8eb
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures (Mobile)\CFXM3_T_FireSparkle.png,ef578d48d4897b14f92f12df68503089
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures (Mobile)\CFXM3_T_GlowDot.png,ae3fa1042e1f4b245970c609dd6952c4
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures (Mobile)\CFXM3_T_GlowSpike.png,7b307a75dc728dd45a8d3c3605600317
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures (Mobile)\CFXM3_T_GlowStar.png,6cfb04d83be10e549887ebb5340a46f9
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures (Mobile)\CFXM3_T_HollowCircle.png,cec52caea64bcb049858f7bb75aa8308
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures (Mobile)\CFXM3_T_HollowOval.png,698a238c38750334cbd983ef2fc0b8e3
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures (Mobile)\CFXM3_T_IceBulk.png,8ec934b6b46a3424c961170abc530b6f
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures (Mobile)\CFXM3_T_IceSmoke.png,8d5678f01a805b84eafa29e231b62e70
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures (Mobile)\CFXM3_T_Leaf.tga,ca3f00bf07abbe140af6dc4539061848
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures (Mobile)\CFXM3_T_RayStraight.png,c80c8de1aefaa5649a5dfe81c9d2e61f
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures (Mobile)\CFXM3_T_Skull.png,b8c77fc49c28810448ac83d2136a8b51
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures (Mobile)\CFXM3_T_SkyRay.png,49c44a6d8e04bc5458e75bc7ab71e16f
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures (Mobile)\CFXM3_T_SmallRay.png,4cf56acadc8dfa74ba2fbfe951e89207
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures (Mobile)\CFXM3_T_SmokePuff.png,34487ea2f31aa17489a59b03570509a2
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures (Mobile)\CFXM3_T_Star4.png,9eefdb1feb0771144ac312f5674618cc
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures (Mobile)\CFXM_ElectricSparkle.png,701be1c47cc479d4b816efdf54167f98
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures (Mobile)\CFXM_T_Anim4_Triangle1.png,aacc95c22afd29c4a938135272f480d5
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures (Mobile)\CFXM_T_Anim7_Electricity.png,080ff20b0d2ba484abc53543e7797d9c
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures (Mobile)\CFXM_T_Bolt.png,cc08ec67b8a74c848a8229cd81d74791
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures (Mobile)\CFXM_T_Ray.png,9145f8a3c6675dd40a10d3ad40181a62
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures (Mobile)\CFXM_T_RayRounded.png,5f84370739e00f6448c2ea5cd4b39ed2
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures (Mobile)\CFXM_T_Ray_RGB.png,fe2a29f5a34ca7d41b227f8177b5068a
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures (Mobile)\CFXM_T_Ripple.png,bed383b85ec989046a42d498571d2ca2
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures (Mobile)\CFXM_T_SpacedLine.png,8e2a22936d4455547b8f079edae12629
+Assets/ExternalAssets/JMO Assets\Cartoon FX\Textures (Mobile)\CFXM_T_WhiteCircleSmall.png,8b61535684d3b3243a077d250c9c1c33
+Assets/ExternalAssets/JMO Assets\Cartoon FX Easy Editor\CartoonFX Easy Editor Readme.txt,459d1fc7f02e45a45806af5efd38b025
+Assets/ExternalAssets/JMO Assets\Cartoon FX Easy Editor\Editor\CFXEasyEditor.cs,d56b3c7055d81cb44803b5d7db4b65e0
+Assets/ExternalAssets/JMO Assets\Editor\JMOAssets.dll,cedc53e91a163eb498a6434b79d244de

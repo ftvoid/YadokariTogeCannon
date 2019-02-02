@@ -49,11 +49,6 @@ public class CountDown : MonoBehaviour
                 image.color = new Color(1, 1, 1, 0);
             }
         }
-
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            StartCountDown();
-        }
     }
 
     /// <summary>

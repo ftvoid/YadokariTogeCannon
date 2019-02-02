@@ -49,6 +49,8 @@ public class HermitClab : MonoBehaviour
 
     MoveState state = MoveState.Stop;
 
+    bool isDead = false;
+
     private void Awake()
     {
         IsShelled = false;
@@ -109,8 +111,8 @@ public class HermitClab : MonoBehaviour
                 return;
 
             //殻を持っていて、動いていなければreturn
-            var isDead = col?.gameObject?.GetComponent<CrabControl>()?.isDead() ?? false;
-            if (IsShelled || isDead)
+            var isCrabDead = col?.gameObject?.GetComponent<CrabControl>()?.isDead() ?? false;
+            if (IsShelled || isCrabDead)
                 return;
 
             //そうでなければ死ぬ
@@ -335,12 +337,19 @@ public class HermitClab : MonoBehaviour
     //死亡
     public void Dead()
     {
+        if ( isDead )
+        {
+            return;
+        }
+
         SoundManager.Instance.StopAllSE();
         SoundManager.Instance.PlaySE("StrongHit");
         EffectManager.Instance.ShowEffect("Dead",this.transform.position,this.transform.rotation);
         StartCoroutine(GameOver());
 
         this.gameObject.transform.localScale = Vector3.zero;
+
+        isDead = true;
     }
 
     IEnumerator GameOver()

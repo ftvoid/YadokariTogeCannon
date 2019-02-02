@@ -60,9 +60,11 @@ public class EffectManager : SingletonMonoBehaviour<EffectManager>
         {
             info.playingEffects.Remove(effect);
             GameObject.Destroy(effect.gameObject);
-            Debug.Log($"エフェクト\"{effectID}\"消滅");
+            //Debug.Log($"エフェクト\"{effectID}\"消滅");
         });
         info.playingEffects.Add(effect);
+
+        Debug.Log($"エフェクト\"{effectID}\"出現");
 
         _effectInfo[index] = info;
     }

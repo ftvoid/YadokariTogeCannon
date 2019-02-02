@@ -133,6 +133,7 @@ public class CrabControl : MonoBehaviour
                 break;
         }
 
+#if UNITY_EDITOR
         // debug
         if(Input.GetKeyDown(KeyCode.P))
         {
@@ -144,6 +145,7 @@ public class CrabControl : MonoBehaviour
             // JumpRotatoin
             JumpRotation = new Vector3(Random.Range(0.0f, JumpRotationMax), Random.Range(0.0f, JumpRotationMax), 0.0f);
         }
+#endif
     }
 
     // search hermitcrab

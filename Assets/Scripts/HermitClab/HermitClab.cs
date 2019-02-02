@@ -109,7 +109,8 @@ public class HermitClab : MonoBehaviour
                 return;
 
             //殻を持っていて、動いていなければreturn
-            if (IsShelled || col.gameObject.GetComponent<CrabControl>().isDead())
+            var isDead = col?.gameObject?.GetComponent<CrabControl>()?.isDead() ?? false;
+            if (IsShelled || isDead)
                 return;
 
             //そうでなければ死ぬ
@@ -164,8 +165,11 @@ public class HermitClab : MonoBehaviour
         if (!IsShelled)
             return;
         Debug.Log(shell);
-        if(this.transform.localScale != Vector3.zero || !IsShellExistence())
-            shell.transform.localScale = this.transform.localScale * 1.2f;
+        if ( shell != null )
+        {
+            if ( this.transform.localScale != Vector3.zero || !IsShellExistence() )
+                shell.transform.localScale = this.transform.localScale * 1.2f;
+        }
 
         if (state == MoveState.Move)
             OpenShell();

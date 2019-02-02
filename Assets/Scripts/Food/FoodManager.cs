@@ -45,8 +45,10 @@ public class FoodManager : SingletonMonoBehaviour<FoodManager>
     {
         for (int i = 0; i < 1; i += 0)
         {
-            if (Input.GetKeyDown(KeyCode.B))
+#if UNITY_EDITOR
+            if ( Input.GetKeyDown(KeyCode.B))
                 break;
+#endif
 
             if (nowFoodList.Count <= foodCount)
             {
